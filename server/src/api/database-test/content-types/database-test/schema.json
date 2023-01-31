@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "database_tests",
+  "info": {
+    "singularName": "database-test",
+    "pluralName": "database-tests",
+    "displayName": "DatabaseTest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}
