@@ -17,9 +17,6 @@ html, body {
     padding: 0;
 }
 
-[v-cloak] {
-    display: none;
-}
 .title-bar {
     background: linear-gradient(90deg, #575DAA, #9695C9);
     padding: 3px 2px 3px 3px;
@@ -32,12 +29,14 @@ html, body {
     font-size: small;
     color: #fff;
 }
+
 .curved {
     height: 20vh;
     width: 100%;
     background: #575DAA;
     position: relative;
 }
+
 .curved::after {
     content: '';
     border-top-left-radius: 50% 100%;
@@ -54,7 +53,7 @@ html, body {
     transition: opacity 0.2s ease;
 }
 
-.fade-enter-from,
+.fade-enter,
 .fade-leave-to {
     opacity: 0;
 }

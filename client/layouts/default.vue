@@ -113,7 +113,9 @@
           <ul class="relative flex flex-row justify-start pt-8 pl-8 pb-4 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold">
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer px-2" @mouseover="highlightIndex = 3">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 3}">Блог</span>
+                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 3}">
+                <nuxt-link to="/blog">Блог</nuxt-link>
+                </span>
               </a>
               <transition name="fade">
                 <div v-show="highlightIndex == 3" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
