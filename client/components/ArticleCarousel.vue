@@ -1,6 +1,6 @@
 <template>
   <div class="grid">
-    <Slide v-for="(slide, index) in carouselSlides" :key="index" :transitionDuration="0.3" class="row-start-1 col-start-1 col-span-full">
+    <SlideItem v-for="(slide, index) in carouselSlides" :key="index" :transitionDuration="0.3" class="row-start-1 col-start-1 col-span-full">
       <article class="relative lg:pt-52 lg:mx-24" v-show="currentSlide == index">
         <div class="overflow-hidden lg:absolute left-0 top-0 lg:w-[50%] aspect-[7/5] rounded-md lg:drop-shadow-offcenter shadow-2xl">
           <img :src="require(`@/assets/stock/${slide.image}`)">
@@ -18,7 +18,7 @@
           <button class="bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">Научете Повече <fa icon="fa-solid fa-chevron-right " /></button>
         </div>
       </article>
-    </Slide>
+    </SlideItem>
     <div class="col-span-full flex flex-row gap-5 lg:my-0 my-8 lg:absolute mx-auto 1xl:top-[32rem] top-[29rem] 1xl:left-64 left-48">
       <button @click="previousSlide()">
         <fa icon="fa-solid fa-arrow-left-long" class="lg:mr-5 mr-14 fa-3x text-explo-lightgreen cursor-pointer hover:-translate-x-1 transition-transform duration-200" />
@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import Slide from '@/components/Slide.vue'
+import SlideItem from '~/components/SlideItem.vue'
 export default {
   components: {
-    Slide
+    SlideItem
   },
   props: {
     carouselSlides: {

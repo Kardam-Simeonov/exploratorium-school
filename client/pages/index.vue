@@ -18,7 +18,7 @@
               Игра
             </div>
             <div class="p-2 overflow-hidden">
-              <Carousel
+              <ImageCarousel
                 class="relative"
                 :carousel-slides="['bonfire.jpg', 'woodensign.jpg', 'treebridge.jpg']"
                 :initial-delay="2000"
@@ -34,7 +34,7 @@
               <div>Групова работа</div>
             </div>
             <div class="p-2 overflow-hidden">
-              <Carousel
+              <ImageCarousel
                 class="relative"
                 :carousel-slides="['group4.jpg', 'kayak.jpg', 'group2.jpg']"
                 :initial-delay="6000"
@@ -93,7 +93,7 @@
               Откривателство
             </div>
             <div class="p-2 overflow-hidden">
-              <Carousel
+              <ImageCarousel
                 class="relative"
                 :carousel-slides="['group2.jpg', 'kayak.jpg', 'group4.jpg',]"
                 :initial-delay="8000"
@@ -109,7 +109,7 @@
               Природа
             </div>
             <div class="p-2 overflow-hidden">
-              <Carousel
+              <ImageCarousel
                 class="relative"
                 :carousel-slides="['treebridge.jpg', 'bonfire.jpg', 'drawingonterrace.jpg']"
                 :initial-delay="4000"
@@ -127,7 +127,7 @@
       :class="{ 'pointer-events-all': isNewsOpen, 'pointer-events-none': !isNewsOpen }"
     >
       <transition
-        enter-from-class="all opacity-0"
+        enter-class="all opacity-0"
         enter-active-class="duration-300 ease-in"
         leave-active-class="duration-300 ease-out"
         leave-to-class="all opacity-0"
@@ -139,7 +139,7 @@
         />
       </transition>
       <transition
-        enter-from-class="transform translate-x-full"
+        enter-class="transform translate-x-full"
         enter-active-class="duration-300 ease-out"
         leave-active-class="duration-300 ease-out"
         leave-to-class="transform translate-x-full"
@@ -311,13 +311,13 @@
 </template>
 
 <script>
-import Carousel from '@/components/Carousel.vue'
+import ImageCarousel from '~/components/ImageCarousel.vue'
 import ArticleCarousel from '@/components/ArticleCarousel.vue'
 
 export default {
-  name: 'HomePage',
+  name: 'Home',
   components: {
-    Carousel,
+    ImageCarousel,
     ArticleCarousel
   },
   data () {
