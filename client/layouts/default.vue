@@ -9,12 +9,14 @@
           <ul class="relative flex flex-row justify-end pt-8 pr-8 pb-4 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold">
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer px-2" @mouseover="highlightIndex = 0">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 0}">Начало</span>
+                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 0}">
+                  <NuxtLink to="/">Начало</NuxtLink>
+                </span>
               </a>
               <transition name="fade">
                 <div v-show="highlightIndex == 0" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/house.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/house.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Следете всичко ново в Експлораториум от нашата начална страница!
                     </h1>
@@ -43,7 +45,7 @@
               <transition name="fade">
                 <div v-show="highlightIndex == 1" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/woodensign.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/woodensign.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Експлораториум е място отвъд догми, празни слова или формули
                     </h1>
@@ -72,7 +74,7 @@
               <transition name="fade">
                 <div v-show="highlightIndex == 2" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/drawingonterrace.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/drawingonterrace.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Един ден в Експлораториум протича според собствения часовник на детето
                     </h1>
@@ -105,22 +107,22 @@
               </div>
             </div>
             <div class="p-2">
-              <router-link class="focus:outline-none" to="/" @click="(isNavVisible = false)">
-                <img src="@/assets/artwork/logoWhite.png">
-              </router-link>
+              <NuxtLink to="/">
+                <img class="focus:outline-none" src="@/assets/artwork/logoWhite.png">
+              </NuxtLink>
             </div>
           </div>
           <ul class="relative flex flex-row justify-start pt-8 pl-8 pb-4 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold">
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer px-2" @mouseover="highlightIndex = 3">
                 <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 3}">
-                <nuxt-link to="/blog">Блог</nuxt-link>
+                  <nuxt-link to="/blog">Блог</nuxt-link>
                 </span>
               </a>
               <transition name="fade">
                 <div v-show="highlightIndex == 3" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/treebridge.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/treebridge.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Следете всичко ново в Експлораториум от нашата начална страница!
                     </h1>
@@ -149,7 +151,7 @@
               <transition name="fade">
                 <div v-show="highlightIndex == 4" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/undertree.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/undertree.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Експлораториум е място отвъд догми, празни слова или формули
                     </h1>
@@ -178,7 +180,7 @@
               <transition name="fade">
                 <div v-show="highlightIndex == 5" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/bonfire.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/bonfire.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Един ден в Експлораториум протича според собствения часовник на детето
                     </h1>
@@ -204,7 +206,7 @@
               <transition name="fade">
                 <div v-show="highlightIndex == 6" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/group1.jpg')] bg-cover bg-no-repeat" />
+                    <div class="h-56 bg-[url('@/assets/stock/group1.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Един ден в Експлораториум протича според собствения часовник на детето
                     </h1>
