@@ -1,0 +1,19 @@
+576caa - background
+
+575DAA - dark blue
+9695C9 - light blue
+EEF4F9 - white blue
+
+399845 - darker green
+CADA2B - dark green
+ECE82B - light green  
+
+FECE32 - dark yellow
+F5EC17 - light yellow
+
+EB2124 - dark red
+EB6262 - light red
+
+
+#CBDB2C - lightcard
+#B8C24E - darkcard
