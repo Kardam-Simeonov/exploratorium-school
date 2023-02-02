@@ -172,10 +172,9 @@
         </aside>
       </transition>
     </section>
-    <!-- Seperator-->
-    <div class="hidden md:block curved rotate-180 z-0" />
     <!-- About Us -->
-    <section class="grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkblue to-explo-lightblue px-6 md:pt-16 md:pb-32 pb-16 pt-28 rounded-b-3xl">
+    <section class="relative grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkpurple to-explo-lightblue px-6 md:pb-32 pb-16 pt-32 rounded-b-3xl">
+      <img src="@/assets/artwork/svg/wavesdivider.svg" class="absolute top-0 h-20 w-full">
       <img
         class="md:block hidden lg:col-span-7 col-span-full max-w-3xl w-full px-4 mb-8 self-center justify-self-center"
         src="@/assets/artwork/cardMap.png"
@@ -332,7 +331,7 @@ export default {
   },
   methods: {
     async getArticleSlides () {
-      const result = await this.$axios.$get('http://localhost:1337/api/carousel-articles?fields=title%2C%20description&populate=image')
+      const result = await this.$axios.$get('http://localhost:1337/api/carousel-articles?fields=title%2C%20description&populate=image&locale=en')
       this.carouselArticles = result.data
     },
     parallaxMove (e) {

@@ -100,7 +100,7 @@
               </transition>
             </li>
           </ul>
-          <div class="2xl:w-[48rem] xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-2xl">
+          <div class="2xl:w-[48rem] xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-lg">
             <div class="title-bar">
               <div class="title-bar-text">
                 ⠀
