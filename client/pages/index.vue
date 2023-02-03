@@ -314,7 +314,7 @@ import ImageCarousel from '~/components/ImageCarousel.vue'
 import ArticleCarousel from '@/components/ArticleCarousel.vue'
 
 export default {
-  name: 'Home',
+  name: 'HomePage',
   components: {
     ImageCarousel,
     ArticleCarousel
