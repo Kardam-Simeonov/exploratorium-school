@@ -172,10 +172,9 @@
         </aside>
       </transition>
     </section>
-    <!-- Seperator-->
-    <div class="hidden md:block curved rotate-180 z-0" />
     <!-- About Us -->
-    <section class="grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkblue to-explo-lightblue px-6 md:pt-16 md:pb-32 pb-16 pt-28 rounded-b-3xl">
+    <section class="relative grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkpurple to-explo-lightblue px-6 md:pb-32 pb-16 pt-32 rounded-b-3xl">
+      <img src="@/assets/artwork/svg/wavesdivider.svg" class="absolute top-0 h-20 w-full">
       <img
         class="md:block hidden lg:col-span-7 col-span-full max-w-3xl w-full px-4 mb-8 self-center justify-self-center"
         src="@/assets/artwork/cardMap.png"
@@ -254,7 +253,7 @@
         </h1>
         <div class="w-10 h-2 bg-explo-darkgreen" />
       </div>
-      <ArticleCarousel :carousel-slides="articleSlidesData" />
+      <ArticleCarousel :carousel-slides="carouselArticles" />
     </section>
     <!-- Facebook Feed -->
     <section class="bg-explo-darkpurple bg-opacity-40 mt-28 pb-28 py-12 sm:px-12 px-6">
@@ -267,7 +266,7 @@
         </div>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group3.jpg')] bg-cover" @mouseover="feedIndex = 0" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-from-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
               <div v-show="feedIndex == 0" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><fa icon="fa-brands fa-facebook" /> ExploratoriumBG</p>
@@ -277,7 +276,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/drawingonterrace.jpg')] bg-cover" @mouseover="feedIndex = 1" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-from-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
               <div v-show="feedIndex == 1" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><fa icon="fa-brands fa-facebook" /> ExploratoriumBG</p>
@@ -287,7 +286,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group1.jpg')] bg-cover" @mouseover="feedIndex = 2" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-from-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
               <div v-show="feedIndex == 2" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><fa icon="fa-brands fa-facebook" /> ExploratoriumBG</p>
@@ -297,7 +296,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group2.jpg')] bg-cover" @mouseover="feedIndex = 3" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-from-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
               <div v-show="feedIndex == 3" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><fa icon="fa-brands fa-facebook" /> ExploratoriumBG</p>
@@ -315,35 +314,26 @@ import ImageCarousel from '~/components/ImageCarousel.vue'
 import ArticleCarousel from '@/components/ArticleCarousel.vue'
 
 export default {
-  name: 'Home',
+  name: 'HomePage',
   components: {
     ImageCarousel,
     ArticleCarousel
   },
   data () {
     return {
-      articleSlidesData: {
-        0: {
-          title: 'Откриване на годината в Експлораториум',
-          description: 'Експлораториум е място отвъд формули, празни слова и догми - място, посветено към света на безграничната детска фантазия и въображение. Тук децата са свободни да се изразяват, да се развиват и да се научават, изцяло според собственото им темпо.',
-          image: 'group3.jpg'
-        },
-        1: {
-          title: 'Екскурзия до Природонаучен музей',
-          description: 'Децата от Експлораториум посетиха Природонаучен музей в София. Те се насладиха на различни експонати, които се отнасят до природата и научните явления. Това е една от много интересния и полезни проекти, които децата изработиха през учебната година 2020/2021. Те се насладиха на различни експонати, които се отнасят до природата и научните явления. Това е една от много интересния и полезни проекти, които децата изработиха през учебната година 2020/2021.',
-          image: 'drawingonterrace.jpg'
-        },
-        2: {
-          title: 'Проект - Макет на Град',
-          description: 'Децата от Експлораториум изработиха макет на град, обурудван с различни средства за транспорт. Това е една от много интересния и полезни проекти, които децата изработват в Експлораториум. Градът е напълно функционален и се състои от различни средства за транспорт, които са изработени от децата. Това е една от много интересния и полезни проекти, които децата изработват в Експлораториум. Градът е напълно функционален и се състои от различни средства за транспорт, които са изработени от децата.',
-          image: 'group1.jpg'
-        }
-      },
+      carouselArticles: [],
       isNewsOpen: false,
       feedIndex: -1
     }
   },
+  created () {
+    this.getArticleSlides()
+  },
   methods: {
+    async getArticleSlides () {
+      const result = await this.$axios.$get('http://localhost:1337/api/carousel-articles?fields=title%2C%20description&populate=image&locale=en')
+      this.carouselArticles = result.data
+    },
     parallaxMove (e) {
       document.querySelectorAll('.parallax').forEach((layer) => {
         const speed = layer.getAttribute('data-speed')
