@@ -12,7 +12,10 @@
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen" />
         </div>
-        <article v-for="article, index in articles" :key="index" class="h-full w-full rounded-md rounded-br-3xl p-4 pb-6 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-md">
+        <article v-for="article, index in articles" :key="index" class="h-full w-full rounded-md rounded-br-3xl p-2 pb-3 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-md">
+          <!-- <div class="text-white font-bold bg-gradient-to-r from-explo-background to-explo-lightblue rounded-md py-1 px-2">
+            ⠀
+          </div> -->
           <div class="h-56 my-2 overflow-hidden">
             <img :src="`http://localhost:1337${article.attributes.image.data.attributes.formats.medium.url}`" class="w-full object-cover rounded-md">
           </div>
