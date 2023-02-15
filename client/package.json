@@ -6,20 +6,23 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
-    "lint:prettier": "prettier --check .",
-    "lint": "yarn lint:js && yarn lint:prettier",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+    "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/google-fonts": "^3.0.0-1",
+    "@nuxtjs/strapi": "^1.7.1",
     "@nuxtjs/tailwindcss": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.52.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.9.0",
     "nuxt": "^3.2.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "nuxt-icon": "^0.2.11",
+    "typescript": "*"
   }
 }
