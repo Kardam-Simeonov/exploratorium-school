@@ -11,5 +11,10 @@ export default defineNuxtConfig({
       Inter: [400],
       Lobster: [400]
     }
+  },
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+    prefix: '/api',
+    version: 'v4'
   }
 })
