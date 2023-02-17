@@ -35,7 +35,7 @@ export default {
     transition: v-bind(transitionStyle);
 }
 
-.slide-enter,
+.slide-enter-from,
 .slide-leave-to {
     opacity: 0;
 }

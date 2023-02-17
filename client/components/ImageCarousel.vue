@@ -64,7 +64,7 @@ export default {
       useAsset
     }
   },
-  mounted () {
+  created () {
     setTimeout(() => {
       this.nextSlide()
       this.autoplay()

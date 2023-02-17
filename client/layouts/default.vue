@@ -114,7 +114,7 @@
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer px-2" @mouseover="highlightIndex = 3">
                 <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 3}">
-                  <nuxt-link to="/blog">Блог</nuxt-link>
+                  <Nuxt-Link to="/blog">Блог</Nuxt-Link>
                 </span>
               </a>
               <transition name="fade">
@@ -272,7 +272,7 @@
       </div>
     </nav>
     <!-- Page Content -->
-    <main class="relative">
+    <main>
       <slot />
     </main>
     <!-- Footer -->

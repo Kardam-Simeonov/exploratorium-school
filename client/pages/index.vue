@@ -1,5 +1,5 @@
 <template>
-  <main class="relative">
+  <div class="relative">
     <!-- Tiles -->
     <section @mousemove="parallaxMove">
       <div class="flex justify-center 2xl:my-12 lg:my-10 mt-20 mb-16 px-8">
@@ -127,7 +127,7 @@
       :class="{ 'pointer-events-all': isNewsOpen, 'pointer-events-none': !isNewsOpen }"
     >
       <transition
-        enter-class="all opacity-0"
+        enter-from-class="all opacity-0"
         enter-active-class="duration-300 ease-in"
         leave-active-class="duration-300 ease-out"
         leave-to-class="all opacity-0"
@@ -139,7 +139,7 @@
         />
       </transition>
       <transition
-        enter-class="transform translate-x-full"
+        enter-from-class="transform translate-x-full"
         enter-active-class="duration-300 ease-out"
         leave-active-class="duration-300 ease-out"
         leave-to-class="transform translate-x-full"
@@ -253,7 +253,7 @@
         </h1>
         <div class="w-10 h-2 bg-explo-darkgreen" />
       </div>
-      <!-- <ArticleCarousel :carousel-slides="carouselArticles" /> -->
+      <ArticleCarousel :carousel-slides="carouselArticles" />
     </section>
     <!-- Facebook Feed -->
     <section class="bg-explo-darkpurple bg-opacity-40 mt-28 pb-28 py-12 sm:px-12 px-6">
@@ -266,7 +266,7 @@
         </div>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group3.jpg')] bg-cover" @mouseover="feedIndex = 0" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition name="fade">
               <div v-show="feedIndex == 0" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><Icon name="fa6-brands:facebook" /> ExploratoriumBG</p>
@@ -276,7 +276,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/drawingonterrace.jpg')] bg-cover" @mouseover="feedIndex = 1" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition name="fade">
               <div v-show="feedIndex == 1" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><Icon name="fa6-brands:facebook" /> ExploratoriumBG</p>
@@ -286,7 +286,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group1.jpg')] bg-cover" @mouseover="feedIndex = 2" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition name="fade">
               <div v-show="feedIndex == 2" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><Icon name="fa6-brands:facebook" /> ExploratoriumBG</p>
@@ -296,7 +296,7 @@
         </article>
         <article class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('@/assets/stock/group2.jpg')] bg-cover" @mouseover="feedIndex = 3" @mouseleave="feedIndex = -1">
           <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl" target="_blank">
-            <transition enter-class="all opacity-0" enter-active-class="duration-200 ease-in" leave-active-class="duration-200 ease-in" leave-to-class="all opacity-0">
+            <transition name="fade">
               <div v-show="feedIndex == 3" class="h-full w-full rounded-md p-6 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
                 <p class="text-white text-sm break-words">Представям ви първите два броя на ръкописен вестник " Щастливи новини" създаден в  клуб " Щастие". А ето и темите предложени и изписани  от...</p>
                 <p class="text-white mt-4"><Icon name="fa6-brands:facebook" /> ExploratoriumBG</p>
@@ -306,18 +306,20 @@
         </article>
       </div>
     </section>
-  </main>
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-
 export default {
   name: 'HomePage',
-  setup () {
+  async setup () {
     const carouselArticles = ref([])
     const isNewsOpen = ref(false)
     const feedIndex = ref(-1)
+
+    const { find } = useStrapi()
+    const result = await find('carousel-articles?fields=title%2C%20description&populate=image')
+    carouselArticles.value = result.data
 
     function parallaxMove (e) {
       document.querySelectorAll('.parallax').forEach((layer) => {
@@ -328,24 +330,12 @@ export default {
       })
     }
 
-    const { find } = useStrapi()
-
-    async function getArticleSlides () {
-      const result = await find('carousel-slides')
-      // const result = await this.$axios.$get('http://localhost:1337/api/carousel-articles?fields=title%2C%20description&populate=image&locale=en')
-      carouselArticles.value = result.data
-    }
-
     return {
       carouselArticles,
       isNewsOpen,
       feedIndex,
-      parallaxMove,
-      getArticleSlides
+      parallaxMove
     }
-  },
-  created () {
-    // this.getArticleSlides()
   }
 }
 </script>

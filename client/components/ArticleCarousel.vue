@@ -3,7 +3,7 @@
     <SlideItem v-for="(slide, index) in carouselSlides" :key="index" :transition-duration="0.3" class="row-start-1 col-start-1 col-span-full">
       <article v-show="currentSlide == index" class="relative lg:pt-52 lg:mx-24">
         <div class="overflow-hidden lg:absolute left-0 top-0 lg:w-[50%] aspect-[7/5] rounded-md lg:drop-shadow-offcenter shadow-2xl">
-          <img :src="`http://localhost:1337${slide.attributes.image.data.attributes.formats.medium.url}`">
+          <img :src="`http://localhost:1337${slide.attributes.image.data.attributes.url}`">
         </div>
         <div class="relative z-10 1xl:ml-96 lg:ml-72 p-8 bg-explo-darkpurple shadow-lg rounded-md rounded-br-[4rem] border-b-12  border-explo-lightblue">
           <div class="sm:min-h-[10rem]">
@@ -15,16 +15,18 @@
               {{ truncate(slide.attributes.description, 200, '...') }}
             </p>
           </div>
-          <button class="bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">Научете Повече <fa icon="fa-solid fa-chevron-right " /></button>
+          <button class="bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">
+            Научете Повече <Icon name="fa6-solid:chevron-right" />
+          </button>
         </div>
       </article>
     </SlideItem>
     <div class="col-span-full flex flex-row gap-5 lg:my-0 my-8 lg:absolute mx-auto 1xl:top-[32rem] top-[29rem] 1xl:left-64 left-48">
       <button @click="previousSlide()">
-        <fa icon="fa-solid fa-arrow-left-long" class="lg:mr-5 mr-14 fa-3x text-explo-lightgreen cursor-pointer hover:-translate-x-1 transition-transform duration-200" />
+        <Icon name="fa6-solid:arrow-left-long" class="lg:mr-5 mr-14 text-5xl text-explo-lightgreen cursor-pointer hover:-translate-x-1 transition-transform duration-200" />
       </button>
       <button @click="nextSlide()">
-        <fa icon="fa-solid fa-arrow-right-long" class="fa-3x text-explo-lightgreen cursor-pointer hover:translate-x-1 transition-transform duration-200" />
+        <Icon name="fa6-solid:arrow-right-long" class="text-5xl text-explo-lightgreen cursor-pointer hover:translate-x-1 transition-transform duration-200" />
       </button>
     </div>
     <ul class="col-span-full lg:w-80 w-64 flex flex-row gap-5 justify-self-center lg:mt-14">
@@ -57,10 +59,10 @@ export default {
       }
     }
     function nextSlide () {
-      currentSlide.value = currentSlide.value === Object.keys(this.carouselSlides).length - 1 ? 0 : currentSlide.value + 1
+      currentSlide.value = currentSlide.value === 2 ? 0 : currentSlide.value + 1
     }
     function previousSlide () {
-      currentSlide.value = currentSlide.value === 0 ? Object.keys(this.carouselSlides).length - 1 : currentSlide.value - 1
+      currentSlide.value = currentSlide.value === 0 ? 2 : currentSlide.value - 1
     }
 
     return {
