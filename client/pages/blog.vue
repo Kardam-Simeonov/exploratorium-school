@@ -12,7 +12,7 @@
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen" />
         </div>
-        <article v-for="article, index in articles" :key="index" class="h-full w-full rounded-md rounded-br-3xl p-2 pb-3 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-md">
+        <article v-for="article, index in articles.data" :key="index" class="h-full w-full rounded-md rounded-br-3xl p-2 pb-3 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-md">
           <!-- <div class="text-white font-bold bg-gradient-to-r from-explo-background to-explo-lightblue rounded-md py-1 px-2">
               ⠀
             </div> -->
@@ -49,5 +49,5 @@ function truncate (text, length, suffix) {
 const { find } = useStrapi()
 const { data: articles } = await useAsyncData(
   'articles',
-  () => find('articles', { fields: ['title', 'content'], populate: ['image'] }))
+  () => find('articles', { fields: ['title', 'content', 'slug'], populate: ['image'] }))
 </script>
