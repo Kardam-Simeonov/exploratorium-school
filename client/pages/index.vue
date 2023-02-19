@@ -253,7 +253,7 @@
         </h1>
         <div class="w-10 h-2 bg-explo-darkgreen" />
       </div>
-      <ArticleCarousel :carousel-slides="carouselArticles" />
+      <ArticleCarousel :carousel-slides="carouselArticles.data" />
     </section>
     <!-- Facebook Feed -->
     <section class="bg-explo-darkpurple bg-opacity-40 mt-28 pb-28 py-12 sm:px-12 px-6">
@@ -309,33 +309,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomePage',
-  async setup () {
-    const carouselArticles = ref([])
-    const isNewsOpen = ref(false)
-    const feedIndex = ref(-1)
+<script setup>
+const isNewsOpen = ref(false)
+const feedIndex = ref(-1)
 
-    const { find } = useStrapi()
-    const result = await find('carousel-articles?fields=title%2C%20description&populate=image')
-    carouselArticles.value = result.data
-
-    function parallaxMove (e) {
-      document.querySelectorAll('.parallax').forEach((layer) => {
-        const speed = layer.getAttribute('data-speed')
-        const x = (window.innerWidth - e.pageX * speed) / 150
-        const y = (window.innerHeight - e.pageY * speed) / 150
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-      })
-    }
-
-    return {
-      carouselArticles,
-      isNewsOpen,
-      feedIndex,
-      parallaxMove
-    }
-  }
+function parallaxMove (e) {
+  document.querySelectorAll('.parallax').forEach((layer) => {
+    const speed = layer.getAttribute('data-speed')
+    const x = (window.innerWidth - e.pageX * speed) / 150
+    const y = (window.innerHeight - e.pageY * speed) / 150
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+  })
 }
+
+// carousel-articles?fields=title%2C%20description&populate=image'
+// const { data: carouselArticles } = await useFetch('http://127.0.0.1:1337/api/carousel-articles')
+const { find } = useStrapi()
+const { data: carouselArticles } = await useAsyncData(
+  'carousel-articles',
+  () => find('carousel-articles', { fields: ['title', 'description'], populate: ['image'] }))
 </script>

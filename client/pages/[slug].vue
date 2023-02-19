@@ -18,20 +18,11 @@
     </section>
   </div>
 </template>
-<script>
-export default {
-  name: 'ArticlePage',
-  async setup () {
-    const currentArticle = ref({})
-    const { find } = useStrapi()
-    const route = useRoute()
+<script setup>
+const currentArticle = ref({})
+const { find } = useStrapi()
+const route = useRoute()
 
-    const result = await find('articles?filters[slug][$eq]=' + route.params.slug + '&fields=title,content')
-    currentArticle.value = result.data[0].attributes
-
-    return {
-      currentArticle
-    }
-  }
-}
+const result = await find('articles?filters[slug][$eq]=' + route.params.slug + '&fields=title,content')
+currentArticle.value = result.data[0].attributes
 </script>

@@ -35,29 +35,19 @@
     </section>
   </div>
 </template>
-<script>
-export default {
-  name: 'BlogPage',
-  async setup () {
-    const articles = ref([])
-
-    const { find } = useStrapi()
-    const result = await find('articles?fields=title%2C%20content%2C%20slug&populate=image')
-    articles.value = result.data
-
-    function truncate (text, length, suffix) {
-      if (text.length > length) {
-        const trimmedString = text.substring(0, length)
-        return trimmedString.substring(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))) + suffix
-      } else {
-        return text
-      }
-    }
-
-    return {
-      articles,
-      truncate
-    }
+<script setup>
+function truncate (text, length, suffix) {
+  if (text.length > length) {
+    const trimmedString = text.substring(0, length)
+    return trimmedString.substring(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))) + suffix
+  } else {
+    return text
   }
 }
+
+// articles?fields=title%2C%20content%2C%20slug&populate=image
+const { find } = useStrapi()
+const { data: articles } = await useAsyncData(
+  'articles',
+  () => find('articles', { fields: ['title', 'content'], populate: ['image'] }))
 </script>
