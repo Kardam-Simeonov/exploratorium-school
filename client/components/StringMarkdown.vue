@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-
 import markdownParser from '@nuxt/content/transformers/markdown'
 
 export default defineComponent({
