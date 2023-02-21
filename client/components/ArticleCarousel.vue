@@ -50,14 +50,6 @@ export default {
   setup () {
     const currentSlide = ref(0)
 
-    function truncate (text, length, suffix) {
-      if (text.length > length) {
-        const trimmedString = text.substring(0, length)
-        return trimmedString.substring(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))) + suffix
-      } else {
-        return text
-      }
-    }
     function nextSlide () {
       currentSlide.value = currentSlide.value === 2 ? 0 : currentSlide.value + 1
     }

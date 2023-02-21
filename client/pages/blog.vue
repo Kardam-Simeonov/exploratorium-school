@@ -17,7 +17,7 @@
               ⠀
             </div> -->
           <div class="h-56 my-2 overflow-hidden">
-            <img :src="`http://localhost:1337${article.attributes.image.data.attributes.formats.medium.url}`" class="w-full object-cover rounded-md">
+            <img :src="`http://localhost:1337${article.attributes.image.data.attributes.url}`" class="w-full object-cover rounded-md">
           </div>
           <h2 class="text-xl text-explo-darkgreen font-bold mt-8 mb-4">
             {{ truncate(article.attributes.title, 100, '...') }}
@@ -36,15 +36,6 @@
   </div>
 </template>
 <script setup>
-function truncate (text, length, suffix) {
-  if (text.length > length) {
-    const trimmedString = text.substring(0, length)
-    return trimmedString.substring(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(' '))) + suffix
-  } else {
-    return text
-  }
-}
-
 // articles?fields=title%2C%20content%2C%20slug&populate=image
 const { find } = useStrapi()
 const { data: articles } = await useAsyncData(

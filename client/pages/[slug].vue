@@ -11,8 +11,8 @@
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen" />
         </div>
-        <article class="h-full w-2/3">
-          <div class="text-white leading-6" v-html="currentArticle.data.attributes.content" />
+        <article class="h-full w-[70%] text-white leading-6">
+          <StringMarkdown :md="currentArticle.data.attributes.content" />
         </article>
       </div>
     </section>
