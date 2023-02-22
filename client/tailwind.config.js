@@ -47,7 +47,29 @@ module.exports = {
       },
       dropShadow: {
         offcenter: '15px 15px 0 rgb(150, 149, 201)'
-      }
+      },
+      typography: ({ theme }) => ({
+        explo: {
+          css: {
+            '--tw-prose-body': theme('colors.explo-whiteblue'),
+            '--tw-prose-headings': theme('colors.explo-darkgreen'),
+            '--tw-prose-lead': theme('colors.explo-darkgreen'),
+            '--tw-prose-links': theme('colors.explo-darkgreen'),
+            '--tw-prose-bold': theme('colors.explo-whiteblue'),
+            '--tw-prose-counters': theme('colors.explo-whiteblue'),
+            '--tw-prose-bullets': theme('colors.explo-whiteblue'),
+            '--tw-prose-hr': theme('colors.explo-whiteblue'),
+            '--tw-prose-quotes': theme('colors.explo-whiteblue'),
+            '--tw-prose-quote-borders': theme('colors.explo-darkgreen'),
+            '--tw-prose-captions': theme('colors.explo-whiteblue'),
+            '--tw-prose-code': theme('colors.explo-whiteblue'),
+            '--tw-prose-pre-code': theme('colors.explo-whiteblue'),
+            '--tw-prose-pre-bg': theme('colors.explo-darkblue'),
+            '--tw-prose-th-borders': theme('colors.explo-whiteblue'),
+            '--tw-prose-td-borders': theme('colors.explo-whiteblue')
+          }
+        }
+      })
     },
     fontFamily: {
       lobster: ['Lobster', 'cursive'],
@@ -64,5 +86,7 @@ module.exports = {
     },
     screens: newScreens
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
