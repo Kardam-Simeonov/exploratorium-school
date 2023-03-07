@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <!-- Tiles -->
-    <section @mousemove="parallaxMove">
+    <section class="relative" @mousemove="parallaxMove">
       <div class="flex justify-center 2xl:my-12 lg:my-10 mt-20 mb-16 px-8">
         <h1
           class="lg:max-w-3xl bg-explo-lightblue bg-opacity-80 p-6 rounded-md shadow-md border-b-8 border-[#5b61a8] 1xl:text-3xl text-2xl text-center font-bold text-explo-whiteblue"
@@ -120,6 +120,8 @@
           </div>
         </div>
       </div>
+      <img src="@/assets/artwork/svg/blob1-fill.svg" class="w-[60rem] opacity-40 absolute z-10 top-[24rem] -left-[22rem]">
+      <!-- <img src="@/assets/artwork/svg/blob2-fill.svg" class="w-[60rem] opacity-40 absolute z-10 top-[15rem] -right-[24rem]"> -->
     </section>
     <!-- News -->
     <section
@@ -173,14 +175,14 @@
       </transition>
     </section>
     <!-- About Us -->
-    <section class="relative grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkpurple to-explo-lightblue px-6 md:pb-32 pb-16 pt-32 rounded-b-3xl">
-      <img src="@/assets/artwork/svg/wavesdivider.svg" class="absolute top-0 h-20 w-full">
+    <section class="relative grid grid-cols-12 sm:gap-10 bg-gradient-to-b from-explo-darkpurple to-explo-lightblue px-6 md:pb-32 pb-16 pt-36 rounded-b-3xl">
+      <img class="absolute top-0 z-0 w-screen h-48" src="@/assets/artwork/svg/wavesdivider.svg">
       <img
-        class="md:block hidden lg:col-span-7 col-span-full max-w-3xl w-full px-4 mb-8 self-center justify-self-center"
+        class="md:block hidden lg:col-span-7 col-span-full relative z-10 max-w-3xl w-full px-4 mb-8 self-center justify-self-center"
         src="@/assets/artwork/cardMap.png"
       >
-      <img class="md:hidden col-span-full mt-9 mb-8 mx-auto max-w-md w-full" src="@/assets/artwork/cardMapHouse.png">
-      <div class="lg:col-span-5 col-span-full self-start justify-self-center">
+      <img class="md:hidden col-span-full mt-9 mb-8 mx-auto relative z-10 max-w-md w-full" src="@/assets/artwork/cardMapHouse.png">
+      <div class="lg:col-span-5 col-span-full self-start justify-self-center relative z-10">
         <h1 class="font-lobster text-left 2xl:text-6xl text-5xl text-explo-darkgreen drop-shadow-xl">
           За нас
         </h1>

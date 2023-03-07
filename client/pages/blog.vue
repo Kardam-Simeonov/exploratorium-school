@@ -3,7 +3,7 @@
     <!-- Blog -->
     <section class="bg-gradient-to-b from-explo-darkpurple to-explo-lightblue pb-48 rounded-b-3xl">
       <!-- Seperator-->
-      <img src="@/assets/artwork/svg/wavesdivider.svg" class="h-16 w-full mb-12">
+      <img src="@/assets/artwork/svg/wavesdivider.svg" class="h-36 w-full mb-12">
       <!-- Content -->
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto px-12 2xl:max-w-7xl max-w-5xl">
         <div class="col-span-full mb-8">

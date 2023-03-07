@@ -1,7 +1,9 @@
 <template>
   <div class="relative">
     <!-- About Us -->
-    <section class="bg-[#6c6aaf] pb-48 rounded-b-3xl">
+    <!-- #6c6aaf -->
+    <section class="bg-gradient-to-b from-explo-darkpurple to-[#7674b3] pb-48 rounded-b-3xl">
+      <img src="@/assets/artwork/svg/wavesdivider.svg" class="h-36 w-full mb-12">
       <div class="flex flex-col gap-8 mx-auto px-12 2xl:max-w-7xl max-w-5xl">
         <div class="col-span-full mb-8">
           <h1 class="font-lobster text-left 2xl:text-6xl text-5xl text-explo-darkgreen mb-4 drop-shadow-xl">
