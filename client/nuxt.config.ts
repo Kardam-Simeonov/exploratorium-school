@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      strapiUrl: process.env.STRAPI_URL
+    }
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
@@ -14,10 +19,12 @@ export default defineNuxtConfig({
     }
   },
   strapi: {
-    url: process.env.STRAPI_URL || 'http://127.0.0.1:1337',
+    url: process.env.STRAPI_URL,
     prefix: '/api',
-    version: 'v4',
-    cookie: {},
-    cookieName: 'strapi_jwt'
+    version: 'v4'
+  },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'page', mode: 'out-in' }
   }
 })

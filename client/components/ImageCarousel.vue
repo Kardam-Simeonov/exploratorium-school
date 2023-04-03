@@ -11,64 +11,53 @@
   </div>
 </template>
 
-<script>
-import { ref } from 'vue'
-
-export default {
-  name: 'ImageCarousel',
-  props: {
-    carouselSlides: {
-      type: Array,
-      default: () => []
-    },
-    duration: {
-      type: Number,
-      default: 8000
-    },
-    initialDelay: {
-      type: Number,
-      default: 0
-    },
-    isRoundBottomLeft: {
-      type: Boolean,
-      default: false
-    },
-    isRoundBottomRight: {
-      type: Boolean,
-      default: false
-    }
+<script setup>
+const props = defineProps({
+  carouselSlides: {
+    type: Array,
+    default: () => []
   },
-  setup (props) {
-    const currentSlide = ref(1)
-
-    function nextSlide () {
-      currentSlide.value = currentSlide.value === props.carouselSlides.length ? 1 : currentSlide.value + 1
-    }
-    function autoplay () {
-      setInterval(() => {
-        nextSlide()
-      }, props.duration)
-    }
-    function useAsset (path) {
-      const assets = import.meta.glob('~/assets/**/*', {
-        eager: true,
-        import: 'default'
-      })
-      return assets['/assets/stock/' + path]
-    }
-
-    return {
-      currentSlide,
-      nextSlide,
-      autoplay,
-      useAsset
-    }
+  duration: {
+    type: Number,
+    default: 8000
   },
-  created () {
-    setTimeout(() => {
-      this.nextSlide()
-      this.autoplay()
-    }, this.initialDelay)
+  initialDelay: {
+    type: Number,
+    default: 0
+  },
+  isRoundBottomLeft: {
+    type: Boolean,
+    default: false
+  },
+  isRoundBottomRight: {
+    type: Boolean,
+    default: false
   }
+})
+
+const currentSlide = ref(1)
+
+function nextSlide () {
+  currentSlide.value = currentSlide.value === props.carouselSlides.length ? 1 : currentSlide.value + 1
 }
+
+function autoplay () {
+  setInterval(() => {
+    nextSlide()
+  }, props.duration)
+}
+
+function useAsset (path) {
+  const assets = import.meta.glob('~/assets/**/*', {
+    eager: true,
+    import: 'default'
+  })
+  return assets['/assets/stock/' + path]
+}
+
+setTimeout(() => {
+  nextSlide()
+  autoplay()
+}, props.initialDelay)
+
 </script>

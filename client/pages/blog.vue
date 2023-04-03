@@ -1,11 +1,9 @@
 <template>
-  <div class="relative">
-    <!-- Blog -->
-    <section class="bg-gradient-to-b from-explo-darkpurple to-explo-lightblue pb-48 rounded-b-3xl">
-      <!-- Seperator-->
-      <img src="@/assets/artwork/svg/wavesdivider.svg" class="h-36 w-full mb-12">
+  <section class="relative pt-[28rem]">
+    <div class="absolute z-0 top-0 left-0 right-0 bottom-0 bg-[url('@/assets/stock/SVS_blogbanner.jpg')] h-[30rem]" />
+    <div class="relative z-10 bg-gradient-to-b from-explo-darkpurple to-explo-lightblue border-t-16 border-explo-lightblue pb-48 rounded-3xl">
       <!-- Content -->
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto px-12 2xl:max-w-7xl max-w-5xl">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto px-12 pt-20 2xl:max-w-7xl max-w-5xl">
         <div class="col-span-full mb-8">
           <h1 class="font-lobster text-left 2xl:text-6xl text-5xl text-explo-darkgreen md:mb-2 mb-4 drop-shadow-xl">
             Блог
@@ -17,7 +15,7 @@
               ⠀
             </div> -->
           <div class="h-56 my-2 overflow-hidden">
-            <img :src="`http://localhost:1337${article.attributes.image.data.attributes.url}`" class="w-full object-cover rounded-md">
+            <img :src="runtimeConfig.public.strapiUrl + article.attributes.image.data.attributes.url" class="w-full object-cover rounded-md">
           </div>
           <h2 class="text-xl text-explo-darkgreen font-bold mt-8 mb-4">
             {{ truncate(article.attributes.title, 100, '...') }}
@@ -32,12 +30,13 @@
           </NuxtLink>
         </article>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script setup>
-// articles?fields=title%2C%20content%2C%20slug&populate=image
+const runtimeConfig = useRuntimeConfig()
 const { find } = useStrapi()
+
 const { data: articles } = await useAsyncData(
   'articles',
   () => find('articles', { fields: ['title', 'content', 'slug'], populate: ['image'] }))

@@ -33,9 +33,8 @@ module.exports = {
         'explo-darkcard': '#B8C24E',
         'explo-darkergreen': '#399845',
         'explo-darkgreen': '#CADA2B',
-        'explo-lightgreen': '#ECE82B',
+        'explo-lightgreen': '#F5EC17',
         'explo-darkyellow': '#FECE32',
-        'explo-lightyellow': '#F5EC17',
         'explo-darkred': '#EB2124',
         'explo-lightred': '#EB6262',
         'explo-darkpurple': '#5957AA'
@@ -84,7 +83,21 @@ module.exports = {
       6: '6px',
       8: '8px'
     },
-    screens: newScreens
+    screens: newScreens,
+    animation: {
+      'fade-up': 'fadeUp 0.5s ease-out',
+      'fade-in': 'fadeIn 0.3s ease-out'
+    },
+    keyframes: {
+      fadeUp: {
+        '0%': { opacity: 0, transform: 'translateY(50px)' },
+        '100%': { opacity: 1, transform: 'translateY(0)' }
+      },
+      fadeIn: {
+        '0%': { opacity: 0.2 },
+        '100%': { opacity: 1 }
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/typography')

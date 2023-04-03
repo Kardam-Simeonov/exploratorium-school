@@ -6,26 +6,17 @@
   </div>
 </template>
 
-<script>
-import { computed } from 'vue'
-
-export default {
-  name: 'SlideItem',
-  props: {
-    transitionDuration: {
-      type: Number,
-      default: 1
-    }
-  },
-  setup (props) {
-    const transitionStyle = computed(() => {
-      return 'opacity ' + props.transitionDuration + 's ease-in-out'
-    })
-    return {
-      transitionStyle
-    }
+<script setup>
+const props = defineProps({
+  transitionDuration: {
+    type: Number,
+    default: 1
   }
-}
+})
+
+const transitionStyle = computed(() => {
+  return 'opacity ' + props.transitionDuration + 's ease-in-out'
+})
 </script>
 
 <style>
