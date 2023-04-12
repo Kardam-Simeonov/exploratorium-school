@@ -14,6 +14,23 @@ html, body {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.mask-header-mobile {
+    mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMicgcHJlc2VydmVBc3BlY3RSYXRpbz0nbm9uZSc+PHBhdGggZD0nTTEzLjcuM0MxMi0uMSAxMC0uMiA4LjMuNmMtMS4zLjctMi4yIDEuNy0zLjEgMy0xLjMgMS45LTIuNyAzLjgtMy41IDYuMUMuOCAxMiAuNSAxNC41LjMgMTdjLS4yIDIuMi0uNCA0LjUtLjIgNi44czEuMSA0LjUgMi42IDZjMi45IDIuOCA5LjUgMi41IDEzLjMgMS44IDMuMS0uNSA2LjItMSA5LTIuNSAzLjUtMS44IDQuNC01LjEgNS43LTkuMSAxLjYtNCAyLjMtMTMuMS0xLjUtMTUuNi00LjUtMi45LTEwLjMtMy0xNS41LTQuMXonLz48L3N2Zz4K');
+    mask-repeat: no-repeat;
+    mask-position: bottom center;
+    mask-size: 150% 130%;
+}
+.mask-header {
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB3aWR0aD0iMzM1NSIgaGVpZ2h0PSIyNzA5IiB2aWV3Qm94PSIwIDAgMzM1NSAyNzA5IiBmaWxsPSJub25lIgogICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NjBfMTApIj4KICAgICAgICA8cGF0aAogICAgICAgICAgICBkPSJNMzEyNi4yMyAzNjYuNzI5QzMzMzAuOCA2MjIuNTc5IDMzMzcuMzUgOTkyLjgwOSAzMzQ5LjYyIDEzNzUuMDhDMzM2MS45IDE3NTcuMzUgMzM4MS41NCAyMTUxLjY2IDMxNzYuOTcgMjM0OC4wNkMyOTcyLjM5IDI1NDUuMjIgMjU0My42MSAyNTQ1LjIyIDIwNDUuMjcgMjYwOS45M0MxNTQ2LjkzIDI2NzQuNjUgOTc3LjM5NCAyODA0LjA4IDU2OC4yNDggMjYwNi45MkMxNTkuMTAyIDI0MTAuNTIgLTg5LjY1OTEgMTg4Ni43OCAyNy4zNTY4IDE0NzIuMTVDMTQ1LjE5MSAxMDU2Ljc3IDYyOS42MiA3NDkuNzUyIDEwMzguNzcgNDkzLjkwMkMxNDQ3LjkxIDIzOC4wNTIgMTc4MS43OCAzMy4zNzE3IDIxNTAuMDEgMS43NjY3M0MyNTE5LjA2IC0zMC41OTA4IDI5MjEuNjYgMTEwLjg3OSAzMTI2LjIzIDM2Ni43MjlaIgogICAgICAgICAgICBmaWxsPSIjRUVGNEY5IiAvPgogICAgPC9nPgogICAgPGRlZnM+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJjbGlwMF80NjBfMTAiPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0iMzM1NSIgaGVpZ2h0PSIyNzA5IiBmaWxsPSJ3aGl0ZSIgLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4=");
+    mask-repeat: no-repeat;
+    mask-position: bottom center;
+    mask-size: 100% 94%;
+}
+
+.mask-fadeoff {
+    mask-image: linear-gradient(black, transparent);
+}
+
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.2s ease;
@@ -37,7 +54,7 @@ html, body {
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.02s;
+  transition: all 0.05s;
 }
 .page-enter-from,
 .page-leave-to {
