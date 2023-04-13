@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 const newScreens = Object.entries(defaultTheme.screens).reduce(
@@ -32,9 +33,8 @@ module.exports = {
         'explo-darkcard': '#B8C24E',
         'explo-darkergreen': '#399845',
         'explo-darkgreen': '#CADA2B',
-        'explo-lightgreen': '#ECE82B',
+        'explo-lightgreen': '#F5EC17',
         'explo-darkyellow': '#FECE32',
-        'explo-lightyellow': '#F5EC17',
         'explo-darkred': '#EB2124',
         'explo-lightred': '#EB6262',
         'explo-darkpurple': '#5957AA'
@@ -45,8 +45,31 @@ module.exports = {
         16: '16px'
       },
       dropShadow: {
-        offcenter: '15px 15px 0 rgb(150, 149, 201)'
-      }
+        offcenter: '15px 15px 0 rgb(150, 149, 201)',
+        text: '5px 5px 0 rgba(87, 93, 170, 0.8)'
+      },
+      typography: ({ theme }) => ({
+        explo: {
+          css: {
+            '--tw-prose-body': theme('colors.explo-whiteblue'),
+            '--tw-prose-headings': theme('colors.explo-darkgreen'),
+            '--tw-prose-lead': theme('colors.explo-darkgreen'),
+            '--tw-prose-links': theme('colors.explo-darkgreen'),
+            '--tw-prose-bold': theme('colors.explo-whiteblue'),
+            '--tw-prose-counters': theme('colors.explo-whiteblue'),
+            '--tw-prose-bullets': theme('colors.explo-whiteblue'),
+            '--tw-prose-hr': theme('colors.explo-whiteblue'),
+            '--tw-prose-quotes': theme('colors.explo-whiteblue'),
+            '--tw-prose-quote-borders': theme('colors.explo-darkgreen'),
+            '--tw-prose-captions': theme('colors.explo-whiteblue'),
+            '--tw-prose-code': theme('colors.explo-whiteblue'),
+            '--tw-prose-pre-code': theme('colors.explo-whiteblue'),
+            '--tw-prose-pre-bg': theme('colors.explo-darkblue'),
+            '--tw-prose-th-borders': theme('colors.explo-whiteblue'),
+            '--tw-prose-td-borders': theme('colors.explo-whiteblue')
+          }
+        }
+      })
     },
     fontFamily: {
       lobster: ['Lobster', 'cursive'],
@@ -61,7 +84,23 @@ module.exports = {
       6: '6px',
       8: '8px'
     },
-    screens: newScreens
+    screens: newScreens,
+    animation: {
+      'fade-up': 'fadeUp 0.5s ease-out',
+      'fade-in': 'fadeIn 0.3s ease-out'
+    },
+    keyframes: {
+      fadeUp: {
+        '0%': { opacity: 0, transform: 'translateY(50px)' },
+        '100%': { opacity: 1, transform: 'translateY(0)' }
+      },
+      fadeIn: {
+        '0%': { opacity: 0.2 },
+        '100%': { opacity: 1 }
+      }
+    }
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }

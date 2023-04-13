@@ -44,7 +44,7 @@
       "type": "richtext",
       "required": true
     },
-    "image": {
+    "banner": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -56,6 +56,15 @@
           "localized": false
         }
       }
+    },
+    "preview": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
     }
   }
 }

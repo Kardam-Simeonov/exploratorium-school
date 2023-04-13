@@ -1,19 +1,25 @@
 module.exports = {
-  root: true,
   env: {
-    browser: true,
+    es2021: true,
     node: true
   },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
-  },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'eslint:recommended',
+    'plugin:vue/essential',
+    'plugin:@typescript-eslint/recommended',
+    '@nuxtjs/eslint-config-typescript'
   ],
+  overrides: [
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
+  },
   plugins: [
+    'vue',
+    '@typescript-eslint'
   ],
-  // add your custom rules here
-  rules: {}
+  rules: {
+  }
 }

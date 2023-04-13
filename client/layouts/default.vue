@@ -1,301 +1,253 @@
 <template>
   <div>
     <!-- Navigation -->
-    <nav class="h-48">
+    <div class="absolute bg-gradient-to-b from-explo-darkpurple to-transparent lg:h-48 h-36 w-full" />
+    <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0">
       <!-- Default Variant -->
-      <div class="hidden lg:flex flex-col 2xl:max-w-6xl max-w-5xl mx-auto">
+      <div class="hidden lg:flex flex-col 2xl:max-w-7xl max-w-6xl mx-auto">
         <div class="bg-explo-darkcard border-explo-darkgreen border-b-16 h-6 w-full rounded-b-2xl shadow-2xl" />
         <div class="flex flex-row">
-          <ul class="relative flex flex-row justify-end pt-8 pr-8 pb-4 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold">
+          <ul
+            class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-semibold whitespace-nowrap"
+          >
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 0">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 0}">
-                  <NuxtLink to="/">Начало</NuxtLink>
-                </span>
-              </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 0" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
+              <NuxtLink to="/">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 0">
+                  <span
+                    class="bg-opacity-40 p-2 px-3 rounded-full"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 0 }"
+                  >
+                    Начало
+                  </span>
+                </a>
+              </NuxtLink>
+              <!-- <transition name="fade-down">
+                <div
+                  v-show="highlightIndex == 0"
+                  class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard border-b-8 border-explo-darkercard p-8 rounded-md"
+                >
                   <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/house.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Следете всичко ново в Експлораториум от нашата начална страница!
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Какво е ново в Експлораториум?
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Публикации от Фейсбук
-                    </li>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-            <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 1">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 1}">За Нас</span>
-              </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 1" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/woodensign.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Експлораториум е място отвъд догми, празни слова или формули
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Какво е ново в Експлораториум?
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-            <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 2">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 2}">Училищен Живот</span>
-              </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 2" class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/drawingonterrace.jpg')] bg-cover bg-no-repeat rounded-md" />
+                    <div class="h-64 bg-[url('@/assets/stock/house.jpg')] bg-cover bg-no-repeat rounded-md" />
                     <h1 class="text-white font-thin text-lg">
                       Един ден в Експлораториум протича според собствения часовник на детето
                     </h1>
                   </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
+                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue 1xl:text-lg text-base">
+                    <li
+                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
+                    >
                       За Нас
                     </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
+                    <li
+                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
+                    >
                       Последни Публикации
                     </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
+                    <li
+                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
+                    >
                       Какво е ново в Експлораториум?
                     </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer text-lg hover:text-explo-lightgreen">
+                    <li class="h-fit py-2 cursor-pointer hover:text-explo-lightgreen">
                       Публикации от Фейсбук
                     </li>
                   </ul>
                 </div>
-              </transition>
+              </transition> -->
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 1">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
+              </a>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 2">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
+                  Живот</span>
+              </a>
             </li>
           </ul>
-          <div class="2xl:w-[48rem] xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-lg">
-            <div class="title-bar">
-              <div class="title-bar-text">
-                ⠀
-              </div>
-            </div>
+          <div class="2xl:w-[48rem] 1xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-lg">
+            <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="p-2">
               <NuxtLink to="/">
                 <img class="focus:outline-none" src="@/assets/artwork/logoWhite.png">
               </NuxtLink>
             </div>
           </div>
-          <ul class="relative flex flex-row justify-start pt-8 pl-8 pb-4 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold">
+          <ul
+            class="relative flex flex-row justify-start pt-8 pl-6 pb-4 w-full text-white 2xl:text-xl text-lg font-semibold whitespace-nowrap"
+          >
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 3">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 3}">
-                  <nuxt-link to="/blog">Блог</nuxt-link>
-                </span>
-              </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 3" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/treebridge.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Следете всичко ново в Експлораториум от нашата начална страница!
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Какво е ново в Експлораториум?
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Публикации от Фейсбук
-                    </li>
-                  </ul>
-                </div>
-              </transition>
+              <NuxtLink to="/blog">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 3">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
+                    Блог
+                  </span>
+                </a>
+              </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 4">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 4}">Галерия</span>
+              <a class="cursor-pointer" @mouseover="highlightIndex = 4">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Галерия</span>
               </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 4" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/undertree.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Експлораториум е място отвъд догми, празни слова или формули
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Какво е ново в Експлораториум?
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                  </ul>
-                </div>
-              </transition>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 5">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 5}">Събития</span>
+              <a class="cursor-pointer" @mouseover="highlightIndex = 5">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Събития</span>
               </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 5" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/bonfire.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Един ден в Експлораториум протича според собствения часовник на детето
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Какво е ново в Експлораториум?
-                    </li>
-                  </ul>
-                </div>
-              </transition>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer px-2" @mouseover="highlightIndex = 6">
-                <span class="border-explo-darkgreen pb-1" :class="{'border-b-6': highlightIndex == 6}">Прием</span>
+              <a class="cursor-pointer" @mouseover="highlightIndex = 6">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
               </a>
-              <transition name="fade">
-                <div v-show="highlightIndex == 6" class="absolute top-20 -left-[60%] z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard bg-opacity-[97%] border-b-8 border-explo-darkercard p-8 rounded-md">
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-56 bg-[url('@/assets/stock/group1.jpg')] bg-cover bg-no-repeat rounded-md" />
-                    <h1 class="text-white font-thin text-lg">
-                      Един ден в Експлораториум протича според собствения часовник на детето
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue">
-                    <li class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer text-lg hover:text-explo-lightgreen">
-                      За Нас
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer text-lg hover:text-explo-lightgreen">
-                      Последни Публикации
-                    </li>
-                  </ul>
-                </div>
-              </transition>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Desktop Scroll Down Variant -->
+      <div class="fixed z-50 top-0 left-0 right-0 xl:px-8 px-4 hidden lg:block bg-explo-darkpurple border-b-4 border-explo-lightblue transition-transform duration-500" :class="{ '-translate-y-28': !isScrollNavVisible}">
+        <div class="flex flex-row max-w-[90rem] mx-auto">
+          <NuxtLink to="/">
+            <img class="1xl:w-[18rem] w-[15rem] focus:outline-none my-3" src="@/assets/artwork/svg/logoStandard.svg">
+          </NuxtLink>
+          <ul
+            class="relative flex flex-row justify-end my-auto pr-8 w-full text-explo-whiteblue 2xl:text-xl text-lg font-semibold"
+          >
+            <li @mouseleave="highlightIndex = -1">
+              <NuxtLink to="/">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 0">
+                  <span
+                    class="bg-opacity-40 p-2 px-3 rounded-full"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 0 }"
+                  >
+                    Начало
+                  </span>
+                </a>
+              </NuxtLink>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 1">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
+              </a>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 2">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
+                  Живот</span>
+              </a>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <NuxtLink to="/blog">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 3">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
+                    Блог
+                  </span>
+                </a>
+              </NuxtLink>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 4">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Галерия</span>
+              </a>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 5">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Събития</span>
+              </a>
+            </li>
+            <li @mouseleave="highlightIndex = -1">
+              <a class="cursor-pointer" @mouseover="highlightIndex = 6">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full" :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <!-- Mobile Variant -->
-      <div
-        class="lg:hidden left-0 right-0 transition-transform duration-500 z-50"
-        :class="{ '-translate-y-[100vh]': !isNavVisible, 'fixed': isNavVisible, 'absolute': !isNavVisible }"
-      >
-        <div class="bg-explo-darkcard border-explo-darkgreen border-b-16 min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
-          <ul class="flex flex-col text-left text-white text-2xl h-screen py-16 mb-[15%]">
-            <li class="py-6 px-4 border-y-2 border-explo-darklitecard">
-              Начало
-            </li>
-            <li class="py-6 px-4 border-b-2 border-explo-darklitecard">
-              За Нас
-            </li>
-            <li class="py-6 px-4 border-b-2 border-explo-darklitecard">
-              Училищен Живот
-            </li>
-            <li class="py-6 px-4 border-b-2 border-explo-darklitecard">
-              Блог
-            </li>
-            <li class="py-6 px-4 border-b-2 border-explo-darklitecard">
-              Галерия
-            </li>
-            <li class="py-6 px-4 border-b-2 border-explo-darklitecard">
-              Събития
-            </li>
-          </ul>
-        </div>
-        <div class="w-fit mx-auto bg-white p-1 rounded-md shadow-2xl">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              ⠀
-            </div>
-          </div>
-          <div class="p-2">
-            <router-link class="focus:outline-none" to="/" @click="isNavVisible = false">
-              <img class="w-52" src="@/assets/artwork/logoWhite.png">
-            </router-link>
-          </div>
+      <div class="lg:hidden block absolute top-2 left-0 right-0 sm:w-[15rem] w-[13rem] mx-auto h-fit bg-white p-1 rounded-md shadow-lg">
+        <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
+        <div class="p-2">
+          <NuxtLink to="/">
+            <img class="focus:outline-none" src="@/assets/artwork/logoWhite.png">
+          </NuxtLink>
         </div>
       </div>
+      <transition name="fade">
+        <div
+          v-show="isMenuOpen"
+          class="fixed lg:hidden top-0 left-0 right-0 z-50"
+        >
+          <div
+            class="bg-explo-darkcard bg-opacity-95 min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl"
+          >
+            <ul class="flex flex-col text-left text-white text-2xl h-screen py-24 mb-[15%]">
+              <NuxtLink to="/">
+                <li class="py-6 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  Начало
+                </li>
+              </NuxtLink>
+              <li class="py-6 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                За Нас
+              </li>
+              <li class="py-6 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                Училищен Живот
+              </li>
+              <NuxtLink to="/blog">
+                <li class="py-6 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  Блог
+                </li>
+              </NuxtLink>
+              <li class="py-6 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                Галерия
+              </li>
+              <li class="py-6 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                Събития
+              </li>
+            </ul>
+          </div>
+        </div>
+      </transition>
       <div
-        class="focus:outline-none lg:hidden  top-2 left-auto right-8 bottom-0 cursor-pointer h-fit w-fit transition-transform duration-500 z-50"
-        :class="{ 'rotate-180': isNavVisible, 'fixed' : isNavVisible, 'absolute' : !isNavVisible }"
-        @click="isNavVisible = !isNavVisible"
+        class="focus:outline-none lg:hidden fixed top-4 left-auto right-2 bottom-0 cursor-pointer h-fit w-fit p-2 rounded-2xl transition-transform duration-500 z-50 shadow-2xl"
+        :class="{ 'bg-explo-darkercard': isMenuOpen, 'bg-explo-lightblue': !isMenuOpen }"
+        @click="isMenuOpen = !isMenuOpen"
       >
-        <fa icon="fa-solid fa-bars" class="fa-3x text-white" />
+        <Icon v-show="!isMenuOpen" name="pepicons-pop:menu" class="text-white text-4xl" />
+        <Icon v-show="isMenuOpen" name="pepicons-pop:times" class="text-white text-4xl" />
       </div>
     </nav>
     <!-- Page Content -->
-    <Nuxt />
+    <main>
+      <slot />
+    </main>
     <!-- Footer -->
     <footer>
       <div class="pt-32 pb-12 flex flex-row flex-wrap justify-center gap-14">
-        <div class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-          <fa icon="fa-solid fa-comments" class="fa-2x" />
+        <div
+          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+        >
+          <Icon name="fa6-solid:comments" class="text-4xl" />
           <p class="text-xl font-bold">
-            Питайте ни
+            Питайте
           </p>
         </div>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
-        <div class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-          <fa icon="fa-solid fa-envelope-open-text" class="fa-2x" />
+        <div
+          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+        >
+          <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
           <p class="text-xl font-bold">
-            Запишете се
+            Посетете
           </p>
         </div>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
-        <div class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-          <fa icon="fa-solid fa-location-dot" class="fa-2x" />
+        <div
+          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+        >
+          <Icon name="fa6-solid:hand-holding-heart" class="text-4xl" />
           <p class="text-xl font-bold">
-            Посетете ни
+            Дарете
           </p>
         </div>
       </div>
@@ -351,14 +303,55 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'DefaultLayout',
-  data () {
-    return {
-      isNavVisible: false,
-      highlightIndex: -1
-    }
+<script setup>
+const isMenuOpen = ref(false)
+const highlightIndex = ref(-1)
+const selectedIndex = ref(0)
+
+const route = useRoute()
+
+watch(route, () => {
+  highlightIndex.value = -1
+  switch (route.path) {
+    case '/':
+      selectedIndex.value = 0
+      break
+    case '/blog':
+      selectedIndex.value = 3
+      break
+    default:
+      selectedIndex.value = 3
   }
+})
+
+const nav = ref(null)
+
+function animateNav () {
+  nav.value.classList.remove('animate-fade-in')
+  setTimeout(() => {
+    nav.value.classList.add('animate-fade-in')
+  }, 1)
 }
+
+onMounted(() => {
+  watch(route, () => {
+    animateNav()
+  })
+})
+
+const isScrollNavVisible = ref(false)
+const lastScrollPosition = ref(0)
+const distanceFromTop = ref(600)
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < lastScrollPosition.value && window.scrollY > distanceFromTop.value) {
+      isScrollNavVisible.value = true
+    } else {
+      isScrollNavVisible.value = false
+    }
+    lastScrollPosition.value = window.scrollY
+  })
+})
+
 </script>

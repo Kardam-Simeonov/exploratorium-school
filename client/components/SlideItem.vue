@@ -1,25 +1,22 @@
 <template>
-  <div class="slide">
+  <div>
     <transition name="slide">
       <slot />
     </transition>
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    transitionDuration: {
-      type: Number,
-      default: 1
-    }
-  },
-  computed: {
-    transitionStyle () {
-      return 'opacity ' + this.transitionDuration + 's ease-in-out'
-    }
+<script setup>
+const props = defineProps({
+  transitionDuration: {
+    type: Number,
+    default: 1
   }
-}
+})
+
+const transitionStyle = computed(() => {
+  return 'opacity ' + props.transitionDuration + 's ease-in-out'
+})
 </script>
 
 <style>
@@ -29,7 +26,7 @@ export default {
     transition: v-bind(transitionStyle);
 }
 
-.slide-enter,
+.slide-enter-from,
 .slide-leave-to {
     opacity: 0;
 }
