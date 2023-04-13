@@ -3,7 +3,7 @@
     <img class="h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile sm:opacity-20 opacity-80" src="@/assets/stock/pencils.jpg">
     <div class="max-w-[95rem] ml-auto grid grid-cols-12">
       <section class="lg:col-span-7 col-span-full px-8 pb-4">
-        <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen 1xl:mb-2 drop-shadow-text">
+        <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen drop-shadow-text">
           Блог
         </h1>
         <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
@@ -11,7 +11,7 @@
           <h1 class="text-[2.5rem] mb-2">
             {{ currentArticle.data.attributes.title }}
           </h1>
-          <div class="text-gray-200 mb-8">
+          <div class="text-sm text-gray-300 mb-10">
             <span>Публикувано на {{ currentArticle.data.attributes.publishedAt.substr(0, 10) }}</span>
           </div>
           <StringMarkdown :md="currentArticle.data.attributes.content" />
@@ -51,6 +51,7 @@ const { data: currentArticle } = await useAsyncData(
 const { data: latestArticles } = await useAsyncData(
   'articles',
   () => find('articles', {
+    fields: ['title', 'preview', 'slug', 'publishedAt'],
     _sort: 'published_at:desc',
     _limit: 3
   })

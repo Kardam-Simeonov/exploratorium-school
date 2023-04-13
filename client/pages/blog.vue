@@ -27,9 +27,12 @@
       >
         <img class="w-full aspect-[13/9] my-2 border-8 rounded-md rotate-6 hover:rotate-0 transition-transform duration-200 object-cover object-center" :src="runtimeConfig.public.strapiUrl + article.attributes.banner.data.attributes.url">
         <img class="absolute top-2 left-0 right-0 mx-auto w-10" src="@/assets/artwork/bullet.png">
-        <h1 class="text-xl text-explo-darkgreen font-bold mt-8 mb-4">
+        <h1 class="text-xl text-explo-darkgreen font-bold mt-8">
           {{ truncate(article.attributes.title, 100, '...') }}
         </h1>
+        <div class="text-gray-200 text-xs mt-2 mb-4">
+          <span>Публикувано на {{ article.attributes.publishedAt.substr(0, 10) }}</span>
+        </div>
         <p class="text-white mb-6">
           {{ truncate(article.attributes.preview, 100, '...') }}
         </p>
@@ -51,5 +54,5 @@ const { find } = useStrapi()
 
 const { data: articles } = await useAsyncData(
   'articles',
-  () => find('articles', { fields: ['title', 'preview', 'slug'], populate: ['banner'] }))
+  () => find('articles', { fields: ['title', 'preview', 'slug', 'publishedAt'], populate: ['banner'] }))
 </script>

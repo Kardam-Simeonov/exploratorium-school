@@ -106,7 +106,7 @@
         </div>
       </div>
       <!-- Desktop Scroll Down Variant -->
-      <div class="fixed z-50 top-0 left-0 right-0 xl:px-8 px-4 hidden lg:block bg-explo-darkpurple border-b-4 border-explo-lightblue transition-transform duration-200" :class="{ '-translate-y-28': !isScrollNavVisible}">
+      <div class="fixed z-50 top-0 left-0 right-0 xl:px-8 px-4 hidden lg:block bg-explo-darkpurple border-b-4 border-explo-lightblue transition-transform duration-500" :class="{ '-translate-y-28': !isScrollNavVisible}">
         <div class="flex flex-row max-w-[90rem] mx-auto">
           <NuxtLink to="/">
             <img class="1xl:w-[18rem] w-[15rem] focus:outline-none my-3" src="@/assets/artwork/svg/logoStandard.svg">
