@@ -9,8 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/strapi',
-    '@nuxt/content'
+    '@nuxtjs/strapi'
   ],
   googleFonts: {
     families: {

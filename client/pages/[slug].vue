@@ -14,7 +14,8 @@
           <div class="text-sm text-gray-300 mb-10">
             <span>Публикувано на {{ currentArticle.data.attributes.publishedAt.substr(0, 10) }}</span>
           </div>
-          <StringMarkdown :md="currentArticle.data.attributes.content" />
+          <!-- <StringMarkdown :md="currentArticle.data.attributes.content" /> -->
+          <div v-html="renderedMarkdown" />
         </article>
       </section>
       <aside class="relative lg:col-span-5 col-span-full">
@@ -41,12 +42,20 @@
   </div>
 </template>
 <script setup>
+import MarkdownIt from 'markdown-it'
+
+const markdownIt = new MarkdownIt()
 const { find, findOne } = useStrapi()
 const route = useRoute()
 
 const { data: currentArticle } = await useAsyncData(
   'article',
-  () => findOne('articles', route.params.slug))
+  () => findOne('articles', route.params.slug)
+)
+
+const renderedMarkdown = computed(() => {
+  return markdownIt.render(currentArticle.value.data.attributes.content)
+})
 
 const { data: latestArticles } = await useAsyncData(
   'articles',

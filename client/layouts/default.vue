@@ -105,7 +105,7 @@
           </ul>
         </div>
       </div>
-      <!-- Desktop Scroll Down Variant -->
+      <!-- Desktop Scroll Down Variant
       <div class="fixed z-50 top-0 left-0 right-0 xl:px-8 px-4 hidden lg:block bg-explo-darkpurple border-b-4 border-explo-lightblue transition-transform duration-500" :class="{ '-translate-y-28': !isScrollNavVisible}">
         <div class="flex flex-row max-w-[90rem] mx-auto">
           <NuxtLink to="/">
@@ -163,7 +163,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- Mobile Variant -->
       <div class="lg:hidden block absolute top-2 left-0 right-0 sm:w-[15rem] w-[13rem] mx-auto h-fit bg-white p-1 rounded-md shadow-lg">
         <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
@@ -339,19 +339,19 @@ onMounted(() => {
   })
 })
 
-const isScrollNavVisible = ref(false)
-const lastScrollPosition = ref(0)
-const distanceFromTop = ref(600)
+// const isScrollNavVisible = ref(false)
+// const lastScrollPosition = ref(0)
+// const distanceFromTop = ref(600)
 
-onMounted(() => {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY < lastScrollPosition.value && window.scrollY > distanceFromTop.value) {
-      isScrollNavVisible.value = true
-    } else {
-      isScrollNavVisible.value = false
-    }
-    lastScrollPosition.value = window.scrollY
-  })
-})
+// onMounted(() => {
+//   window.addEventListener('scroll', () => {
+//     if (window.scrollY < lastScrollPosition.value && window.scrollY > distanceFromTop.value) {
+//       isScrollNavVisible.value = true
+//     } else {
+//       isScrollNavVisible.value = false
+//     }
+//     lastScrollPosition.value = window.scrollY
+//   })
+// })
 
 </script>
