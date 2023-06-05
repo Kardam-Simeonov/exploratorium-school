@@ -1,15 +1,16 @@
 <template>
-  <div class="relative lg:pt-44 pt-32">
-    <img class="sm:h-[50rem] h-[25rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-center sm:opacity-10 opacity-30" src="@/assets/stock/kids-stairs.jpg">
-    <!-- Tiles -->
-    <section class="relative" @mousemove="parallaxMove">
-      <div class="flex justify-center 2xl:my-12 lg:my-10 mt-20 lg:mb-16 mb-16 px-4">
-        <h1
-          class="1xl:max-w-3xl max-w-[39rem] bg-explo-lightblue bg-opacity-90 p-6 rounded-lg shadow-md lg:border-b-8 border-b-4 border-[#5b61a8] 1xl:text-3xl md:text-2xl text-xl text-center font-bold text-white"
-        >
-          Мястото, Където Стъпките се Превръщат в Следи
-        </h1>
+  <div class="relative">
+    <section class="h-[80vh] mt-24 relative">
+      <img class="w-[65%] absolute -left-28 mask-hero object-cover object-center opacity-90" src="@/assets/stock/kids-stairs.jpg">
+      <div class="absolute top-64 right-6 z-10 w-[35%]">
+        <h1 class="text-explo-darkgreen font-bold text-5xl mb-8 drop-shadow-text">Мястото, Където Стъпките се Превръщат в Следи</h1>
+        <h2 class="text-explo-whiteblue text-xl">Място отвъд формули, празни слова и догми - място, посветено към света на безграничната
+          детска фантазия и въображение.</h2>
       </div>
+    </section>
+    <img class="sm:hidden block h-[25rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-center opacity-50" src="@/assets/stock/kids-stairs.jpg">
+    <!-- Tiles -->
+    <section class="relative animate-fade-up" @mousemove="parallaxMove">
       <div class="relative z-40 flex justify-center gap-5">
         <div class="relative z-30 1xl:mt-36 mt-28 w-[25rem] shrink-0">
           <img src="@/assets/artwork/svg/blobL-layer1.svg" class="absolute right-[10%] 2xl:w-[98%] 1xl:w-[85%] w-[80%] opacity-60 z-10">
@@ -56,7 +57,7 @@
           <!-- style="box-shadow: -400px 0px 300px rgba(80,26,232,.2), 400px 0px 300px rgba(36,161,252,.2)" -->
           <div
             class="shrink-0 h-fit 2xl:w-[21rem] 1xl:w-80 w-72 bg-white p-1 rounded-md shadow-2xl"
-            style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.2), 400px 0px 300px rgba(238, 244, 249,.2)"
+            style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)"
           >
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="relative m-2">
@@ -201,7 +202,7 @@
           За нас
         </h1>
         <p
-          class="2xl:max-w-xl max-w-lg p-6 my-8 rounded-md rounded-br-[4rem] border-b-12 border-explo-darkercard text-center 2xl:text-xl text-lg leading-normal text-explo-whiteblue bg-explo-darkcard"
+          class="2xl:max-w-xl max-w-lg p-6 my-8 rounded-md rounded-br-[4rem] border-b-12 border-explo-darkercard text-center 2xl:text-xl text-lg leading-normal text-explo-whiteblue bg-[#b4bd51]"
         >
           Експлораториум е място отвъд формули, празни слова и догми - място, посветено към света на безграничната
           детска фантазия и въображение.

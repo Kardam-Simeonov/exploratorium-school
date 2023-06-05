@@ -1,6 +1,6 @@
 <template>
-  <div class="relative pt-72">
-    <img class="h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile sm:opacity-20 opacity-80" src="@/assets/stock/pencils.jpg">
+  <div class="relative pt-96">
+    <img class="lg:h-[29rem] h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80" src="@/assets/stock/pencils.jpg">
     <div class="max-w-[95rem] ml-auto grid grid-cols-12">
       <section class="lg:col-span-7 col-span-full px-8 pb-4">
         <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen drop-shadow-text">
