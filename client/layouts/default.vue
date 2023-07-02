@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Navigation -->
-    <div class="absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent lg:h-60 h-36 w-full" />
+    <div class="hidden lg:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-56 w-full" />
     <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0">
       <!-- Default Variant -->
       <div class="hidden lg:flex flex-col 2xl:max-w-7xl max-w-6xl mx-auto">
