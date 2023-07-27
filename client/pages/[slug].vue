@@ -3,7 +3,7 @@
     <img
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
       src="@/assets/stock/pencils.jpg">
-    <header class="relative px-4">
+    <header class="relative sm:px-8 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <img class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="@/assets/stock/pencils.jpg">
       <div class="min-h-[28rem] max-w-7xl mx-auto">
@@ -22,7 +22,7 @@
       </div>
     </header>
     <div class="max-w-[85rem] mx-auto grid grid-cols-12 gap-5">
-      <section class="lg:col-span-7 col-span-full px-4 pb-4">
+      <section class="lg:col-span-7 col-span-full sm:px-8 px-4 pb-4">
         <article class="prose prose-explo prose-img:max-h-80 sm:prose-img:ml-6 max-w-6xl">
           <!-- <StringMarkdown :md="currentArticle.data.attributes.content" /> -->
           <div v-html="renderedMarkdown" />
