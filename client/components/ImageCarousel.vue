@@ -1,12 +1,12 @@
 <template>
   <div>
     <SlideItem v-for="(slide, index) in carouselSlides" :key="index">
-      <img
+      <nuxt-img
         v-show="currentSlide === index + 1"
-        :src="useAsset(slide)"
+        :src="'/stock/' + slide"
         :class="{ 'rounded-bl-[3rem]': isRoundBottomLeft, 'rounded-br-[3rem]': isRoundBottomRight }"
         class="absolute rounded-md"
-      >
+      />
     </SlideItem>
   </div>
 </template>
@@ -47,13 +47,13 @@ function autoplay () {
   }, props.duration)
 }
 
-function useAsset (path) {
-  const assets = import.meta.glob('~/assets/**/*', {
-    eager: true,
-    import: 'default'
-  })
-  return assets['/assets/stock/' + path]
-}
+// function useAsset (path) {
+//   const assets = import.meta.glob('~/assets/**/*', {
+//     eager: true,
+//     import: 'default'
+//   })
+//   return assets['/assets/stock/' + path]
+// }
 
 setTimeout(() => {
   nextSlide()

@@ -1,11 +1,11 @@
 <template>
   <div class="relative lg:pt-80 pt-72">
-    <img
+    <nuxt-img
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
-      src="@/assets/stock/pencils.jpg">
+      src="/stock/pencils.jpg" />
     <header class="relative sm:px-8 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <img class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="@/assets/stock/pencils.jpg">
+      <nuxt-img class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/pencils.jpg" />
       <div class="min-h-[28rem] max-w-7xl mx-auto">
         <div class="xl:max-w-[38rem] max-w-[45rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen xl:mb-2 drop-shadow-text">
