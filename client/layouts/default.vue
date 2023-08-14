@@ -233,14 +233,16 @@
           </p>
         </div>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
-        <div
-          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
-        >
-          <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
-          <p class="text-xl font-bold">
-            Посетете
-          </p>
-        </div>
+        <NuxtLink to="/admission">
+          <div
+            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+          >
+            <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
+            <p class="text-xl font-bold">
+              Прием
+            </p>
+          </div>
+        </NuxtLink>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
         <div
           class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
