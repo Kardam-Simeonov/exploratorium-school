@@ -301,7 +301,7 @@
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen drop-shadow-text" />
         </div>
-        <ArticleCarousel :carousel-slides="articles.data" />
+        <ArticleCarousel :carousel-slides="articles ? articles.data : []" />
         <NuxtLink to="/blog"
           class="w-fit bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-3 mx-auto mt-16 shadow-lg">
           Вижте всички статии

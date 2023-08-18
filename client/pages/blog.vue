@@ -21,7 +21,7 @@
     <!-- Content -->
     <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mt-16 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
       <article
-        v-for="article, index in articles.data"
+        v-for="article, index in articles.data ? articles.data : []"
         :key="index"
         class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl"
       >

@@ -1,6 +1,6 @@
 <template>
   <div class="grid">
-    <SlideItem v-for="(slide, index) in props.carouselSlides" :key="index" :transition-duration="0.3" class="row-start-1 col-start-1 col-span-full">
+    <SlideItem v-for="(slide, index) in visibleSlides" :key="index" :transition-duration="0.3" class="row-start-1 col-start-1 col-span-full">
       <article v-show="currentSlide == index" class="relative lg:pt-52 lg:mx-32">
         <div class="overflow-hidden lg:absolute relative left-0 top-0 1xl:w-1/2 lg:w-[53%] lg:aspect-[7/5] aspect-[7/5] lg:rounded-md rounded-t-2xl lg:drop-shadow-offcenter shadow-2xl">
           <nuxt-img :src="runtimeConfig.public.strapiUrl + slide.attributes.banner.data.attributes.url" />
@@ -55,6 +55,8 @@ const props = defineProps({
 })
 
 const currentSlide = ref(0)
+
+const visibleSlides = computed(() => props.carouselSlides.filter(slide => slide !== null && typeof slide === 'object'))
 
 function nextSlide () {
   currentSlide.value = currentSlide.value === 2 ? 0 : currentSlide.value + 1

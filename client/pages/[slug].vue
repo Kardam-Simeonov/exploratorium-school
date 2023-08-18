@@ -64,6 +64,10 @@ const { data: currentArticle } = await useAsyncData(
   () => findOne('articles', route.params.slug)
 )
 
+if (!currentArticle.value || !currentArticle.value.data){
+  throw createError({ statusCode: 404, statusMessage: 'Article not found'})
+}
+
 const renderedMarkdown = computed(() => {
   return markdownIt.render(currentArticle.value.data.attributes.content)
 })

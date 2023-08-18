@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      strapiUrl: process.env.STRAPI_URL
+      strapiUrl: 'http://127.0.0.1:1337'
     }
   },
   modules: [
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     }
   },
   strapi: {
-    url: process.env.STRAPI_URL,
+    url: 'http://127.0.0.1:1337',
     prefix: '/api',
     version: 'v4'
   },
