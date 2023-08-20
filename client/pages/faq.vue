@@ -7,8 +7,8 @@
         <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
         <div class="1xl:min-h-[35rem] lg:min-h-[48rem] min-h-[35rem] max-w-7xl mx-auto">
           <div class="1xl:max-w-[38rem] max-w-[30rem] relative">
-            <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
-              Прием
+            <h1 class="font-lobster text-left text-6xl leading-none text-explo-darkgreen mb-5 drop-shadow-text">
+              Често Задавани Въпроси
             </h1>
             <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
             <p class="text-xl text-explo-whiteblue font-medium leading-7">

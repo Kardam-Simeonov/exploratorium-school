@@ -224,14 +224,16 @@
     <!-- Footer -->
     <footer>
       <div class="pt-32 pb-12 flex flex-row flex-wrap justify-center gap-14">
-        <div
-          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
-        >
-          <Icon name="fa6-solid:comments" class="text-4xl" />
-          <p class="text-xl font-bold">
-            Питайте
-          </p>
-        </div>
+        <NuxtLink to="/faq">
+          <div
+            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+          >
+            <Icon name="fa6-solid:comments" class="text-4xl" />
+            <p class="text-xl font-bold">
+              Въпроси
+            </p>
+          </div>
+        </NuxtLink>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
         <NuxtLink to="/admission">
           <div
@@ -244,14 +246,16 @@
           </div>
         </NuxtLink>
         <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
-        <div
-          class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
-        >
-          <Icon name="fa6-solid:hand-holding-heart" class="text-4xl" />
-          <p class="text-xl font-bold">
-            Дарете
-          </p>
-        </div>
+        <NuxtLink to="/give">
+          <div
+            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+          >
+            <Icon name="fa6-solid:hand-holding-heart" class="text-4xl" />
+            <p class="text-xl font-bold">
+              Подкрепа
+            </p>
+          </div>
+        </NuxtLink>
       </div>
       <div class="bg-explo-darkcard border-explo-darkgreen border-t-16 min-h-[14rem] rounded-t-2xl shadow-2xl">
         <div

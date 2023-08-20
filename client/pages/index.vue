@@ -6,23 +6,24 @@
       <nuxt-img class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
         src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]" src="@/assets/artwork/svg/blobL-layer2.svg">
-      <div
-        class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 2xl:pl-4 lg:text-left text-left max-w-4xl mx-auto">
+      <div class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 pl-4 lg:text-left text-left max-w-4xl mx-auto">
         <h1 class="text-explo-darkgreen font-bold 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">Мястото, Където
           Стъпките се Превръщат в Следи</h1>
         <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">Място отвъд формули, празни слова и догми -
           място, посветено към света на безграничната
           детска фантазия и въображение.</h2>
         <div class="flex flex-wrap justify-center gap-8 mt-10">
-          <div
-            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
-            <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
+          <NuxtLink to="/faq">
+            <div
+              class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+              <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
+              </div>
+              <p class="font-bold">
+                Въпроси
+              </p>
             </div>
-            <p class="font-bold">
-              Питайте
-            </p>
-          </div>
+          </NuxtLink>
           <NuxtLink to="/admission">
             <div
               class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
@@ -34,15 +35,17 @@
               </p>
             </div>
           </NuxtLink>
-          <div
-            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
-            <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="fa6-solid:hand-holding-heart" class="2xl:text-4xl text-3xl" />
+          <NuxtLink to="/give">
+            <div
+              class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+              <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                <Icon name="fa6-solid:hand-holding-heart" class="2xl:text-4xl text-3xl" />
+              </div>
+              <p class="font-bold">
+                Подкрепа
+              </p>
             </div>
-            <p class="font-bold">
-              Дарете
-            </p>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
