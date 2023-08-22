@@ -23,7 +23,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.9.0",
-    "nuxt": "^3.2.0",
+    "nuxt": "^3.6.5",
     "nuxt-icon": "^0.2.11",
     "typescript": "*"
   },
