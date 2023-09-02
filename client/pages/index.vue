@@ -7,11 +7,8 @@
         src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 pl-4 lg:text-left text-left max-w-4xl mx-auto">
-        <h1 class="text-explo-darkgreen font-bold 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">Мястото, Където
-          Стъпките се Превръщат в Следи</h1>
-        <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">Място отвъд формули, празни слова и догми -
-          място, посветено към света на безграничната
-          детска фантазия и въображение.</h2>
+        <h1 class="text-explo-darkgreen font-bold 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">{{ $t("hero_title") }}</h1>
+        <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">{{ $t("hero_subtitle") }}</h2>
         <div class="flex flex-wrap justify-center gap-8 mt-10">
           <NuxtLink to="/faq">
             <div
@@ -50,7 +47,7 @@
       </div>
     </section>
     <!-- Tiles -->
-    <section class="relative animate-fade-up lg:mt-8 mt-4" @mousemove="parallaxMove">
+    <section class="relative lg:mt-8 mt-4" @mousemove="parallaxMove">
       <div class="relative z-40 flex justify-center gap-5">
         <div class="relative z-30 1xl:mt-36 mt-28 w-[25rem] shrink-0">
           <img src="@/assets/artwork/svg/blobL-layer1.svg"
@@ -214,14 +211,11 @@
       <div
         class="1xl:col-span-5 lg:col-span-6 col-span-full self-start lg:justify-self-center sm:justify-self-end justify-self-center relative z-10 my-8 sm:mt-8 mt-20">
         <h1 class="font-lobster text-left 2xl:text-6xl text-5xl text-explo-darkgreen drop-shadow-text">
-          За нас
+          {{ $t("about_title") }}
         </h1>
         <p
           class="2xl:max-w-xl max-w-lg p-6 my-8 rounded-md rounded-br-[4rem] border-b-12 border-explo-darkercard text-center 2xl:text-xl text-lg leading-normal text-explo-whiteblue bg-[#b4bd51]">
-          Експлораториум е място отвъд формули, празни слова и догми - място, посветено към света на безграничната
-          детска фантазия и въображение.
-          Тук децата са свободни да се изразяват, да се развиват и да се научават, изцяло според собственото им темпо.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum deleniti expedita amet adipisci.
+          {{ $t("about_text") }}
           <!-- <div class="hidden 2xl:block absolute left-auto right-12 bottom-6 w-10 h-10 rounded-full bg-explo-lightblue border-b-12 border-explo-darkpurple"></div>  -->
         </p>
         <button
@@ -300,14 +294,14 @@
         <div class="col-span-full mb-8 pl-6">
           <h1
             class="font-lobster text-left 1xl:text-5xl text-4xl text-explo-darkgreen md:mb-2 mb-4 w-fit drop-shadow-text">
-            Какво е ново в Експлораториум?
+            {{ $t("publications_title") }}
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen drop-shadow-text" />
         </div>
         <ArticleCarousel :carousel-slides="articles ? articles.data : []" />
         <NuxtLink to="/blog"
           class="w-fit bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-3 mx-auto mt-16 shadow-lg">
-          Вижте всички статии
+          {{ $t("publications_button") }}
         </NuxtLink>
       </div>
     </section>
@@ -405,5 +399,5 @@ const mockFacebookPost = ref('Представям ви първите два б
 const { find } = useStrapi()
 const { data: articles } = await useAsyncData(
   'articles',
-  () => find('articles', { fields: ['title', 'preview'], populate: ['banner'] }))
+  () => find('articles', { fields: ['title', 'preview', 'slug'], populate: ['banner'] }))
 </script>

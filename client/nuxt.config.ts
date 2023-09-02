@@ -6,12 +6,31 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
     '@nuxtjs/strapi',
     '@nuxt/image'
   ],
+  i18n: {
+    lazy: true,
+    langDir: 'locales',
+    strategy: 'prefix_except_default',
+    locales: [
+      {
+        code: 'bg',
+        name: 'Български',
+        file: 'bg.json',
+      },
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json',
+      }
+    ],
+    defaultLocale: 'bg',
+  },
   googleFonts: {
     families: {
       Inter: [400],

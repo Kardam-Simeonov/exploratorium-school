@@ -8,7 +8,7 @@
       <div class="1xl:min-h-[35rem] lg:min-h-[48rem] min-h-[35rem] max-w-7xl mx-auto">
         <div class="1xl:max-w-[38rem] max-w-[30rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
-            Блог
+            {{ $t("blog") }}
           </h1>
           <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
           <p class="text-xl text-explo-whiteblue font-medium leading-7">
