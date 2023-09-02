@@ -1,9 +1,9 @@
 <template>
   <div class="grid">
-    <SlideItem v-for="(slide, index) in props.carouselSlides" :key="index" :transition-duration="0.3" class="row-start-1 col-start-1 col-span-full">
+    <SlideItem v-for="(slide, index) in visibleSlides" :key="index" :transition-duration="0.3" class="row-start-1 col-start-1 col-span-full">
       <article v-show="currentSlide == index" class="relative lg:pt-52 lg:mx-32">
         <div class="overflow-hidden lg:absolute relative left-0 top-0 1xl:w-1/2 lg:w-[53%] lg:aspect-[7/5] aspect-[7/5] lg:rounded-md rounded-t-2xl lg:drop-shadow-offcenter shadow-2xl">
-          <img :src="runtimeConfig.public.strapiUrl + slide.attributes.banner.data.attributes.url">
+          <nuxt-img class="object-cover h-full w-full" :src="runtimeConfig.public.strapiUrl + slide.attributes.banner.data.attributes.url" />
           <button class="lg:hidden block absolute left-2 bottom-2 px-2 bg-explo-lightblue bg-opacity-50 h-fit w-fit rounded-xl" @click="previousSlide()">
             <Icon name="pepicons-pop:angle-left" class="text-white text-5xl" />
           </button>
@@ -22,9 +22,11 @@
               {{ truncate(slide.attributes.preview, 200, '...') }}
             </p>
           </div>
-          <button class="bg-explo-darkcard text-explo-whiteblue text-base rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">
-            Научете Повече <Icon name="fa6-solid:chevron-right" />
-          </button>
+          <NuxtLink :to="localPath(`/${slide.attributes.slug}`)">
+            <button class="bg-explo-darkcard text-explo-whiteblue text-base rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">
+              Научете Повече <Icon name="fa6-solid:chevron-right" />
+            </button>
+          </NuxtLink>
         </div>
       </article>
     </SlideItem>
@@ -45,6 +47,7 @@
 </template>
 
 <script setup>
+const localPath = useLocalePath()
 const runtimeConfig = useRuntimeConfig()
 
 const props = defineProps({
@@ -55,6 +58,8 @@ const props = defineProps({
 })
 
 const currentSlide = ref(0)
+
+const visibleSlides = computed(() => props.carouselSlides.filter(slide => slide !== null && typeof slide === 'object'))
 
 function nextSlide () {
   currentSlide.value = currentSlide.value === 2 ? 0 : currentSlide.value + 1

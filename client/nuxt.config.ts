@@ -2,15 +2,35 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      strapiUrl: process.env.STRAPI_URL
+      strapiUrl: 'http://127.0.0.1:1337'
     }
   },
   modules: [
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/strapi'
+    '@nuxtjs/strapi',
+    '@nuxt/image'
   ],
+  i18n: {
+    lazy: true,
+    langDir: 'locales',
+    strategy: 'prefix_except_default',
+    locales: [
+      {
+        code: 'bg',
+        name: 'Български',
+        file: 'bg.json',
+      },
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json',
+      }
+    ],
+    defaultLocale: 'bg',
+  },
   googleFonts: {
     families: {
       Inter: [400],
@@ -18,7 +38,7 @@ export default defineNuxtConfig({
     }
   },
   strapi: {
-    url: process.env.STRAPI_URL,
+    url: 'http://127.0.0.1:1337',
     prefix: '/api',
     version: 'v4'
   },

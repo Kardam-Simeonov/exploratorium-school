@@ -46,7 +46,7 @@ module.exports = {
       },
       dropShadow: {
         offcenter: '15px 15px 0 rgb(150, 149, 201)',
-        text: '5px 5px 0 rgba(87, 93, 170, 0.8)'
+        text: '5px 5px 0 rgba(87, 93, 170, 0.8)',
       },
       typography: ({ theme }) => ({
         explo: {
