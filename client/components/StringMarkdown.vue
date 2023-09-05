@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <ContentRenderer id="article-wrapper" :value="parsedMarkdown" />
 </template>
 
@@ -17,4 +17,4 @@ const props = defineProps({
 })
 
 const parsedMarkdown = await markdownParser.parse(props.cid, props.md)
-</script>
+</script> -->
