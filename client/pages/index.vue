@@ -1,10 +1,12 @@
 <template>
   <div class="relative">
     <nuxt-img class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80"
+      loading="lazy"
       width="1200px"
       src="/stock/kids-stairs.jpg" />
     <section class="lg:max-h-[50rem] lg:min-h-[40rem] lg:h-[90vh] lg:pt-24 pt-56 mb-12 relative flex">
       <nuxt-img class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
+        loading="lazy"
         width="2500px"
         src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]" src="@/assets/artwork/svg/blobL-layer2.svg">
@@ -57,6 +59,7 @@
           <img src="@/assets/artwork/svg/blobL-layer2.svg"
             class="absolute top-[11%] 2xl:left-[13%] 1xl:left-[28%] left-[40%] 2xl:w-[85%] 1xl:w-[70%] w-[62%] opacity-70 z-10 drop-shadow-xl">
           <nuxt-img src="/stock/blobL-image.png"
+            loading="lazy"
             width="400px"
             class="absolute top-[19%] 2xl:left-[18%] 1xl:left-[32%] left-[44%] 2xl:w-[73%] 1xl:w-[60%] w-[52%] z-10" />
           <img src="@/assets/artwork/svg/scribble-1.svg"
@@ -95,12 +98,14 @@
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="relative m-2">
-              <nuxt-img width="450px" src="/stock/IconBaseTransparentTop.png" />
-              <nuxt-img width="450px" class="relative z-50" src="/stock/IconBaseTransparentBottom.png" />
+              <nuxt-img loading="lazy" width="450px" src="/stock/IconBaseTransparentTop.png" />
+              <nuxt-img loading="lazy" width="450px" class="relative z-50" src="/stock/IconBaseTransparentBottom.png" />
               <nuxt-img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
+                loading="lazy"
                 width="300px"
                 src="/stock/girlPainter.png" data-speed="1" style="transform: translateX(6px)" />
               <nuxt-img class="absolute top-[13%] 1xl:-left-12 -left-10 w-[50%] parallax transition-transform ease-linear z-40"
+                loading="lazy"
                 width="300px"
                 src="/stock/boyPainter.png" data-speed="-1"
                 style="transform: translateX(22px) translateY(7px);" />
@@ -152,6 +157,7 @@
           <img src="@/assets/artwork/svg/blobR-layer2.svg"
             class="absolute top-[13%] 2xl:right-[11%] 1xl:right-[28%] right-[38%] 2xl:w-[88%] 1xl:w-[72%] w-[65%] opacity-70 z-10 drop-shadow-xl">
           <nuxt-img src="/stock/blobR-image.png"
+            loading="lazy"
             width="400px"
             class="absolute top-[21%] 2xl:right-[20%] 1xl:right-[37%] right-[46%] 2xl:w-[68%] 1xl:w-[55%] w-[50%] z-10" />
           <img src="@/assets/artwork/svg/scribble-1.svg"
@@ -208,6 +214,7 @@
         class="absolute lg:top-96 sm:top-72 top-64 lg:left-16 -left-4 1xl:w-72 lg:w-64 sm:w-56 w-36 opacity-10 -rotate-90"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img
+        loading="lazy"
         class="1xl:col-span-7 lg:col-span-6 col-span-full relative 1xl:max-w-lg max-w-[27rem] w-full rounded-xl rounded-br-[3rem] self-center lg:justify-self-center sm:justify-self-start justify-self-center my-12 1xl:mr-32 lg:mr-12 shadow-xl"
         src="/stock/house.jpg" />
       <img class="w-[14rem] absolute z-10 lg:top-[30rem] top-[22rem] 1xl:left-8 -left-8"
@@ -279,10 +286,12 @@
     <!-- What's new -->
     <section class="relative">
       <nuxt-img src="/stock/playground.jpg"
+        loading="lazy"
         width="700px"
         class="lg:hidden block absolute z-0 w-full min-h-[20rem] -top-[9rem] opacity-10 object-cover object-center mask-fadeoff" />
       <div class="relative grid gap-5 sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl">
         <nuxt-img src="/stock/playground.png"
+          loading="lazy"
           width="1200px"
           class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%] brightness-90" />
         <!-- <div class="lg:block hidden absolute z-10 -top-8 left-[65%] 2xl:w-[25rem] 1xl:w-[23rem] w-[21rem] aspect-[8/6]">
