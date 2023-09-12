@@ -72,7 +72,7 @@
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['bonfire.jpg', 'woodensign.jpg', 'treebridge.jpg']"
                 :initial-delay="2000" :is-round-bottom-right="true" />
-              <div class="h-[162px]" />
+              <div class="2xl:h-[162px] 1xl:h-[138px] h-[114px]" />
             </div>
           </div>
           <div
@@ -84,7 +84,7 @@
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['group4.jpg', 'kayak.jpg', 'group2.jpg']"
                 :initial-delay="6000" :is-round-bottom-right="true" />
-                <div class="h-[330px]" />
+                <div class="2xl:h-[330px] 1xl:h-[267px] h-[224px]" />
             </div>
           </div>
         </div>
@@ -97,11 +97,13 @@
             <div class="relative m-2">
               <nuxt-img width="450px" src="/stock/IconBaseTransparentTop.png" />
               <nuxt-img width="450px" class="relative z-50" src="/stock/IconBaseTransparentBottom.png" />
-              <img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
-                src="@/assets/artwork/girlPainter.png" data-speed="1" style="transform: translateX(6px)">
-              <img class="absolute top-[13%] 1xl:-left-12 -left-10 w-[50%] parallax transition-transform ease-linear z-40"
-                src="@/assets/artwork/boyPainter.png" data-speed="-1"
-                style="transform: translateX(22px) translateY(7px);">
+              <nuxt-img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
+                width="300px"
+                src="/stock/girlPainter.png" data-speed="1" style="transform: translateX(6px)" />
+              <nuxt-img class="absolute top-[13%] 1xl:-left-12 -left-10 w-[50%] parallax transition-transform ease-linear z-40"
+                width="300px"
+                src="/stock/boyPainter.png" data-speed="-1"
+                style="transform: translateX(22px) translateY(7px);" />
             </div>
           </div>
           <!-- <div class="cursor-pointer" @click="isNewsOpen = true">
@@ -128,7 +130,7 @@
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['group2.jpg', 'kayak.jpg', 'group4.jpg',]"
                 :initial-delay="8000" :is-round-bottom-left="true" />
-              <div class="h-[330px]" />
+              <div class="2xl:h-[330px] 1xl:h-[267px] h-[224px]" />
             </div>
           </div>
           <div
@@ -140,7 +142,7 @@
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['treebridge.jpg', 'bonfire.jpg', 'drawingonterrace.jpg']"
                 :initial-delay="4000" :is-round-bottom-left="true" />
-              <div class="h-[162px]" />
+              <div class="2xl:h-[162px] 1xl:h-[138px] h-[114px]" />
             </div>
           </div>
         </div>
@@ -277,9 +279,11 @@
     <!-- What's new -->
     <section class="relative">
       <nuxt-img src="/stock/playground.jpg"
+        width="700px"
         class="lg:hidden block absolute z-0 w-full min-h-[20rem] -top-[9rem] opacity-10 object-cover object-center mask-fadeoff" />
       <div class="relative grid gap-5 sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl">
         <nuxt-img src="/stock/playground.png"
+          width="1200px"
           class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%] brightness-90" />
         <!-- <div class="lg:block hidden absolute z-10 -top-8 left-[65%] 2xl:w-[25rem] 1xl:w-[23rem] w-[21rem] aspect-[8/6]">
           <img src="@/assets/artwork/svg/blobBlog-layer2.svg" class="absolute w-full drop-shadow-lg">
