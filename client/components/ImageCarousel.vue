@@ -3,6 +3,7 @@
     <SlideItem v-for="(slide, index) in carouselSlides" :key="index">
       <nuxt-img
         v-show="currentSlide === index + 1"
+        :width="imageWidth"
         :src="'/stock/' + slide"
         :class="{ 'rounded-bl-[3rem]': isRoundBottomLeft, 'rounded-br-[3rem]': isRoundBottomRight }"
         class="absolute rounded-md"
@@ -32,6 +33,10 @@ const props = defineProps({
   isRoundBottomRight: {
     type: Boolean,
     default: false
+  },
+  imageWidth: {
+    type: String,
+    default: '100%'
   }
 })
 
