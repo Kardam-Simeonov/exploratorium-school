@@ -95,8 +95,8 @@
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="relative m-2">
-              <nuxt-img width="450px" src="/stock/IconBaseTransparentTop.png" />
-              <nuxt-img width="450px" class="relative z-50" src="/stock/IconBaseTransparentBottom.png" />
+              <img src="@/assets/artwork/svg/IconBaseTransparentTop.svg" />
+              <img class="relative z-50" src="@/assets/artwork/svg/IconBaseTransparentBottom.svg" />
               <nuxt-img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
                 width="300px"
                 src="/stock/girlPainter.png" data-speed="1" style="transform: translateX(6px)" />
