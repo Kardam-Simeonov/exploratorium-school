@@ -9,7 +9,7 @@
         <div class="bg-explo-darkercard border-explo-darkcard border-b-16 h-6 w-full rounded-b-2xl shadow-2xl" />
         <div class="flex flex-row">
           <ul
-            class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-semibold whitespace-nowrap">
+            class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 0">
@@ -76,7 +76,7 @@
             </div>
           </div>
           <ul
-            class="relative flex flex-row justify-start pt-8 pl-6 pb-4 w-full text-white 2xl:text-xl text-lg font-semibold whitespace-nowrap">
+            class="relative flex flex-row justify-start pt-8 pl-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/blog')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 3">
@@ -233,7 +233,7 @@
           <div
             class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
             <Icon name="fa6-solid:comments" class="text-4xl" />
-            <p class="text-xl font-bold">
+            <p class="text-xl font-medium">
               Въпроси
             </p>
           </div>
@@ -243,7 +243,7 @@
           <div
             class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
             <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
-            <p class="text-xl font-bold">
+            <p class="text-xl font-medium">
               Прием
             </p>
           </div>
@@ -253,7 +253,7 @@
           <div
             class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
             <Icon name="fa6-solid:hand-holding-heart" class="text-4xl" />
-            <p class="text-xl font-bold">
+            <p class="text-xl font-medium">
               Подкрепа
             </p>
           </div>
@@ -263,11 +263,11 @@
         <div
           class="grid lg:grid-cols-11 grid-cols-6 gap-y-8 1xl:gap-x-5 max-w-[90rem] mx-auto py-8 lg:px-8 md:px-16 px-8">
           <div class="1xl:col-span-2 lg:col-span-3 md:col-span-3 col-span-full flex break-words">
-            <div class="flex flex-col mr-6 w-full">
-              <span class="text-2xl font-bold text-explo-whiteblue">Работно Време</span>
+            <div class="flex flex-col mr-6 w-full font-medium">
+              <span class="text-2xl text-explo-whiteblue">Работно Време</span>
               <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:50</span>
-              <span class="text-xl font-bold text-explo-whiteblue">+359 87 918 0700</span>
-              <span class="text-sm font-bold text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
+              <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
+              <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
             </div>
           </div>
           <div class="1xl:col-span-3 lg:col-span-2 md:col-span-3 col-span-full">
@@ -279,16 +279,16 @@
             <div class="h-48 w-[0.20rem] bg-explo-darklitecard" />
           </div>
           <div class="lg:col-span-5 col-span-full flex flex-col">
-            <p class="text-2xl font-bold text-explo-whiteblue mb-4">
+            <p class="text-2xl font-medium text-explo-whiteblue mb-4">
               Навигация
             </p>
             <div class="grid grid-cols-2">
-              <div class="text-xl font-normal text-explo-whiteblue">
+              <div class="text-xl text-explo-whiteblue">
                 <p>Начало</p>
                 <p>За нас</p>
                 <p>Училищен Живот</p>
               </div>
-              <div class="text-xl font-normal text-explo-whiteblue">
+              <div class="text-xl text-explo-whiteblue">
                 <p>Блог</p>
                 <p>Галерия</p>
                 <p>Прием</p>

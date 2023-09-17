@@ -13,11 +13,11 @@
         </div>
         <div class="relative z-10 lg:w-2/3 lg:ml-auto p-8 bg-explo-darkpurple shadow-lg lg:rounded-md rounded-b-2xl lg:rounded-br-[4rem] border-b-12  border-explo-lightblue">
           <div class="sm:min-h-[10rem] mb-4">
-            <h1 class="text-left 1xl:text-2xl lg:text-xl text-2xl font-bold text-explo-darkgreen mb-2 max-h-28 overflow-y-hidden">
+            <h1 class="text-left 1xl:text-2xl lg:text-xl text-2xl font-medium text-explo-darkgreen mb-2 max-h-28 overflow-y-hidden">
               {{ truncate(slide.attributes.title, 50, '...') }}
             </h1>
             <p
-              class="text-left 2xl:text-lg 1xl:text-lg lg:text-base text-lg font-light text-explo-whiteblue"
+              class="text-left 2xl:text-lg 1xl:text-lg lg:text-base text-lg text-explo-whiteblue"
             >
               {{ truncate(slide.attributes.preview, 200, '...') }}
             </p>

@@ -33,8 +33,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Inter: [400],
-      Lobster: [400]
+      Inter: [300, 400, 500, 600, 700],
+      Lobster: true
     }
   },
   strapi: {

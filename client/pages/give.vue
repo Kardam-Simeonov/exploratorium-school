@@ -3,7 +3,7 @@
       <header class="relative sm:px-12 px-6">
         <img class="lg:block hidden 1xl:w-[30rem] w-[24rem] absolute 1xl:top-[17%] top-[45%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
         <nuxt-img class="lg:block hidden aspect-[6/5] 1xl:w-[48%] w-[55%] ml-auto absolute left-0 -right-1 bottom-[12%] object-cover object-center mask-header" 
-          width="1000px"
+          width="1500px"
           src="/stock/drawing.jpg" />
         <nuxt-img class="lg:hidden block h-[23rem] w-full absolute -top-[55%] left-0 object-cover object-center mask-header-mobile opacity-80" 
           width="100vw"
@@ -15,7 +15,7 @@
               Подкрепете ни
             </h1>
             <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
-            <p class="text-xl text-explo-whiteblue font-medium leading-7">
+            <p class="text-xl text-explo-whiteblue leading-7">
               Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и нашата методика на работа.
             </p>
           </div>
@@ -25,12 +25,12 @@
       <!-- Content -->
         <section class="mx-auto mt-28 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
             <div class="flex flex-col max-w-lg mb-8">
-                <h1 class="text-3xl font-bold text-explo-darkgreen mb-2">
+                <h1 class="text-3xl font-medium text-explo-darkgreen mb-2">
                     Процесът на прием
                 </h1>
             </div>
             <div class="flex flex-col max-w-lg mb-8">
-                <h1 class="text-3xl font-bold text-explo-darkgreen mb-4">
+                <h1 class="text-3xl font-medium text-explo-darkgreen mb-4">
                     Такси
                 </h1>
                 <p class="text-base text-white mb-3">

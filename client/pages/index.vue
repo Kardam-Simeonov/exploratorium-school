@@ -9,16 +9,16 @@
         src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 pl-4 lg:text-left text-left max-w-4xl mx-auto">
-        <h1 class="text-explo-darkgreen font-bold 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">{{ $t("hero_title") }}</h1>
+        <h1 class="text-explo-darkgreen font-medium 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">{{ $t("hero_title") }}</h1>
         <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">{{ $t("hero_subtitle") }}</h2>
-        <div class="flex flex-wrap justify-center gap-8 mt-10">
+        <div class="flex flex-wrap justify-center gap-8 mt-10 font-medium">
           <NuxtLink to="/faq">
             <div
               class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
                 <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
               </div>
-              <p class="font-bold">
+              <p>
                 Въпроси
               </p>
             </div>
@@ -29,7 +29,7 @@
               <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
                 <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
               </div>
-              <p class="font-bold">
+              <p>
                 Прием
               </p>
             </div>
@@ -40,7 +40,7 @@
               <div class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
                 <Icon name="fa6-solid:hand-holding-heart" class="2xl:text-4xl text-3xl" />
               </div>
-              <p class="font-bold">
+              <p>
                 Подкрепа
               </p>
             </div>
@@ -66,7 +66,7 @@
           <div
             class="p-1 2xl:w-[15rem] 1xl:w-52 w-[11rem] ml-auto rounded-md rounded-br-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
-              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-bold">
+              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
               Игра
             </div>
             <div class="p-2 overflow-hidden">
@@ -78,7 +78,7 @@
           <div
             class="p-1 2xl:w-[17rem] 1xl:w-56 w-48 ml-auto rounded-md rounded-br-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
-              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-bold">
+              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
               <div>Групова работа</div>
             </div>
             <div class="p-2 overflow-hidden">
@@ -124,7 +124,7 @@
           <div
             class="p-1 2xl:w-[17rem] 1xl:w-56 w-48 mr-auto rounded-md rounded-bl-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
-              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-bold">
+              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
               Откривателство
             </div>
             <div class="p-2 overflow-hidden">
@@ -136,7 +136,7 @@
           <div
             class="p-1 2xl:w-[15rem] 1xl:w-52 w-[11rem] mr-auto rounded-md rounded-bl-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
-              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-bold">
+              class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
               Природа
             </div>
             <div class="p-2 overflow-hidden">

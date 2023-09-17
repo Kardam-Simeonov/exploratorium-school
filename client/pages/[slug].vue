@@ -15,7 +15,7 @@
             Блог
           </h1>
           <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
-          <h1 class="text-[2.5rem] mb-2 text-explo-darkgreen font-bold leading-snug">
+          <h1 class="text-[2.5rem] mb-2 text-explo-darkgreen font-medium leading-snug">
             {{ currentArticle.data.attributes.title }}
           </h1>
           <div class="text-sm text-gray-300 mb-10">
@@ -34,7 +34,7 @@
       <aside class="relative lg:col-span-5 col-span-full xl:pt-36 px-4">
         <div
           class="relative xl:max-w-[25rem] max-w-lg rounded-md rounded-br-3xl px-5 py-6 mx-auto lg:mr-auto lg:ml-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-2xl">
-          <h1 class="text-explo-darkgreen text-xl font-bold mt-4 mb-6">
+          <h1 class="text-explo-darkgreen text-xl font-medium mt-4 mb-6">
             Последни Публикации
           </h1>
           <article v-for="article, index in latestArticles.data" :key="index"
