@@ -30,6 +30,7 @@ export default defineNuxtConfig({
       }
     ],
     defaultLocale: 'bg',
+    detectBrowserLanguage: false
   },
   googleFonts: {
     families: {

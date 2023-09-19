@@ -108,8 +108,8 @@
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink @mouseover="highlightIndex = 7" v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)"
               class="p-2 px-3 rounded-full text-xl">
-              <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
-              <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" />
+              <!-- <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
+              <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" /> -->
             </NuxtLink>
             </li>
           </ul>
