@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
-    'nuxt-icon',
+    // 'nuxt-icon',
     '@nuxtjs/google-fonts',
     '@nuxtjs/strapi',
     '@nuxt/image'
