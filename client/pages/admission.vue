@@ -4,9 +4,11 @@
         <img class="lg:block hidden 1xl:w-[30rem] w-[24rem] absolute 1xl:top-[17%] top-[45%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
         <nuxt-img class="lg:block hidden aspect-[6/5] 1xl:w-[48%] w-[55%] ml-auto absolute left-0 -right-1 bottom-[12%] object-cover object-center mask-header" 
           width="1500px"
+          format="webp"
           src="/stock/drawing.jpg" />
         <nuxt-img class="lg:hidden block h-[23rem] w-full absolute -top-[55%] left-0 object-cover object-center mask-header-mobile opacity-80" 
           width="100vw"
+          format="webp"
           src="/stock/drawing.jpg" />
         <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
         <div class="1xl:min-h-[35rem] lg:min-h-[48rem] min-h-[35rem] max-w-7xl mx-auto">
