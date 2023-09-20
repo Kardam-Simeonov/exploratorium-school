@@ -1,11 +1,11 @@
 <template>
   <div class="relative">
     <nuxt-img class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80"
-      width="1200px"
+      width="100vw"
       src="/stock/kids-stairs.jpg" />
     <section class="lg:max-h-[50rem] lg:min-h-[40rem] lg:h-[90vh] lg:pt-24 pt-56 mb-12 relative flex">
       <nuxt-img class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
-        width="2500px"
+        width="1920px"
         src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 pl-4 lg:text-left text-left max-w-4xl mx-auto">
