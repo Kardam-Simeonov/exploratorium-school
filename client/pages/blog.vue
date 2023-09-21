@@ -31,7 +31,7 @@
         class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl"
       >
         <nuxt-img class="w-full aspect-[13/9] my-2 border-8 rounded-md rotate-6 hover:rotate-0 transition-transform duration-200 object-cover object-center"
-          :src="runtimeConfig.public.strapiUrl + article.attributes.banner.data.attributes.url" />
+          :src="runtimeConfig.public.strapiUrl + article.attributes.banner.data.attributes.url " />
         <img class="absolute top-2 left-0 right-0 mx-auto w-10" src="@/assets/artwork/bullet.png">
         <h1 class="text-xl text-explo-darkgreen font-medium mt-8">
           {{ truncate(article.attributes.title, 100, '...') }}

@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <nuxt-img class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80"
-      width="100vw"
+      width="1200px"
       src="/stock/kids-stairs.jpg" />
     <section class="lg:max-h-[50rem] lg:min-h-[40rem] lg:h-[90vh] lg:pt-24 pt-56 mb-12 relative flex">
       <nuxt-img class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
@@ -95,13 +95,17 @@
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="relative m-2">
-              <img src="@/assets/artwork/svg/IconBaseTransparentTop.svg" />
-              <img class="relative z-50" src="@/assets/artwork/svg/IconBaseTransparentBottom.svg" />
+              <nuxt-img
+                width="400px" 
+                src="/stock/IconBaseTransparentTop.png" />
+              <nuxt-img class="relative z-50" 
+                width="400px" 
+                src="/stock/IconBaseTransparentBottom.png" />
               <nuxt-img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
-                width="300px"
+                width="250px"
                 src="/stock/girlPainter.png" data-speed="1" style="transform: translateX(6px)" />
               <nuxt-img class="absolute top-[13%] 1xl:-left-12 -left-10 w-[50%] parallax transition-transform ease-linear z-40"
-                width="300px"
+                width="200px"
                 src="/stock/boyPainter.png" data-speed="-1"
                 style="transform: translateX(22px) translateY(7px);" />
             </div>
@@ -284,8 +288,8 @@
         class="lg:hidden block absolute z-0 w-full min-h-[20rem] -top-[9rem] opacity-10 object-cover object-center mask-fadeoff" />
       <div class="relative grid gap-5 sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl">
         <nuxt-img src="/stock/playground.png"
-          width="1200px"
-          class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%] brightness-90" />
+          width="1000px"
+          class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%]" />
         <!-- <div class="lg:block hidden absolute z-10 -top-8 left-[65%] 2xl:w-[25rem] 1xl:w-[23rem] w-[21rem] aspect-[8/6]">
           <img src="@/assets/artwork/svg/blobBlog-layer2.svg" class="absolute w-full drop-shadow-lg">
           <img src="@/assets/artwork/svg/logoBase.svg" class="absolute top-[35%] left-[10%] w-[80%]">
