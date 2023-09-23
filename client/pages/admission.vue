@@ -7,7 +7,7 @@
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img width="1000px"
-        class="xl:block hidden aspect-[6/5] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
+        class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
         src="/stock/drawing.jpg" />
       <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
