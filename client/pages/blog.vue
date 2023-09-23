@@ -1,6 +1,6 @@
 <template>
-  <div class="relative pt-72">
-    <header class="relative sm:px-12 px-6">
+  <div class="relative 1xl:pt-72 pt-64">
+    <!-- <header class="relative sm:px-12 px-6">
       <img class="lg:block hidden 1xl:w-[30rem] w-[24rem] absolute 1xl:top-[17%] top-[45%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img class="lg:block hidden aspect-[6/5] 1xl:w-[48%] w-[55%] ml-auto absolute left-0 -right-1 bottom-[12%] object-cover object-center mask-header" 
         width="1500px"
@@ -20,10 +20,32 @@
           </p>
         </div>
       </div>
+    </header> -->
+    <nuxt-img
+      width="100vw"
+      class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
+      src="/stock/pencils.jpg" />
+    <header class="relative lg:pl-12 px-4">
+      <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
+      <nuxt-img 
+        width="1000px"
+        class="xl:block hidden aspect-[6/5] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/pencils.jpg" />
+      <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
+      <div class="min-h-[28rem] max-w-7xl mx-auto">
+        <div class="xl:max-w-[35rem] max-w-[45rem] relative">
+          <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
+            {{ $t("blog") }}
+          </h1>
+          <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
+          <p class="text-xl text-explo-whiteblue leading-7">
+            Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и нашата методика на работа.
+          </p>
+        </div>
+      </div>
     </header>
-    <div class="absolute left-0 right-0 mx-auto w-56 h-2 bg-explo-lightblue rounded-2xl" />
+    <div class="mx-auto my-24 w-56 h-2 bg-explo-lightblue rounded-2xl" />
     <!-- Content -->
-    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mt-28 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
+    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
       <article
         v-if="articles && articles.data"
         v-for="article, index in articles.data"

@@ -1,10 +1,10 @@
 <template>
-  <div class="relative lg:pt-80 pt-72">
+  <div class="relative 1xl:pt-80 pt-64">
     <nuxt-img
       width="100vw"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
       src="/stock/pencils.jpg" />
-    <header class="relative sm:px-8 px-4">
+    <header class="relative lg:pl-12 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img 
         width="1000px"
@@ -25,7 +25,7 @@
       </div>
     </header>
     <div class="max-w-[85rem] mx-auto grid grid-cols-12 gap-5">
-      <section class="lg:col-span-7 col-span-full sm:px-8 px-4 pb-4">
+      <section class="lg:col-span-7 col-span-full lg:pl-12 px-4 pb-8">
         <article class="prose prose-explo prose-img:max-h-80 sm:prose-img:ml-6 max-w-6xl">
           <!-- <StringMarkdown :md="currentArticle.data.attributes.content" /> -->
           <div v-html="renderedMarkdown" />
