@@ -96,7 +96,7 @@
           <div class="shrink-0 h-fit 2xl:w-[21rem] 1xl:w-80 w-72 bg-white p-1 rounded-md shadow-2xl"
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
-            <div class="relative m-2 min-h-[30rem]">
+            <div class="relative m-2 min-h-[20rem]">
               <nuxt-img
                 width="400px" 
                 src="/stock/IconBaseTransparentTop.png" />
