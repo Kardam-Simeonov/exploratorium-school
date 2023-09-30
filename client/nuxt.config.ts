@@ -37,13 +37,6 @@ export default defineNuxtConfig({
       Inter: [300, 400, 500, 600, 700],
       Lobster: true
     },
-    subsets: ['latin', 'cyrillic'],
-    display: 'swap',
-    prefetch: false,
-    preconnect: false,
-    preload: false,
-    download: true,
-    base64: false,
   },
   strapi: {
     url: process.env.STRAPI_URL || 'http://127.0.0.1:1337',

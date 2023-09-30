@@ -96,7 +96,7 @@
           <div class="shrink-0 h-fit 2xl:w-[21rem] 1xl:w-80 w-72 bg-white p-1 rounded-md shadow-2xl"
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
-            <div class="relative m-2 min-h-[20rem]">
+            <div class="relative m-2 min-h-[30rem]">
               <nuxt-img
                 width="400px" 
                 src="/stock/IconBaseTransparentTop.png" />
@@ -331,78 +331,11 @@
           </h1>
           <div class="w-10 h-2 bg-explo-darkgreen ml-1" />
         </div>
-        <article
-          class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('/stock/group3.jpg')] bg-cover"
-          @mouseover="feedIndex = 0" @mouseleave="feedIndex = -1">
-          <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl"
-            target="_blank">
-            <transition name="fade">
-              <div v-show="feedIndex == 0"
-                class="h-full w-full rounded-md sm:p-6 p-3 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
-                <p class="text-white sm:text-sm text-xs break-words"><span class="sm:inline hidden">{{
-                  truncate(mockFacebookPost, 140, '...') }}</span><span class="sm:hidden imline">{{
-    truncate(mockFacebookPost, 50, '...') }}</span></p>
-                <p class="text-white sm:mt-4 mt-2 sm:text-base text-sm">
-                  <Icon name="fa6-brands:facebook" /> ExploratoriumBG
-                </p>
-              </div>
-            </transition>
-          </a>
-        </article>
-        <article
-          class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('/stock/drawingonterrace.jpg')] bg-cover"
-          @mouseover="feedIndex = 1" @mouseleave="feedIndex = -1">
-          <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl"
-            target="_blank">
-            <transition name="fade">
-              <div v-show="feedIndex == 1"
-                class="h-full w-full rounded-md sm:p-6 p-3 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
-                <p class="text-white sm:text-sm text-xs break-words"><span class="sm:inline hidden">{{
-                  truncate(mockFacebookPost, 140, '...') }}</span><span class="sm:hidden imline">{{
-    truncate(mockFacebookPost, 50, '...') }}</span></p>
-                <p class="text-white sm:mt-4 mt-2 sm:text-base text-sm">
-                  <Icon name="fa6-brands:facebook" /> ExploratoriumBG
-                </p>
-              </div>
-            </transition>
-          </a>
-        </article>
-        <article
-          class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('/stock/group1.jpg')] bg-cover"
-          @mouseover="feedIndex = 2" @mouseleave="feedIndex = -1">
-          <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl"
-            target="_blank">
-            <transition name="fade">
-              <div v-show="feedIndex == 2"
-                class="h-full w-full rounded-md sm:p-6 p-3 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
-                <p class="text-white sm:text-sm text-xs break-words"><span class="sm:inline hidden">{{
-                  truncate(mockFacebookPost, 140, '...') }}</span><span class="sm:hidden imline">{{
-    truncate(mockFacebookPost, 50, '...') }}</span></p>
-                <p class="text-white sm:mt-4 mt-2 sm:text-base text-sm">
-                  <Icon name="fa6-brands:facebook" /> ExploratoriumBG
-                </p>
-              </div>
-            </transition>
-          </a>
-        </article>
-        <article
-          class="relative aspect-square rounded-md cursor-pointer shadow-lg bg-[url('/stock/group2.jpg')] bg-cover"
-          @mouseover="feedIndex = 3" @mouseleave="feedIndex = -1">
-          <a href="https://www.facebook.com/ExploratoriumBG/posts/pfbid02rBDcApGH9SQdb1m84dHarGWfegp8LYmqQsM5Vj6CpwNtLnssHdE9sZTiaUu8QXZEl"
-            target="_blank">
-            <transition name="fade">
-              <div v-show="feedIndex == 3"
-                class="h-full w-full rounded-md sm:p-6 p-3 text-center flex flex-col place-content-center bg-explo-darkercard bg-opacity-80">
-                <p class="text-white sm:text-sm text-xs break-words"><span class="sm:inline hidden">{{
-                  truncate(mockFacebookPost, 140, '...') }}</span><span class="sm:hidden imline">{{
-    truncate(mockFacebookPost, 50, '...') }}</span></p>
-                <p class="text-white sm:mt-4 mt-2 sm:text-base text-sm">
-                  <Icon name="fa6-brands:facebook" /> ExploratoriumBG
-                </p>
-              </div>
-            </transition>
-          </a>
-        </article>
+        <div class="col-span-full">
+          <ClientOnly>
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+          </ClientOnly>
+        </div>
       </div>
     </section>
   </div>
