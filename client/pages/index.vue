@@ -324,7 +324,7 @@
     </section>
     <!-- Facebook Feed -->
     <section class="bg-explo-darkpurple bg-opacity-40 pb-28 py-12 sm:px-12 px-6">
-      <div class="grid lg:grid-cols-4 grid-cols-2 gap-3 mx-auto 2xl:max-w-6xl max-w-5xl">
+      <div class="grid gap-3 mx-auto 2xl:max-w-6xl max-w-5xl">
         <div class="col-span-full mb-8">
           <h1 class="font-lobster text-left 2xl:text-5xl text-4xl text-explo-darkgreen md:mb-2 mb-4 drop-shadow-xl">
             <Icon name="fa6-brands:facebook" /> @ExploratoriumBG
