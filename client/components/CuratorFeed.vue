@@ -19,10 +19,15 @@ const loadCuratorScript = () => {
 };
 
 onMounted(() => {
-  loadCuratorScript();
+  // Because the page transition behavior is broken,
+  // a set timeout of the duration of transition is set
+  // to guarrante a loaded DOM tree.
+  setTimeout(() => {
+    loadCuratorScript();
+  }, 50);
 });
 
-// welcome to hell
+// Welcome to hell
 onBeforeUnmount(() => {
   const existingScript = document.querySelector(
     'script[src="https://cdn.curator.io/published/2027d41f-868e-4661-a6b0-76f090c44c10.js"]'
