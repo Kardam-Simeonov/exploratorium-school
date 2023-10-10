@@ -1,7 +1,8 @@
 <template>
     <div class="relative 1xl:pt-72 pt-64">
-    <nuxt-img width="100vw"
+    <nuxt-img width="700px"
       :placeholder="[4, 3]"
+      format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
       src="/stock/drawing.jpg" />
     <header class="relative lg:pl-12 px-4">
@@ -9,6 +10,7 @@
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img width="1000px"
         :placeholder="[4, 3]"
+        format="webp"
         class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
         src="/stock/drawing.jpg" />
       <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]"
