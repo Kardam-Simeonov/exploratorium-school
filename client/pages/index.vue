@@ -1,12 +1,16 @@
 <template>
   <div class="relative">
     <nuxt-img
-      class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80"
-      width="1200px" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
+      class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80" 
+      format="webp"
+      width="1000"
+      alt="Kids sitting on stairs"
+      :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
     <section class="lg:max-h-[50rem] lg:min-h-[40rem] lg:h-[90vh] lg:pt-24 pt-56 mb-12 relative flex">
       <nuxt-img
         class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
-        width="1920px" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
+        format="webp"
+        width="1920px" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
       <div
@@ -209,7 +213,7 @@
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img
         class="1xl:col-span-7 lg:col-span-6 col-span-full relative 1xl:max-w-lg max-w-[27rem] w-full rounded-xl rounded-br-[3rem] self-center lg:justify-self-center sm:justify-self-start justify-self-center my-12 1xl:mr-32 lg:mr-12 shadow-xl"
-        src="/stock/house.jpg" loading="lazy" :placeholder="[4, 3]" width="900px" />
+        src="/stock/house.jpg" loading="lazy" :placeholder="[4, 3]" width="800px" />
       <img class="w-[14rem] absolute z-10 lg:top-[30rem] top-[22rem] 1xl:left-8 -left-8"
         src="@/assets/artwork/svg/scribble-1.svg">
       <!-- <img class="absolute top-[31rem] bottom-0 left-[31.5rem] w-[14rem] opacity-60" src="@/assets/artwork/svg/blobHouse-layer3.svg"> -->
@@ -278,10 +282,10 @@
     </section> -->
     <!-- What's new -->
     <section class="relative">
-      <nuxt-img src="/stock/playground.jpg" width="700px"
+      <nuxt-img src="/stock/playground.jpg" width="700px" format="webp"
         class="lg:hidden block absolute z-0 w-full min-h-[20rem] -top-[9rem] opacity-10 object-cover object-center mask-fadeoff" />
       <div class="relative grid gap-5 sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl">
-        <nuxt-img src="/stock/playground.png" width="1000px"
+        <nuxt-img src="/stock/playground.png" width="1000px" format="webp"
           class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%]" />
         <!-- <div class="lg:block hidden absolute z-10 -top-8 left-[65%] 2xl:w-[25rem] 1xl:w-[23rem] w-[21rem] aspect-[8/6]">
           <img src="@/assets/artwork/svg/blobBlog-layer2.svg" class="absolute w-full drop-shadow-lg">
@@ -338,4 +342,6 @@ const { find } = useStrapi()
 const { data: articles } = await useAsyncData(
   'articles',
   () => find('articles', { fields: ['title', 'preview', 'slug'], populate: ['banner'] }))
+
+  
 </script>
