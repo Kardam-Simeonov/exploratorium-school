@@ -6,7 +6,7 @@
       width="1000"
       alt="Kids sitting on stairs"
       :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
-    <section class="lg:max-h-[55rem] lg:min-h-[40rem] lg:h-[90vh] lg:pt-32 pt-56 mb-12 relative flex">
+    <section class="lg:max-h-[55rem] lg:min-h-[40rem] xl:h-[90vh] lg:h-[40vh] lg:pt-32 pt-56 mb-12 relative flex">
       <nuxt-img
         class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
         format="webp"

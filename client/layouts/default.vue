@@ -5,7 +5,7 @@
       class="hidden xl:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-64 w-full" />
     <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0">
       <!-- Default Variant -->
-      <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-6xl mx-auto px-6">
+      <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-7xl mx-auto px-6">
         <div class="bg-explo-darkercard border-explo-darkcard border-b-16 h-6 w-full rounded-b-2xl shadow-2xl" />
         <div class="flex flex-row">
           <ul
