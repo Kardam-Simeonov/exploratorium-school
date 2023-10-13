@@ -127,7 +127,7 @@
       </div>
       <transition name="fade">
         <div v-show="isMenuOpen" class="fixed xl:hidden top-0 left-0 right-0 z-50">
-          <div class="bg-explo-darkcard bg-opacity-[0.98] min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
+          <div class="bg-explo-darkcard bg-opacity-[0.96] min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
             <ul class="flex flex-col text-center text-white text-2xl h-screen py-24 mb-[15%]">
               <NuxtLink to="/">
                 <li class="py-8 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">

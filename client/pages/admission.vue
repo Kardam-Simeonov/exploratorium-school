@@ -3,7 +3,7 @@
     <nuxt-img width="700px"
       :placeholder="[4, 3]"
       format="webp"
-      class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-header-mobile opacity-80"
+      class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/drawing.jpg" />
     <header class="relative lg:pl-12 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
@@ -15,8 +15,8 @@
         src="/stock/drawing.jpg" />
       <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
-      <div class="min-h-[28rem] max-w-7xl mx-auto">
-        <div class="xl:max-w-[35rem] max-w-[45rem] relative">
+      <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto">
+        <div class="max-w-[35rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
             Прием
           </h1>
