@@ -1,14 +1,16 @@
 <template>
   <div class="relative 1xl:pt-80 pt-56">
-    <nuxt-img
-      width="100vw"
+    <nuxt-img width="100vw"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/pencils.jpg" />
     <header class="relative lg:pl-12 px-4">
-      <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <nuxt-img 
-        width="1000px"
-        class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/pencils.jpg" />
+      <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
+        src="@/assets/artwork/svg/blobHouse-layer2.svg">
+      <nuxt-img width="1000px"
+        class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
+        src="/stock/pencils.jpg" />
+      <img class="hidden 2xl:block w-[23rem] absolute -left-[12rem] top-[45%] opacity-[0.03]"
+        src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="min-h-[28rem] max-w-7xl mx-auto">
         <div class="xl:max-w-[38rem] max-w-[45rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen xl:mb-2 drop-shadow-text">
@@ -38,16 +40,18 @@
             Последни Публикации
           </h1>
           <article v-for="article, index in latestArticles.data" :key="index"
-            class="p-3 mb-3 bg-explo-whiteblue hover:bg-opacity-20 bg-opacity-10 rounded-xl shadow-xl">
-            <div class="text-gray-200 text-sm mb-2">
-              <span>Публикувано на {{ article.attributes.publishedAt.substr(0, 10) }}</span>
-            </div>
-            <h2 class="text-lg text-explo-darkgreen mb-2">
-              {{ truncate(article.attributes.title, 100, '...') }}
-            </h2>
-            <p class="text-white">
-              {{ truncate(article.attributes.preview, 100, '...') }}
-            </p>
+            class="p-3 mb-3 bg-explo-whiteblue hover:bg-opacity-20 bg-opacity-10 rounded-xl shadow-xl cursor-pointer">
+            <NuxtLink :to="article.attributes.slug">
+              <div class="text-gray-200 text-sm mb-2">
+                <span>Публикувано на {{ article.attributes.publishedAt.substr(0, 10) }}</span>
+              </div>
+              <h2 class="text-lg text-explo-darkgreen mb-2">
+                {{ truncate(article.attributes.title, 100, '...') }}
+              </h2>
+              <p class="text-white">
+                {{ truncate(article.attributes.preview, 100, '...') }}
+              </p>
+            </NuxtLink>
           </article>
         </div>
       </aside>
@@ -67,8 +71,8 @@ const { data: currentArticle } = await useAsyncData(
   () => findOne('articles', route.params.slug)
 )
 
-if (!currentArticle.value || !currentArticle.value.data){
-  throw createError({ statusCode: 404, statusMessage: 'Article not found'})
+if (!currentArticle.value || !currentArticle.value.data) {
+  throw createError({ statusCode: 404, statusMessage: 'Article not found' })
 }
 
 const renderedMarkdown = computed(() => {
