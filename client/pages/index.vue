@@ -13,7 +13,7 @@
         src="/svg/blobL-layer2.svg">
       <div
         class="relative lg:right-8 z-10 xl:w-[35%] lg:w-[40%] flex flex-col justify-center p-2 pl-4 lg:text-left text-left max-w-4xl mx-auto">
-        <h1 class="text-explo-@/assets/artworkdarkgreen font-medium 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">{{ $t("hero_title")
+        <h1 class="text-explo-darkgreen font-medium 2xl:text-5xl text-4xl mt-56 mb-8 drop-shadow-text">{{ $t("hero_title")
         }}</h1>
         <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">{{ $t("hero_subtitle") }}</h2>
         <div class="flex flex-wrap justify-center gap-8 mt-10 font-medium">

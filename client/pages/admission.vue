@@ -32,12 +32,13 @@
     <!-- Content -->
     <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen bg-[url('/stock/kids-stairs.jpg')] ">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-4">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background rounded-full text-6xl drop-shadow-sm">
             1
           </div>
         </div>
+        <div class="mx-auto my-6 w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
         <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
           Среща
         </h1>
@@ -46,12 +47,13 @@
         </p>
       </article>
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-4">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background rounded-full text-6xl drop-shadow-sm">
             2
           </div>
         </div>
+        <div class="mx-auto my-6 w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
         <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
           Пробна седмица
         </h1>
@@ -60,12 +62,13 @@
         </p>
       </article>
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-4">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background rounded-full text-6xl drop-shadow-sm">
             3
           </div>
         </div>
+        <div class="mx-auto my-6 w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
         <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
           Записване
         </h1>
