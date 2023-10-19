@@ -30,12 +30,51 @@
     </header>
     <div class="mx-auto my-24 w-56 h-2 bg-explo-lightblue rounded-2xl" />
     <!-- Content -->
-    <section class="mx-auto mt-28 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
-      <div class="flex flex-col max-w-lg mb-8">
-        <h1 class="text-3xl font-medium text-explo-darkgreen mb-2">
-          Процесът на прием
+    <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
+      <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen bg-[url('/stock/kids-stairs.jpg')] ">
+          <div
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            1
+          </div>
+        </div>
+        <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
+          Среща
         </h1>
-      </div>
+        <p class="text-white mb-6">
+          Организираме среща с детето и родителите. По време на срещата ще Ви представим нашата методика на работа и ще отговорим на всички Ваши въпроси.
+        </p>
+      </article>
+      <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+          <div
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            2
+          </div>
+        </div>
+        <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
+          Пробна седмица
+        </h1>
+        <p class="text-white mb-6">
+          Повреме на пробната седмица, детето ще има възможност да се запознае с учителите и другите деца, както и да се присъедини към ежедневните занимания.
+        </p>
+      </article>
+      <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+          <div
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full text-6xl">
+            3
+          </div>
+        </div>
+        <h1 class="text-xl text-explo-darkgreen font-medium mt-8 mb-5">
+          Записване
+        </h1>
+        <p class="text-white mb-6">
+          След пробната седмица, детето може да бъде записано в училището.
+        </p>
+      </article>
+    </section>
+    <section class="mx-auto mt-28 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
       <div class="flex flex-col max-w-lg mb-8">
         <h1 class="text-3xl font-medium text-explo-darkgreen mb-4">
           Такси
