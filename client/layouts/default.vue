@@ -6,7 +6,7 @@
     <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0">
       <!-- Default Variant -->
       <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-7xl mx-auto px-6">
-        <div class="bg-explo-darkercard border-explo-darkcard border-b-12 h-6 w-full rounded-b-2xl shadow-2xl" />
+        <div class="bg-explo-darkercard border-explo-darkcard border-b-[10px] h-4 w-full rounded-b-2xl shadow-2xl relative z-0" />
         <div class="flex flex-row">
           <ul
             class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
