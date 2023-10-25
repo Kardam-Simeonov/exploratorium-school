@@ -1,5 +1,5 @@
 <template>
-  <div class="relative 1xl:pt-80 pt-56">
+  <div class="relative 1xl:pt-[21rem] pt-56">
     <nuxt-img width="700px"
       :placeholder="[4, 3]"
       format="webp"

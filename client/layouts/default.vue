@@ -2,18 +2,18 @@
   <div>
     <!-- Navigation -->
     <div
-      class="hidden xl:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-64 w-full" />
-    <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0">
+      class="hidden xl:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-72 w-full" />
+    <nav ref="nav" class="lg:h-48 h-36 animate-fade-in absolute z-50 top-0 left-0 right-0 ">
       <!-- Default Variant -->
-      <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-7xl mx-auto px-6">
-        <div class="bg-explo-darkercard border-explo-darkcard border-b-[10px] h-4 w-full rounded-b-2xl shadow-2xl relative z-0" />
-        <div class="flex flex-row">
+      <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-7xl mx-auto px-6 relative">
+        <div class="opacity-10 bg-[#9a99cc] h-28 w-full absolute left-0 z-0 rounded-b-[3rem] shadow-lg" />
+        <div class="flex flex-row pt-3 relative">
           <ul
             class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 0">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 0 }">
                     Начало
                   </span>
@@ -55,13 +55,13 @@
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 1">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                   :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 2">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                   :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
                   Живот</span>
               </a>
@@ -80,7 +80,7 @@
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/blog')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 3">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
                     Блог
                   </span>
@@ -89,19 +89,19 @@
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 4">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                   :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Галерия</span>
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 5">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                   :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Събития</span>
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 6">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full"
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                   :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
               </a>
             </li>

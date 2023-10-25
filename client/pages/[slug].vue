@@ -1,5 +1,5 @@
 <template>
-  <div class="relative 1xl:pt-80 pt-56">
+  <div class="relative 1xl:pt-[21rem] pt-56">
     <nuxt-img width="100vw"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/pencils.jpg" />
