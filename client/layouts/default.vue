@@ -106,11 +106,11 @@
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink @mouseover="highlightIndex = 7" v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)"
-              class="p-2 px-3 rounded-full text-xl">
-              <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
-              <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" />
-            </NuxtLink>
+              <NuxtLink @mouseover="highlightIndex = 7" v-for="locale in availableLocales" :key="locale.code"
+                :to="switchLocalePath(locale.code)" class="p-2 px-3 rounded-full text-xl">
+                <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
+                <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" />
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -258,35 +258,21 @@ const availableLocales = computed(() => {
 
 const isMenuOpen = ref(false)
 const highlightIndex = ref(-1)
-const selectedIndex = ref(0)
 
 const route = useRoute()
-
-watch(route, () => {
-  highlightIndex.value = -1
-  switch (route.path) {
-    case '/':
-      selectedIndex.value = 0
-      break
-    case '/blog':
-      selectedIndex.value = 3
-      break
-    default:
-      selectedIndex.value = 3
-  }
-})
-
 const nav = ref(null)
 
 function animateNav() {
   nav.value.classList.remove('animate-fade-in')
   setTimeout(() => {
     nav.value.classList.add('animate-fade-in')
-  }, 1)
+  }, 0.3)
 }
 
 onMounted(() => {
-  watch(route, () => {
+  watch(() => route.path, () => {
+    console.log('route changed')
+    highlightIndex.value = -1
     animateNav()
   })
 })

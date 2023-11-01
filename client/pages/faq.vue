@@ -1,23 +1,20 @@
 <template>
   <div class="relative 1xl:pt-[21rem] pt-64">
-    <nuxt-img width="700px"
-      :placeholder="[4, 3]"
-      format="webp"
+    <nuxt-img width="700px" :placeholder="[4, 3]" format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
-      src="/stock/drawing.jpg" />
+      src="/stock/house.jpg" />
     <header class="relative lg:pl-12 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <nuxt-img width="1000px"
-        :placeholder="[4, 3]"
-        format="webp"
+      <nuxt-img width="1000px" :placeholder="[4, 3]" format="webp"
         class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
-        src="/stock/drawing.jpg" />
+        src="/stock/house.jpg" />
       <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto">
         <div class="max-w-[35rem] relative">
-          <h1 class="font-lobster text-left lg:text-[3.50rem] text-4xl leading-none text-explo-darkgreen mb-5 drop-shadow-text">
+          <h1
+            class="font-lobster text-left lg:text-[4rem] text-4xl leading-none text-explo-darkgreen mb-5 drop-shadow-text">
             Често Задавани Въпроси
           </h1>
           <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
@@ -29,55 +26,50 @@
       </div>
     </header>
     <div class="mx-auto my-24 w-56 h-2 bg-explo-lightblue rounded-2xl" />
-    <!-- <div class="relative pt-72">
-      <header class="relative sm:px-12 px-6">
-        <img class="lg:block hidden 1xl:w-[30rem] w-[24rem] absolute 1xl:top-[17%] top-[45%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
-        <nuxt-img class="lg:block hidden aspect-[6/5] 1xl:w-[48%] w-[55%] ml-auto absolute left-0 -right-1 bottom-[12%] object-cover object-center mask-header" 
-          width="1500px"
-          src="/stock/drawing.jpg" />
-        <nuxt-img class="lg:hidden block h-[23rem] w-full absolute -top-[55%] left-0 object-cover object-center mask-header-mobile opacity-80" 
-          width="100vw"
-          src="/stock/drawing.jpg" />
-        <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
-        <div class="1xl:min-h-[35rem] lg:min-h-[48rem] min-h-[35rem] max-w-7xl mx-auto">
-          <div class="1xl:max-w-[38rem] max-w-[30rem] relative">
-            <h1 class="font-lobster text-left lg:text-6xl text-5xl leading-none text-explo-darkgreen mb-5 drop-shadow-text">
-              Често Задавани Въпроси
-            </h1>
-            <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
-            <p class="text-xl text-explo-whiteblue leading-7">
-              Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и нашата методика на работа.
-            </p>
+    <!-- Content -->
+    <section class="mx-auto mt-28 mb-28 px-6 lg:max-w-5xl md:max-w-4xl max-w-lg">
+      <div v-for="(faq, index) in faqs" :key="index" class="bg-explo-lightblue bg-opacity-20 rounded-xl mb-4">
+        <div
+          class="bg-explo-darkpurple bg-opacity-60 p-6 text-white rounded-xl w-full flex flex-row justify-between cursor-pointer"
+          @click="toggleAnswer(index)">
+          <p class="text-explo-darkgreen font-medium text-xl drop-shadow-md">{{ faq.question }}</p>
+          <Icon class="text-3xl transition-transform duration-300" :class="{'rotate-180': faq.isAnswerVisible}" name="fa6-solid:chevron-down" />
+        </div>
+        <div class="px-10 text-white grid transition-[grid-template-rows] duration-300"
+          :class="{ 'grid-rows-[1fr]': faq.isAnswerVisible, 'grid-rows-[0fr]': !faq.isAnswerVisible }">
+          <div class="overflow-hidden">
+            <p class="py-8">{{ faq.answer }}</p>
           </div>
         </div>
-      </header>
-      <div class="absolute left-0 right-0 mx-auto w-56 h-2 bg-explo-lightblue rounded-2xl" /> -->
-      <!-- Content -->
-        <section class="mx-auto mt-28 mb-28 px-6 lg:max-w-[75rem] md:max-w-4xl max-w-lg">
-            <div class="flex flex-col max-w-lg mb-8">
-                <h1 class="text-3xl font-medium text-explo-darkgreen mb-2">
-                    Процесът на прием
-                </h1>
-            </div>
-            <div class="flex flex-col max-w-lg mb-8">
-                <h1 class="text-3xl font-medium text-explo-darkgreen mb-4">
-                    Такси
-                </h1>
-                <p class="text-base text-white mb-3">
-                    Annual tuition: For the first child in the family: $12,000<br>
-                    For the second child: $11,000<br>
-                    For additional children: $9,500<br>
-                </p>
-                <p class="text-base text-white mb-3">
-                    Enrollment may take place at any time during the school year as long as there are openings available, and is for a full year from the date of entry.
-                </p>
-                <p class="text-base text-white">
-                    The School does not discriminate on the basis of race, color, gender, or national or ethnic origin.
-                </p>
-            </div>
-        </section>
-    </div>
-  </template>
-  <script setup>
-  </script>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup>
+const faqs = ref([
+  {
+    question: 'Какво е Експлораториум Скул?',
+    answer: 'It is a place where children',
+    isAnswerVisible: false,
+  },
+  {
+    question: 'Какво е Експлораториум Скул?',
+    answer: 'Отговор на първия въпрос.',
+    isAnswerVisible: false,
+  },
+  {
+    question: 'Какво е Експлораториум Скул?',
+    answer: 'Отговор на първия въпрос.',
+    isAnswerVisible: false,
+  },
+]);
+
+const toggleAnswer = (i) => {
+  const faq = faqs.value[i];
+  if (faq) {
+    faq.isAnswerVisible = !faq.isAnswerVisible;
+  }
+};
+</script>
   

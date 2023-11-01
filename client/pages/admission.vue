@@ -1,20 +1,19 @@
 <template>
-  <div class="relative 1xl:pt-[21rem] pt-56">
-    <nuxt-img width="700px"
+  <div class="relative 1xl:pt-[21rem] pt-64">
+    <nuxt-img
+      width="700px"
       :placeholder="[4, 3]"
       format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
-      src="/stock/drawing.jpg" />
-    <header class="relative 1xl:pl-14 lg:pl-24 px-4">
-      <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
-        src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <nuxt-img width="1000px"
-        :placeholder="[4, 3]"
+      src="/stock/natureCloseup1.jpg" />
+    <header class="relative lg:pl-12 px-4">
+      <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
+      <nuxt-img 
+        width="1000px"
         format="webp"
-        class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
-        src="/stock/drawing.jpg" />
-      <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]"
-        src="@/assets/artwork/svg/blobL-layer2.svg">
+        :placeholder="[4, 3]"
+        class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/natureCloseup1.jpg" />
+      <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto">
         <div class="max-w-[35rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
@@ -22,8 +21,7 @@
           </h1>
           <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
           <p class="text-xl text-explo-whiteblue leading-7">
-            Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и
-            нашата методика на работа.
+            Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и нашата методика на работа.
           </p>
         </div>
       </div>
@@ -34,7 +32,7 @@
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
         <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/smallgroup.jpg')] bg-cover mb-6 rounded-lg">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkpurple bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
             1
           </div>
         </div>
@@ -47,9 +45,9 @@
         </p>
       </article>
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/smallgroup.jpg')] bg-cover mb-6 rounded-lg">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/groupCloseup1.JPG')] bg-cover mb-6 rounded-lg">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkpurple bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
             2
           </div>
         </div>
@@ -62,9 +60,9 @@
         </p>
       </article>
       <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/smallgroup.jpg')] bg-cover mb-6 rounded-lg">
+        <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/woodensign.jpg')] bg-cover mb-6 rounded-lg">
           <div
-            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-darkpurple bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
+            class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
             3
           </div>
         </div>

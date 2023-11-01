@@ -16,7 +16,7 @@
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen xl:mb-2 drop-shadow-text">
             Блог
           </h1>
-          <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
+          <div class="w-10 h-2 mb-8 bg-explo-darkgreen drop-shadow-text" />
           <h1 class="text-[2.5rem] mb-2 text-explo-darkgreen font-medium leading-snug">
             {{ currentArticle.data.attributes.title }}
           </h1>
