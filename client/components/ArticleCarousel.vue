@@ -32,10 +32,10 @@
     </SlideItem>
     <div class="hidden absolute lg:flex flex-row gap-5 mr-auto ml-8 2xl:top-[32rem] top-[30rem] 2xl:left-64 left-48 text-5xl">
       <button @click="previousSlide()">
-        <Icon name="fa6-solid:arrow-left-long" class="lg:mr-5 mr-8 text-explo-lightgreen cursor-pointer hover:-translate-x-1 transition-transform duration-200" />
+        <Icon name="fa6-solid:arrow-left-long" class="lg:mr-5 mr-8 text-explo-darkgreen cursor-pointer hover:-translate-x-1 transition-transform duration-200" />
       </button>
       <button @click="nextSlide()">
-        <Icon name="fa6-solid:arrow-right-long" class="text-explo-lightgreen cursor-pointer hover:translate-x-1 transition-transform duration-200" />
+        <Icon name="fa6-solid:arrow-right-long" class="text-explo-darkgreen cursor-pointer hover:translate-x-1 transition-transform duration-200" />
       </button>
     </div>
     <ul class="col-span-full lg:w-80 w-64 flex flex-row gap-5 justify-self-center mt-14">

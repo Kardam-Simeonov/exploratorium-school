@@ -11,13 +11,13 @@
         src="/stock/pencils.jpg" />
       <img class="hidden 2xl:block w-[23rem] absolute -left-[12rem] top-[45%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
-      <div class="min-h-[28rem] max-w-7xl mx-auto">
+      <div class="xl:min-h-[25rem] mb-12 max-w-7xl mx-auto">
         <div class="xl:max-w-[38rem] max-w-[45rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen xl:mb-2 drop-shadow-text">
             Блог
           </h1>
           <div class="w-10 h-2 mb-8 bg-explo-darkgreen drop-shadow-text" />
-          <h1 class="text-[2.5rem] mb-2 text-explo-darkgreen font-medium leading-snug">
+          <h1 class="1xl:text-[2.5rem] text-4xl mb-2 text-explo-darkgreen font-medium leading-snug">
             {{ currentArticle.data.attributes.title }}
           </h1>
           <div class="text-sm text-gray-300 mb-10">
