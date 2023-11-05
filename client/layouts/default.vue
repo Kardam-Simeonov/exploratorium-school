@@ -90,13 +90,13 @@
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 4">
                 <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Галерия</span>
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Събития</span>
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
               <a class="cursor-pointer" @mouseover="highlightIndex = 5">
                 <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Събития</span>
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Контакти</span>
               </a>
             </li>
             <li @mouseleave="highlightIndex = -1">
@@ -118,7 +118,7 @@
       <!-- Mobile Variant -->
       <div
         class="xl:hidden block absolute top-2 left-0 right-0 sm:w-[15rem] w-[13rem] mx-auto h-fit bg-white p-1 rounded-md shadow-lg">
-        <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
+        <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.400rem]" />
         <div class="p-2">
           <NuxtLink to="/">
             <img class="focus:outline-none" src="@/assets/artwork/logoWhite.png">
@@ -172,30 +172,39 @@
       <div class="pt-32 pb-12 flex flex-row flex-wrap justify-center gap-14">
         <NuxtLink to="/faq">
           <div
-            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-            <Icon name="fa6-solid:comments" class="text-4xl" />
+            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+            <div
+              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+              <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
+            </div>
             <p class="text-xl font-medium">
               Въпроси
             </p>
           </div>
         </NuxtLink>
-        <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
+        <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
         <NuxtLink to="/admission">
           <div
-            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-            <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
+            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+            <div
+              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+              <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
+            </div>
             <p class="text-xl font-medium">
               Прием
             </p>
           </div>
         </NuxtLink>
-        <div class="md:block hidden h-14 w-[0.10rem] bg-explo-darkercard my-auto" />
+        <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
         <NuxtLink to="/give">
           <div
-            class="flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer hover:-translate-y-1 transition-transform duration-200">
-            <Icon name="fa6-solid:hand-holding-heart" class="text-4xl" />
+            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+            <div
+                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                <Icon name="fa6-solid:phone" class="2xl:text-4xl text-3xl" />
+              </div>
             <p class="text-xl font-medium">
-              Подкрепа
+              Контакти
             </p>
           </div>
         </NuxtLink>

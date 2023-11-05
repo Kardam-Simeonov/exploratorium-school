@@ -13,7 +13,7 @@
         format="webp"
         :placeholder="[4, 3]"
         class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/pencils.jpg" />
-      <img class="2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
+      <img class="xl:block hidden 2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto animate-fade-down">
         <div class="max-w-[35rem] relative">
           <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] leading-none text-explo-darkgreen mb-5 drop-shadow-text">
@@ -36,7 +36,7 @@
         class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl"
       >
         <nuxt-img class="w-full aspect-[13/9] my-2 border-8 rounded-md rotate-6 hover:rotate-0 transition-transform duration-200 object-cover object-center"
-          :src="runtimeConfig.public.strapiUrl + article.attributes.banner.data.attributes.formats.small.url " />
+          :src="runtimeConfig.public.strapiUrl + article.attributes.banner.data.attributes.formats.small.url" />
         <img class="absolute top-2 left-0 right-0 mx-auto w-10" src="@/assets/artwork/bullet.png">
         <h1 class="text-xl text-explo-darkgreen font-medium mt-8">
           {{ truncate(article.attributes.title, 100, '...') }}

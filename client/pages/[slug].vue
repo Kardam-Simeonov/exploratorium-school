@@ -1,5 +1,5 @@
 <template>
-  <div class="relative 1xl:pt-[21rem] pt-56">
+  <div class="relative sm:pt-48 pt-64">
     <nuxt-img width="100vw"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/pencils.jpg" />
@@ -7,20 +7,16 @@
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img width="1000px"
-        class="xl:block hidden w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header"
+        class="xl:block hidden w-[40%] ml-auto absolute 2xl:right-6 right-0 -bottom-24 object-cover object-center mask-header"
         src="/stock/pencils.jpg" />
       <img class="hidden 2xl:block w-[23rem] absolute -left-[12rem] top-[45%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
-      <div class="xl:min-h-[25rem] mb-12 max-w-7xl mx-auto">
-        <div class="xl:max-w-[38rem] max-w-[45rem] relative">
-          <h1 class="font-lobster text-left 1xl:text-[5rem] text-[4.5rem] text-explo-darkgreen xl:mb-2 drop-shadow-text">
-            Блог
-          </h1>
-          <div class="w-10 h-2 mb-8 bg-explo-darkgreen drop-shadow-text" />
-          <h1 class="1xl:text-[2.5rem] text-4xl mb-2 text-explo-darkgreen font-medium leading-snug">
+      <div class="xl:min-h-[25rem] min-h-[15rem] mb-12 max-w-[82rem] mx-auto flex flex-col justify-center">
+        <div class="max-w-[43rem] sm:px-6 py-12 rounded-3xl sm:bg-explo-lightblue sm:bg-opacity-20 animate-fade-down drop-shadow-text"> 
+          <h1 class="1xl:text-[2.5rem] sm:text-4xl text-4xl mb-6 text-explo-darkgreen font-medium 1xl:leading-tight sm:leading-tight leading-tight">
             {{ currentArticle.data.attributes.title }}
           </h1>
-          <div class="text-sm text-gray-300 mb-10">
+          <div class="text-sm text-gray-300">
             <span>Публикувано на {{ currentArticle.data.attributes.publishedAt.substr(0, 10) }}</span>
           </div>
         </div>
@@ -56,7 +52,6 @@
         </div>
       </aside>
     </div>
-    <div class="mx-auto mt-14 w-56 h-2 bg-explo-lightblue rounded-2xl" />
   </div>
 </template>
 <script setup>
@@ -65,6 +60,15 @@ import MarkdownIt from 'markdown-it'
 const markdownIt = new MarkdownIt()
 const { find, findOne } = useStrapi()
 const route = useRoute()
+
+const { data: latestArticles } = await useAsyncData(
+  'articles',
+  () => find('articles', {
+    fields: ['title', 'preview', 'slug', 'publishedAt'],
+    _sort: 'published_at:desc',
+    _limit: 3
+  })
+)
 
 const { data: currentArticle } = await useAsyncData(
   'article',
@@ -78,13 +82,4 @@ if (!currentArticle.value || !currentArticle.value.data) {
 const renderedMarkdown = computed(() => {
   return markdownIt.render(currentArticle.value.data.attributes.content)
 })
-
-const { data: latestArticles } = await useAsyncData(
-  'articles',
-  () => find('articles', {
-    fields: ['title', 'preview', 'slug', 'publishedAt'],
-    _sort: 'published_at:desc',
-    _limit: 3
-  })
-)
 </script>
