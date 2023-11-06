@@ -39,7 +39,7 @@
               </p>
             </div>
           </NuxtLink>
-          <NuxtLink to="/give">
+          <NuxtLink to="/contact">
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
