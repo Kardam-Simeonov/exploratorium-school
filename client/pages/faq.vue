@@ -1,23 +1,26 @@
 <template>
-  <div class="relative 1xl:pt-72 pt-64">
+  <div class="relative pt-56">
     <nuxt-img width="1000px" :placeholder="[4, 3]" format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/englishTeacher.jpg" />
     <header class="relative px-4">
-      <img class="xl:block hidden 2xl:w-[22rem] w-[15rem] absolute top-[8rem] -right-[2rem] opacity-[0.025] -rotate-[150deg]"
+      <img class="xl:block hidden 2xl:w-[22rem] w-[15rem] absolute top-[15rem] -right-[4rem] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <img class="xl:block hidden 2xl:w-[40rem] w-[38rem] absolute -top-[40rem] -right-[6rem] opacity-[0.025] -rotate-[150deg]"
+      <img class="xl:block hidden 2xl:w-[40rem] w-[38rem] absolute -top-[32rem] -right-[8rem] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
-      <img class="xl:block hidden 2xl:w-[23rem] w-[20rem] absolute -left-[12rem] top-[6rem] opacity-[0.025]"
+      <img class="xl:block hidden 2xl:w-[23rem] w-[20rem] absolute -left-[12rem] top-[15rem] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">
-      <img class="xl:block hidden 2xl:w-[10rem] w-[8rem] absolute left-[5rem] -top-[7rem] opacity-[0.025]"
+      <img class="xl:block hidden 2xl:w-[12rem] w-[8rem] absolute left-[0rem] -top-[4rem] opacity-[0.03]"
         src="@/assets/artwork/svg/blob-small1.svg">
-      <img class="xl:block hidden 2xl:w-[10rem] w-[8rem] absolute left-[20rem] top-[12rem] opacity-[0.025]"
+      <img class="xl:block hidden 2xl:w-[10rem] w-[8rem] absolute left-[15rem] top-[14rem] opacity-[0.03]"
         src="@/assets/artwork/svg/blob-small2.svg">
-      <h1
-        class="w-fit py-14 px-12 mx-auto 2xl:text-5xl sm:text-4xl text-3xl text-center mb-6 text-explo-darkgreen font-medium rounded-3xl bg-explo-lightblue bg-opacity-20 animate-fade-down drop-shadow-text">
-        Често Задавани Въпроси
-      </h1>
+      <div class="mx-auto w-fit mb-6 xl:p-32 rounded-3xl relative overflow-hidden">
+        <h1
+          class="relative z-10 w-fit py-14 sm:px-12 px-8 2xl:text-5xl sm:text-4xl text-3xl text-center text-explo-darkgreen font-medium rounded-3xl bg-[#7978ba] bg-opacity-60 animate-fade-down drop-shadow-text">
+          Често Задавани Въпроси
+        </h1>
+        <nuxt-img class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/englishTeacher.jpg" />
+      </div>
     </header>
     <div class="mx-auto sm:my-24 my-20 w-56 h-2 bg-explo-lightblue rounded-2xl" />
     <!-- Content -->

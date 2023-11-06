@@ -43,7 +43,7 @@
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-                <Icon name="fa6-solid:phone" class="2xl:text-4xl text-3xl" />
+                <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
               </div>
               <p>
                 Контакти
