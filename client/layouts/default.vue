@@ -196,7 +196,7 @@
           </div>
         </NuxtLink>
         <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
-        <NuxtLink to="/give">
+        <NuxtLink to="/contact">
           <div
             class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
