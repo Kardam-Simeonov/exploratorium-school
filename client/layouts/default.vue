@@ -54,17 +54,21 @@
               </transition> -->
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer" @mouseover="highlightIndex = 1">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
-              </a>
+              <NuxtLink :to="localePath('/about-us')">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 1">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
+                </a>
+              </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer" @mouseover="highlightIndex = 2">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
-                  Живот</span>
-              </a>
+              <NuxtLink :to="localePath('/school-life')">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 2">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
+                    Живот</span>
+                </a>
+              </NuxtLink>
             </li>
           </ul>
           <div class="2xl:w-[48rem] 1xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-lg">
@@ -88,22 +92,28 @@
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer" @mouseover="highlightIndex = 4">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Събития</span>
-              </a>
+              <NuxtLink :to="localePath('/events')">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 4">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Събития</span>
+                </a>
+              </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer" @mouseover="highlightIndex = 5">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Контакти</span>
-              </a>
+              <NuxtLink :to="localePath('/contact')">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 5">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Контакти</span>
+                </a>
+              </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <a class="cursor-pointer" @mouseover="highlightIndex = 6">
-                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                  :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
-              </a>
+              <NuxtLink :to="localePath('/admission')">
+                <a class="cursor-pointer" @mouseover="highlightIndex = 6">
+                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
+                </a>
+              </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink @mouseover="highlightIndex = 7" v-for="locale in availableLocales" :key="locale.code"
@@ -127,30 +137,43 @@
       </div>
       <transition name="fade">
         <div v-show="isMenuOpen" class="fixed xl:hidden top-0 left-0 right-0 z-50">
-          <div class="bg-explo-darkcard bg-opacity-[0.96] min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
+          <div class="bg-explo-darkcard bg-opacity-[0.98] min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
             <ul class="flex flex-col text-center text-white text-2xl h-screen py-24 mb-[15%]">
               <NuxtLink to="/">
                 <li class="py-8 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
                   Начало
                 </li>
               </NuxtLink>
-              <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                За Нас
-              </li>
+              <NuxtLink :to="localePath('/about-us')">
+                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  За Нас
+                </li>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/school-life')">
               <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
                 Училищен Живот
               </li>
+              </NuxtLink>
               <NuxtLink to="/blog">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
                   Блог
                 </li>
               </NuxtLink>
-              <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                Галерия
-              </li>
-              <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                Събития
-              </li>
+              <NuxtLink :to="localePath('/events')">
+                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  Събития
+                </li>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/contact')">
+                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  Контакти
+                </li>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/admission')">
+                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                  Прием
+                </li>
+              </NuxtLink>
             </ul>
           </div>
         </div>
@@ -215,7 +238,7 @@
               <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
               <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
             </div>
-            <iframe class="1xl:h-52 lg:h-48 h-52 md:w-[50%] w-full border-0 rounded-xl" allowfullscreen="" loading="lazy"
+            <iframe class="1xl:h-52 lg:h-48 h-52 1xl:w-[55%] md:w-[50%] w-full border-0 rounded-xl" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.558937295701!2d23.301890451243047!3d42.62830932600874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8392257b0c7d%3A0xf3516e3590e5ea7b!2sul.%20%22Mavrovets%22%203%D0%90%2C%201415%20Kinotsentar%2C%20Sofia!5e0!3m2!1sen!2sbg!4v1672673142690!5m2!1sen!2sbg" />
           </div>

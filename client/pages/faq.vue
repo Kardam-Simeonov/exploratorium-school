@@ -19,7 +19,7 @@
           class="relative z-10 w-fit py-14 sm:px-12 px-8 2xl:text-5xl sm:text-4xl text-3xl text-center text-explo-darkgreen font-medium rounded-3xl bg-[#7978ba] bg-opacity-60 animate-fade-down drop-shadow-text">
           Често Задавани Въпроси
         </h1>
-        <nuxt-img class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/englishTeacher.jpg" />
+        <nuxt-img width="1200px" class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/englishTeacher.jpg" />
       </div>
     </header>
     <div class="mx-auto sm:my-24 my-20 w-56 h-2 bg-explo-lightblue rounded-2xl" />
