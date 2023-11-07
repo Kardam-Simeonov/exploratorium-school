@@ -21,7 +21,7 @@
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-                <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
+                <Icon name="fa6-solid:comments" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
                 Въпроси
@@ -32,7 +32,7 @@
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-                <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
+                <Icon name="pepicons-pop:pinpoint-filled" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
                 Прием
@@ -43,7 +43,7 @@
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-                <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
+                <Icon name="material-symbols:phone-iphone" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
                 Контакти
@@ -54,7 +54,7 @@
       </div>
     </section>
     <!-- Tiles -->
-    <section class="relative lg:mt-16 mt-4" @mousemove="parallaxMove">
+    <section class="relative lg:mt-20 mt-4" @mousemove="parallaxMove">
       <div class="relative z-40 flex justify-center gap-5">
         <div class="relative z-30 1xl:mt-36 mt-28 w-[25rem] shrink-0">
           <img src="@/assets/artwork/svg/blobL-layer1.svg"

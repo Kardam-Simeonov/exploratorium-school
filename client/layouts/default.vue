@@ -169,10 +169,9 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div class="pt-32 pb-12 flex flex-row flex-wrap justify-center gap-14">
+      <div class="pt-24 pb-12 flex flex-row flex-wrap justify-center gap-14">
         <NuxtLink to="/faq">
-          <div
-            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
               class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
               <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
@@ -184,8 +183,7 @@
         </NuxtLink>
         <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
         <NuxtLink to="/admission">
-          <div
-            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
               class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
               <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
@@ -197,12 +195,11 @@
         </NuxtLink>
         <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
         <NuxtLink to="/contact">
-          <div
-            class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
+          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
-                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-                <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
-              </div>
+              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+              <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
+            </div>
             <p class="text-xl font-medium">
               Контакти
             </p>
@@ -210,29 +207,24 @@
         </NuxtLink>
       </div>
       <div class="bg-explo-darkcard border-explo-darkgreen border-t-16 min-h-[14rem] rounded-t-2xl shadow-2xl">
-        <div
-          class="grid lg:grid-cols-11 grid-cols-6 gap-y-8 1xl:gap-x-5 max-w-[90rem] mx-auto py-8 lg:px-8 md:px-16 px-8">
-          <div class="1xl:col-span-2 lg:col-span-3 md:col-span-3 col-span-full flex break-words">
-            <div class="flex flex-col mr-6 w-full font-medium">
+        <div class="flex lg:flex-row flex-col gap-y-8 1xl:gap-x-5 max-w-[90rem] mx-auto py-8 lg:px-8 md:px-16 px-8">
+          <div class="flex md:flex-row flex-col gap-5 justify-end w-full">
+            <div class="flex flex-col mr-auto w-auto font-medium">
               <span class="text-2xl text-explo-whiteblue">Работно Време</span>
               <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:50</span>
               <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
               <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
             </div>
-          </div>
-          <div class="1xl:col-span-3 lg:col-span-2 md:col-span-3 col-span-full">
-            <iframe class="1xl:h-52 lg:h-48 h-52 w-full border-0 rounded-xl" allowfullscreen="" loading="lazy"
+            <iframe class="1xl:h-52 lg:h-48 h-52 md:w-[50%] w-full border-0 rounded-xl" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.558937295701!2d23.301890451243047!3d42.62830932600874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8392257b0c7d%3A0xf3516e3590e5ea7b!2sul.%20%22Mavrovets%22%203%D0%90%2C%201415%20Kinotsentar%2C%20Sofia!5e0!3m2!1sen!2sbg!4v1672673142690!5m2!1sen!2sbg" />
           </div>
-          <div class="col-span-1 mx-auto lg:block hidden">
-            <div class="h-48 w-[0.20rem] bg-explo-darklitecard" />
-          </div>
-          <div class="lg:col-span-5 col-span-full flex flex-col">
+          <div class="lg:block hidden h-48 w-[0.50rem] mx-12 bg-explo-darklitecard" />
+          <div class="flex flex-col items-start w-full">
             <p class="text-2xl font-medium text-explo-whiteblue mb-4">
               Навигация
             </p>
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-2 gap-5">
               <div class="text-xl text-explo-whiteblue">
                 <p>Начало</p>
                 <p>За нас</p>

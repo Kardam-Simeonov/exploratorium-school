@@ -19,7 +19,7 @@
           class="relative z-10 w-fit py-14 sm:px-24 px-8 2xl:text-5xl sm:text-4xl text-3xl text-center text-explo-darkgreen font-medium rounded-3xl bg-[#7978ba] bg-opacity-60 animate-fade-down drop-shadow-text">
           Свържете се с нас
         </h1>
-        <nuxt-img class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/groupCloseup4.jpg" />
+        <nuxt-img class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/groupCloseup5.jpg" />
       </div>
     </header>
     <div class="mx-auto sm:my-24 my-20 w-56 h-2 bg-explo-lightblue rounded-2xl" />
@@ -29,16 +29,16 @@
       <div class="bg-explo-lightblue bg-opacity-20 rounded-xl mb-4 sm:p-6 p-5 text-white">
         <h1 class="text-explo-darkgreen text-2xl drop-shadow-md mb-4 font-medium">Контакти</h1>
         <div class="p-2">
-          <p class="text-xl"><Icon name="fa-solid:phone-alt" class="mr-2 text-explo-lightblue mb-2" /> +359 87 918 0700</p>
-          <p class="text-lg"><Icon name="fa-solid:envelope" class="mr-2 text-explo-lightblue text-xl" /> exploratorium.school@abv.bg</p>
+          <p class="1xl:text-xl text-lg"><Icon name="fa-solid:phone-alt" class="mr-2 text-explo-lightblue mb-2" /> +359 87 918 0700</p>
+          <p class="1xl:text-lg text-base"><Icon name="fa-solid:envelope" class="mr-2 text-explo-lightblue text-xl" /> exploratorium.school@abv.bg</p>
         </div>
       </div>
       <div class="bg-explo-lightblue bg-opacity-20 rounded-xl mb-4 sm:p-6 p-5 text-white">
         <h1 class="text-explo-darkgreen text-2xl drop-shadow-md font-medium mb-4">Банкова сметка</h1>
         <div class="sm:ml-4 ml-2">
-          <p class="text-xl">Експлораториум Скул ЕООД</p>
-          <p class="text-lg">IBAN: BGXXXXXXXXXXXXXXXXXX</p>
-          <p class="text-lg">BIC: XXXXXXX</p>
+          <p class="1xl:text-xl text-lg">Експлораториум Скул ЕООД</p>
+          <p class="1xl:text-lg text-base">IBAN: BGXXXXXXXXXXXXXXXXXX</p>
+          <p class="1xl:text-lg text-base">BIC: XXXXXXX</p>
         </div>
       </div>
     </section>

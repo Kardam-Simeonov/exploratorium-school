@@ -30,7 +30,7 @@
         <div
           class="relative bg-explo-lightblue hover:bg-opacity-30 bg-opacity-20 p-6 text-white rounded-xl w-full flex flex-row justify-between cursor-pointer"
           @click="toggleAnswer(index)">
-          <p class="text-explo-darkgreen font-medium sm:text-xl text-lg drop-shadow-md w-[80%]">{{ faq.question }}</p>
+          <p class="text-explo-darkgreen font-medium sm:text-xl text-lg drop-shadow-md max-w-[80%]">{{ faq.question }}</p>
           <Icon class="text-3xl transition-transform duration-300" :class="{ 'rotate-180': faq.isAnswerVisible }"
             name="fa6-solid:chevron-down" />
         </div>
