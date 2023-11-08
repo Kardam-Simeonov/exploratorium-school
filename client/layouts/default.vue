@@ -249,15 +249,15 @@
             </p>
             <div class="grid grid-cols-2 gap-5">
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/"><p class="mb-2 cursor-pointer underline">Начало</p></NuxtLink>
-                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer underline">За нас</p></NuxtLink>
-                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight underline">Училищен Живот</p></NuxtLink>
-                <NuxtLink to="/blog"><p class="cursor-pointer underline">Блог</p></NuxtLink>
+                <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Начало</p></NuxtLink>
+                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">За нас</p></NuxtLink>
+                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight hover:underline">Училищен Живот</p></NuxtLink>
+                <NuxtLink to="/blog"><p class="cursor-pointer hover:underline">Блог</p></NuxtLink>
               </div>
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/events"><p class="mb-2 cursor-pointer underline">Събития</p></NuxtLink>
-                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer underline">Контакти</p></NuxtLink>
-                <NuxtLink to="/admission"><p class="cursor-pointer underline">Прием</p></NuxtLink>
+                <NuxtLink to="/events"><p class="mb-2 cursor-pointer hover:underline">Събития</p></NuxtLink>
+                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Контакти</p></NuxtLink>
+                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Прием</p></NuxtLink>
               </div>
             </div>
           </div>
