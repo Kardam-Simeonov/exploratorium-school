@@ -249,14 +249,15 @@
             </p>
             <div class="grid grid-cols-2 gap-5">
               <div class="text-xl text-explo-whiteblue">
-                <p>Начало</p>
-                <p>За нас</p>
-                <p>Училищен Живот</p>
+                <NuxtLink to="/"><p class="mb-2 cursor-pointer underline">Начало</p></NuxtLink>
+                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer underline">За нас</p></NuxtLink>
+                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight underline">Училищен Живот</p></NuxtLink>
+                <NuxtLink to="/blog"><p class="cursor-pointer underline">Блог</p></NuxtLink>
               </div>
               <div class="text-xl text-explo-whiteblue">
-                <p>Блог</p>
-                <p>Галерия</p>
-                <p>Прием</p>
+                <NuxtLink to="/events"><p class="mb-2 cursor-pointer underline">Събития</p></NuxtLink>
+                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer underline">Контакти</p></NuxtLink>
+                <NuxtLink to="/admission"><p class="cursor-pointer underline">Прием</p></NuxtLink>
               </div>
             </div>
           </div>
