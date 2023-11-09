@@ -19,39 +19,6 @@
                   </span>
                 </a>
               </NuxtLink>
-              <!-- <transition name="fade-down">
-                <div
-                  v-show="highlightIndex == 0"
-                  class="absolute top-20 left-0 z-50 flex flex-row gap-10 w-[160%] bg-explo-darklitecard border-b-8 border-explo-darkercard p-8 rounded-md"
-                >
-                  <div class="w-2/3 flex flex-col gap-5">
-                    <div class="h-64 rounded-md" /> - TODO: Add Image background, the fucking postcss breaks at buildtime, because it reads the image path of this comment - WTFFF????
-                    <h1 class="text-white font-thin text-lg">
-                      Един ден в Експлораториум протича според собствения часовник на детето
-                    </h1>
-                  </div>
-                  <ul class="w-1/3 flex flex-col content-center text-explo-whiteblue 1xl:text-lg text-base">
-                    <li
-                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
-                    >
-                      За Нас
-                    </li>
-                    <li
-                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
-                    >
-                      Последни Публикации
-                    </li>
-                    <li
-                      class="h-fit py-2 border-b-2 border-explo-darkcard cursor-pointer hover:text-explo-lightgreen"
-                    >
-                      Какво е ново в Експлораториум?
-                    </li>
-                    <li class="h-fit py-2 cursor-pointer hover:text-explo-lightgreen">
-                      Публикации от Фейсбук
-                    </li>
-                  </ul>
-                </div>
-              </transition> -->
             </li>
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/about-us')">
