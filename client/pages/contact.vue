@@ -2,7 +2,7 @@
    <div class="relative pt-56">
     <nuxt-img width="1000px" :placeholder="[4, 3]" format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
-      src="/stock/groupCloseup6.jpg" />
+      src="/stock/groupCloseup6.jpeg" />
     <header class="relative px-4">
       <img class="xl:block hidden 2xl:w-[22rem] w-[15rem] absolute top-[15rem] -right-[4rem] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
@@ -19,7 +19,7 @@
           class="relative z-10 w-fit py-14 sm:px-24 px-8 2xl:text-5xl sm:text-4xl text-3xl text-center text-explo-darkgreen font-medium rounded-3xl bg-[#7978ba] bg-opacity-60 animate-fade-down drop-shadow-text">
           Свържете се с нас
         </h1>
-        <nuxt-img width="1300px" class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/groupCloseup4.jpg" />
+        <nuxt-img width="1300px" class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/groupCloseup4.jpeg" />
       </div>
     </header>
     <div class="mx-auto sm:my-24 my-20 w-56 h-2 bg-explo-lightblue rounded-2xl" />

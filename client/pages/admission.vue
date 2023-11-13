@@ -5,14 +5,14 @@
       :placeholder="[4, 3]"
       format="webp"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
-      src="/stock/natureCloseup1.jpg" />
+      src="/stock/natureCloseup1.jpeg" />
     <header class="relative lg:pl-12 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img 
         width="1200px"
         format="webp"
         :placeholder="[4, 3]"
-        class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/natureCloseup1.jpg" />
+        class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/natureCloseup1.jpeg" />
       <img class="xl:block hidden 2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
       <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto animate-fade-down">
         <div class="max-w-[35rem] relative">
