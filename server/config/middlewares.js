@@ -9,10 +9,10 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'], // Add allowed origins here
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization'],
-      credentials: true,
+      enabled: true,
+      origin: ['*'], // Allow all origins (for debugging)
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+      headers: '*',
     },
   },
   'strapi::poweredBy',
