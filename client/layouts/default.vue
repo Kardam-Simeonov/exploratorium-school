@@ -15,7 +15,7 @@
                 <a class="cursor-pointer" @mouseover="highlightIndex = 0">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 0 }">
-                    Начало
+                    Home
                   </span>
                 </a>
               </NuxtLink>
@@ -24,7 +24,7 @@
               <NuxtLink :to="localePath('/about-us')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 1">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За Нас</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">About us</span>
                 </a>
               </NuxtLink>
             </li>
@@ -32,8 +32,7 @@
               <NuxtLink :to="localePath('/school-life')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 2">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Училищен
-                    Живот</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">School Life</span>
                 </a>
               </NuxtLink>
             </li>
@@ -53,7 +52,7 @@
                 <a class="cursor-pointer" @mouseover="highlightIndex = 3">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
-                    Блог
+                    Blog
                   </span>
                 </a>
               </NuxtLink>
@@ -62,7 +61,7 @@
               <NuxtLink :to="localePath('/events')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 4">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Събития</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Events</span>
                 </a>
               </NuxtLink>
             </li>
@@ -70,7 +69,7 @@
               <NuxtLink :to="localePath('/contact')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 5">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Контакти</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Contact</span>
                 </a>
               </NuxtLink>
             </li>
@@ -78,7 +77,7 @@
               <NuxtLink :to="localePath('/admission')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 6">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Прием</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Admissions</span>
                 </a>
               </NuxtLink>
             </li>
@@ -108,37 +107,37 @@
             <ul class="flex flex-col text-center text-white text-2xl h-screen py-24 mb-[15%]">
               <NuxtLink to="/">
                 <li class="py-8 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Начало
+                  Home
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/about-us')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  За Нас
+                  About Us
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/school-life')">
               <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                Училищен Живот
+                School Life
               </li>
               </NuxtLink>
               <NuxtLink to="/blog">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Блог
+                  Blog
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/events')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Събития
+                  Events
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/contact')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Контакти
+                  Contact
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/admission')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Прием
+                  Admissions
                 </li>
               </NuxtLink>
             </ul>
@@ -167,7 +166,7 @@
               <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl font-medium">
-              Въпроси
+              Questions
             </p>
           </div>
         </NuxtLink>
@@ -179,7 +178,7 @@
               <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl font-medium">
-              Прием
+              Admissions
             </p>
           </div>
         </NuxtLink>
@@ -191,7 +190,7 @@
               <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl font-medium">
-              Контакти
+              Contact
             </p>
           </div>
         </NuxtLink>
@@ -200,8 +199,8 @@
         <div class="flex lg:flex-row flex-col gap-y-8 1xl:gap-x-5 max-w-[90rem] mx-auto py-8 lg:px-8 md:px-16 px-8">
           <div class="flex md:flex-row flex-col gap-5 justify-end w-full">
             <div class="flex flex-col mr-auto w-auto font-medium">
-              <span class="text-2xl text-explo-whiteblue">Работно Време</span>
-              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:50</span>
+              <span class="text-2xl text-explo-whiteblue">Work Days</span>
+              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Monday - Friday<br>8:30 - 17:50</span>
               <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
               <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
             </div>
@@ -212,19 +211,19 @@
           <div class="lg:block hidden h-48 w-[0.50rem] mx-12 bg-explo-darklitecard" />
           <div class="flex flex-col items-start w-full">
             <p class="text-2xl font-medium text-explo-whiteblue mb-4">
-              Навигация
+              Navigation
             </p>
             <div class="grid grid-cols-2 gap-5">
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Начало</p></NuxtLink>
-                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">За нас</p></NuxtLink>
-                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight hover:underline">Училищен Живот</p></NuxtLink>
-                <NuxtLink to="/blog"><p class="cursor-pointer hover:underline">Блог</p></NuxtLink>
+                <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Home</p></NuxtLink>
+                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">About Us</p></NuxtLink>
+                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight hover:underline">School Life</p></NuxtLink>
+                <NuxtLink to="/blog"><p class="cursor-pointer hover:underline">Blog</p></NuxtLink>
               </div>
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/events"><p class="mb-2 cursor-pointer hover:underline">Събития</p></NuxtLink>
-                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Контакти</p></NuxtLink>
-                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Прием</p></NuxtLink>
+                <NuxtLink to="/events"><p class="mb-2 cursor-pointer hover:underline">Events</p></NuxtLink>
+                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Contact</p></NuxtLink>
+                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Admissions</p></NuxtLink>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <nuxt-img
-      class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-right opacity-80"
+      class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-top opacity-80"
       format="webp" width="1000" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
     <div
       class="hidden xl:hidden lg:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-80 w-full" />
@@ -25,7 +25,7 @@
                 <Icon name="fa6-solid:comments" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
-                Въпроси
+                Questions
               </p>
             </div>
           </NuxtLink>
@@ -36,7 +36,7 @@
                 <Icon name="pepicons-pop:pinpoint-filled" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
-                Прием
+                Admissions
               </p>
             </div>
           </NuxtLink>
@@ -47,7 +47,7 @@
                 <Icon name="material-symbols:phone-iphone" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
-                Контакти
+                Contact
               </p>
             </div>
           </NuxtLink>
@@ -72,7 +72,7 @@
             class="p-1 2xl:w-[15rem] 1xl:w-52 w-[11rem] ml-auto rounded-md rounded-br-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
               class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
-              Игра
+              Play
             </div>
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['bonfire.jpg', 'woodensign.jpg', 'treebridge.jpg']"
@@ -84,7 +84,7 @@
             class="p-1 2xl:w-[17rem] 1xl:w-56 w-48 ml-auto rounded-md rounded-br-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
               class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
-              <div>Групова работа</div>
+              <div>Teamwork</div>
             </div>
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['group4.jpg', 'kayak.jpg', 'group2.jpg']"
@@ -117,7 +117,7 @@
             class="p-1 2xl:w-[17rem] 1xl:w-56 w-48 mr-auto rounded-md rounded-bl-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
               class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
-              Откривателство
+              Discovery
             </div>
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['group2.jpg', 'kayak.jpg', 'group4.jpg',]"
@@ -129,7 +129,7 @@
             class="p-1 2xl:w-[15rem] 1xl:w-52 w-[11rem] mr-auto rounded-md rounded-bl-[4rem] border-b-8 border-explo-darkpurple bg-explo-whiteblue shadow-2xl">
             <div
               class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] text-white text-sm font-semibold">
-              Природа
+              Nature
             </div>
             <div class="p-2 overflow-hidden">
               <ImageCarousel class="relative" :carousel-slides="['treebridge.jpg', 'bonfire.jpg', 'drawingonterrace.jpg']"
@@ -181,7 +181,7 @@
         <NuxtLink to="/about-us">
           <button
             class="bg-explo-darkcard text-explo-whiteblue text-lg rounded-lg border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-3 shadow-lg">
-            Научете повече
+            Learn more
             <Icon name="fa6-solid:chevron-right" />
           </button>
         </NuxtLink>

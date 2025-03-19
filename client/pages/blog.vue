@@ -21,7 +21,7 @@
           </h1>
           <div class="w-10 h-2 mb-16 bg-explo-darkgreen drop-shadow-text" />
           <p class="text-xl text-explo-whiteblue leading-7">
-            Благодарим Ви, че посетихте страницата на нашия блог! В него ще откриете статии и мнения за образованието и нашата методика на работа.
+            Thank you for visting our blog page! Here you will find opinions on education and our methodology.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@
           {{ truncate(article.attributes.title, 100, '...') }}
         </h1>
         <div class="text-gray-200 text-xs mt-2 mb-4">
-          <span>Публикувано на {{ article.attributes.publishedAt.substr(0, 10) }}</span>
+          <span>Published on {{ article.attributes.publishedAt.substr(0, 10) }}</span>
         </div>
         <p class="text-white mb-6">
           {{ truncate(article.attributes.preview, 100, '...') }}
@@ -51,7 +51,7 @@
           <button
             class="bg-explo-darkcard text-explo-whiteblue text-md rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg"
           >
-            Научете Повече
+            Learn More
             <Icon name="fa6-solid:chevron-right" />
           </button>
         </NuxtLink>
