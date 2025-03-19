@@ -9,7 +9,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:1337'], // Add allowed origins here
+      origin: ['*'], // Add allowed origins here
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
       credentials: true,
