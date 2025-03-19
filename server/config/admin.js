@@ -7,4 +7,9 @@ module.exports = ({ env }) => ({
   apiToken: {
     salt: env('API_TOKEN_SALT', crypto.randomBytes(16).toString('hex')),
   },
+  transfer: {
+    token: {
+      salt: env('TRANSFER_TOKEN_SALT', crypto.randomBytes(16).toString('hex')),
+    },
+  },
 });
