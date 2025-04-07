@@ -2,12 +2,14 @@
   <div class="relative sm:pt-48 pt-64">
     <nuxt-img width="100vw"
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
+      preload
       src="/stock/pencils.jpg" />
     <header class="relative lg:pl-12 px-4">
       <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <nuxt-img width="1000px"
         class="xl:block hidden w-[40%] ml-auto absolute 2xl:right-6 right-0 -bottom-24 object-cover object-center mask-header"
+        preload
         src="/stock/pencils.jpg" />
       <img class="hidden 2xl:block w-[23rem] absolute -left-[12rem] top-[45%] opacity-[0.03]"
         src="@/assets/artwork/svg/blobL-layer2.svg">

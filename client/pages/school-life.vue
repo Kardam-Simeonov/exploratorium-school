@@ -4,6 +4,7 @@
         width="1400px"
         :placeholder="[4, 3]"
         format="webp"
+        preload
         class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
         src="/stock/groupCloseup5.jpeg" />
       <header class="relative lg:pl-12 px-4">
