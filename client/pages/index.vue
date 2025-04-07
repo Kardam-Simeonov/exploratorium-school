@@ -7,9 +7,9 @@
       class="hidden xl:hidden lg:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-80 w-full" />
     <section
       class="lg:max-h-[55rem] lg:min-h-[40rem] xl:h-[90vh] lg:h-[40vh] xl:pt-36 lg:pt-28 pt-56 mb-12 relative flex">
-      <nuxt-img
+      <!-- <nuxt-img
         class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
-        format="webp" width="1920px" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
+        format="webp" width="1920px" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" /> -->
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]"
         src="../assets/artwork/svg/blobL-layer2.svg">
       <div
