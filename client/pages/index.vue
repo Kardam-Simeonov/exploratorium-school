@@ -2,14 +2,14 @@
   <div class="relative">
     <nuxt-img
       class="lg:hidden block h-[28rem] w-full absolute top-0 left-0 mask-fadeoff object-cover object-top opacity-80"
-      format="webp" fetchPriority="high" width="1000" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
+      format="webp" preload fetchPriority="high" width="1000" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
     <div
       class="hidden xl:hidden lg:block absolute top-0 z-10 bg-gradient-to-b from-explo-darkpurple via-explo-darkpurple to-transparent h-80 w-full" />
     <section
       class="lg:max-h-[55rem] lg:min-h-[40rem] xl:h-[90vh] lg:h-[40vh] xl:pt-36 lg:pt-28 pt-56 mb-12 relative flex">
       <nuxt-img
         class="hidden lg:block w-[60%] relative 1xl:-left-20 -left-20 mask-hero object-cover object-right opacity-90"
-        format="webp" width="1920px" fetchPriority="high" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
+        format="webp" width="1920px" preload  fetchPriority="high" alt="Kids sitting on stairs" :placeholder="[8, 6]" src="/stock/kids-stairs.jpg" />
       <img class="lg:block hidden 2xl:w-[28rem] w-[23rem] absolute -right-4 top-[25rem] opacity-[0.04]"
         src="../assets/artwork/svg/blobL-layer2.svg">
       <div
@@ -100,8 +100,8 @@
             style="box-shadow: -400px 0px 300px rgba(238, 244, 249,.3), 400px 0px 300px rgba(238, 244, 249,.3)">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="relative m-2">
-              <nuxt-img width="400px" fetchPriority="high" src="/stock/IconBaseTransparentTop.png" />
-              <nuxt-img class="relative z-50" fetchPriority="high" width="400px" src="/stock/IconBaseTransparentBottom.png" />
+              <nuxt-img width="400px" fetchPriority="high" preload src="/stock/IconBaseTransparentTop.png" />
+              <nuxt-img class="relative z-50" preload width="400px" src="/stock/IconBaseTransparentBottom.png" />
               <nuxt-img class="absolute top-[6%] left-[47%] w-[65%] parallax transition-transform ease-linear z-40"
                 width="250px" src="/stock/girlPainter.png" data-speed="1" style="transform: translateX(6px)" />
               <nuxt-img
