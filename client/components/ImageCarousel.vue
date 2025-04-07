@@ -4,6 +4,7 @@
       <nuxt-img
         v-show="currentSlide === index + 1"
         format="webp"
+        loading="lazy"
         :width="imageWidth"
         :src="'/stock/' + slide"
         :class="{ 'rounded-bl-[3rem]': isRoundBottomLeft, 'rounded-br-[3rem]': isRoundBottomRight }"
