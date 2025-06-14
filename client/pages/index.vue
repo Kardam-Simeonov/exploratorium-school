@@ -219,7 +219,7 @@
           <div class="w-10 h-2 bg-explo-darkgreen ml-1" />
         </div>
         <div class="col-span-full">
-          <CuratorFeed />
+          <!-- <CuratorFeed /> -->
         </div>
       </div>
     </section>
@@ -227,10 +227,16 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 const { find } = useStrapi()
-const { data: articles } = await useAsyncData(
-  'articles',
-  () => find('articles', { fields: ['title', 'preview', 'slug'], populate: ['banner'] }))
 
+const articles = ref([])
 
+onMounted(async () => {
+  const res = await find('articles', {
+    fields: ['title', 'preview', 'slug'],
+    populate: ['banner']
+  })
+  articles.value = res
+})
 </script>

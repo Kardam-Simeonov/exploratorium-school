@@ -57,31 +57,45 @@
   </div>
 </template>
 <script setup>
+import { ref, onMounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
 import MarkdownIt from 'markdown-it'
 
 const markdownIt = new MarkdownIt()
 const { find, findOne } = useStrapi()
 const route = useRoute()
 
-const { data: latestArticles } = await useAsyncData(
-  'articles',
-  () => find('articles', {
-    fields: ['title', 'preview', 'slug', 'publishedAt'],
-    _sort: 'published_at:desc',
-    _limit: 3
-  })
-)
+const latestArticles = ref([])
+const currentArticle = ref(null)
+const notFound = ref(false)
 
-const { data: currentArticle } = await useAsyncData(
-  'article',
-  () => findOne('articles', route.params.slug)
-)
+onMounted(async () => {
+  try {
+    // Fetch latest articles
+    const resLatest = await find('articles', {
+      fields: ['title', 'preview', 'slug', 'publishedAt'],
+      sort: ['publishedAt:desc'], // 👈 Strapi v4 syntax
+      pagination: { limit: 3 }     // 👈 Strapi v4 syntax
+    })
+    latestArticles.value = resLatest?.data || []
 
-if (!currentArticle.value || !currentArticle.value.data) {
-  throw createError({ statusCode: 404, statusMessage: 'Article not found' })
-}
+    // Fetch current article by slug
+    const resCurrent = await findOne('articles', route.params.slug)
+    if (!resCurrent?.data) {
+      notFound.value = true
+      return
+    }
+    currentArticle.value = resCurrent
+  } catch (err) {
+    console.error('Fetch error:', err)
+    notFound.value = true
+  }
+})
 
+// Markdown rendering
 const renderedMarkdown = computed(() => {
-  return markdownIt.render(currentArticle.value.data.attributes.content)
+  return currentArticle.value?.data?.attributes?.content
+    ? markdownIt.render(currentArticle.value.data.attributes.content)
+    : ''
 })
 </script>

@@ -62,10 +62,22 @@
   </div>
 </template>
 <script setup>
+import { ref, onMounted } from 'vue'
+
 const runtimeConfig = useRuntimeConfig()
 const { find } = useStrapi()
 
-const { data: articles } = await useAsyncData(
-  'articles',
-  () => find('articles', { fields: ['title', 'preview', 'slug', 'publishedAt'], populate: ['banner'] }))
+const articles = ref([])
+
+onMounted(async () => {
+  try {
+    const res = await find('articles', {
+      fields: ['title', 'preview', 'slug', 'publishedAt'],
+      populate: ['banner']
+    })
+    articles.value = res?.data || []
+  } catch (error) {
+    console.error('Failed to fetch articles:', error)
+  }
+})
 </script>

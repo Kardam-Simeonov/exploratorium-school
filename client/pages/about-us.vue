@@ -47,7 +47,7 @@
           </p>
         </article>
         <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/groupCloseup1.JPG')] bg-cover mb-6 rounded-lg">
+          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-cover mb-6 rounded-lg">
             <div
               class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
               2
