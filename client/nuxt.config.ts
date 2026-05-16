@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   runtimeConfig: {
     public: {
       strapiUrl: process.env.STRAPI_URL || 'http://127.0.0.1:1337'

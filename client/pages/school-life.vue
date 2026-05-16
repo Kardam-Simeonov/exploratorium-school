@@ -1,18 +1,11 @@
 <template>
     <div class="relative 1xl:pt-[21rem] pt-64">
-      <nuxt-img
-        width="1400px"
-        :placeholder="[4, 3]"
-        format="webp"
-        preload
+      <img
         class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
         src="/stock/groupCloseup5.jpeg" />
       <header class="relative lg:pl-12 px-4">
         <img class="xl:block hidden w-[30rem] absolute 1xl:top-[17%] top-[25%] left-[80%] opacity-[0.03] -rotate-[150deg]" src="@/assets/artwork/svg/blobHouse-layer2.svg">
-        <nuxt-img 
-          width="1900px" 
-          format="webp"
-          :placeholder="[4, 3]"
+        <img 
           class="xl:block hidden aspect-[5/4] w-[48%] ml-auto absolute left-0 -right-1 bottom-0 object-cover object-center mask-header" src="/stock/groupCloseup5.jpeg" />
         <img class="xl:block hidden 2xl:w-[28rem] w-[23rem] absolute -left-[12rem] 2xl:top-[45%] top-[60%] opacity-[0.03]" src="@/assets/artwork/svg/blobL-layer2.svg">
         <div class="xl:min-h-[28rem] min-h-[20rem] max-w-7xl mx-auto animate-fade-down">
@@ -95,7 +88,7 @@
           </p>
         </div>
         <div class="flex justify-center lg:col-span-6 col-span-full lg:order-2 order-1">
-          <nuxt-img src="/stock/drawingonterrace.jpg"
+          <img src="/stock/drawingonterrace.jpg"
             class="w-[35rem] mask-circle lg:mb-0 mb-8" />
         </div>
       </section>

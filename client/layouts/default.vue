@@ -15,7 +15,7 @@
                 <a class="cursor-pointer" @mouseover="highlightIndex = 0">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 0 }">
-                    Home
+                    Начало
                   </span>
                 </a>
               </NuxtLink>
@@ -24,15 +24,15 @@
               <NuxtLink :to="localePath('/about-us')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 1">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">About us</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За нас</span>
                 </a>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/school-life')">
+              <NuxtLink :to="localePath('/summer-school')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 2">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">School Life</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Лятно училище</span>
                 </a>
               </NuxtLink>
             </li>
@@ -48,41 +48,25 @@
           <ul
             class="relative flex flex-row justify-start pt-8 pl-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/blog')">
+              <NuxtLink :to="localePath('/contact')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 3">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
                     :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
-                    Blog
+                    Контакти
                   </span>
                 </a>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/events')">
+              <NuxtLink :to="localePath('/admission')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 4">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Events</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Прием</span>
                 </a>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/contact')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 5">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">Contact</span>
-                </a>
-              </NuxtLink>
-            </li>
-            <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/admission')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 6">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 6 }">Admissions</span>
-                </a>
-              </NuxtLink>
-            </li>
-            <li @mouseleave="highlightIndex = -1">
-              <NuxtLink @mouseover="highlightIndex = 7" v-for="locale in availableLocales" :key="locale.code"
+              <NuxtLink @mouseover="highlightIndex = 5" v-for="locale in availableLocales" :key="locale.code"
                 :to="switchLocalePath(locale.code)" class="p-2 px-3 rounded-full text-xl">
                 <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
                 <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" />
@@ -107,37 +91,27 @@
             <ul class="flex flex-col text-center text-white text-2xl h-screen py-24 mb-[15%]">
               <NuxtLink to="/">
                 <li class="py-8 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Home
+                  Начало
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/about-us')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  About Us
+                  За нас
                 </li>
               </NuxtLink>
-              <NuxtLink :to="localePath('/school-life')">
+              <NuxtLink :to="localePath('/summer-school')">
               <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                School Life
+                Лятно училище
               </li>
-              </NuxtLink>
-              <NuxtLink to="/blog">
-                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Blog
-                </li>
-              </NuxtLink>
-              <NuxtLink :to="localePath('/events')">
-                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Events
-                </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/contact')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Contact
+                  Контакти
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/admission')">
                 <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Admissions
+                  Прием
                 </li>
               </NuxtLink>
             </ul>
@@ -159,14 +133,14 @@
     <!-- Footer -->
     <footer>
       <div class="pt-24 pb-12 flex flex-row flex-wrap justify-center gap-14">
-        <NuxtLink to="/faq">
+        <NuxtLink to="/summer-school">
           <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
               class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="fa6-solid:comments" class="2xl:text-4xl text-3xl" />
+              <Icon name="mdi:white-balance-sunny" class="2xl:text-4xl text-3xl" />
             </div>
-            <p class="text-xl font-medium">
-              Questions
+            <p class="text-xl text-center font-medium">
+              Лятно<br>училище
             </p>
           </div>
         </NuxtLink>
@@ -178,7 +152,7 @@
               <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl font-medium">
-              Admissions
+              Прием
             </p>
           </div>
         </NuxtLink>
@@ -187,10 +161,10 @@
           <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
               class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="material-symbols:phone-iphone" class="2xl:text-4xl text-3xl" />
+              <Icon name="material-symbols:phone-android-rounded" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl font-medium">
-              Contact
+              Контакти
             </p>
           </div>
         </NuxtLink>
@@ -199,8 +173,8 @@
         <div class="flex lg:flex-row flex-col gap-y-8 1xl:gap-x-5 max-w-[90rem] mx-auto py-8 lg:px-8 md:px-16 px-8">
           <div class="flex md:flex-row flex-col gap-5 justify-end w-full">
             <div class="flex flex-col mr-auto w-auto font-medium">
-              <span class="text-2xl text-explo-whiteblue">Work Days</span>
-              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Monday - Friday<br>8:30 - 17:50</span>
+              <span class="text-2xl text-explo-whiteblue">Работно време</span>
+              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:50</span>
               <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
               <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
             </div>
@@ -211,19 +185,17 @@
           <div class="lg:block hidden h-48 w-[0.50rem] mx-12 bg-explo-darklitecard" />
           <div class="flex flex-col items-start w-full">
             <p class="text-2xl font-medium text-explo-whiteblue mb-4">
-              Navigation
+              Навигация
             </p>
             <div class="grid grid-cols-2 gap-5">
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Home</p></NuxtLink>
-                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">About Us</p></NuxtLink>
-                <NuxtLink to="/school-life"><p class="mb-2 cursor-pointer leading-tight hover:underline">School Life</p></NuxtLink>
-                <NuxtLink to="/blog"><p class="cursor-pointer hover:underline">Blog</p></NuxtLink>
+                <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Начало</p></NuxtLink>
+                <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">За нас</p></NuxtLink>
+                <NuxtLink to="/summer-school"><p class="mb-2 cursor-pointer leading-tight hover:underline">Лятно училище</p></NuxtLink>
               </div>
               <div class="text-xl text-explo-whiteblue">
-                <NuxtLink to="/events"><p class="mb-2 cursor-pointer hover:underline">Events</p></NuxtLink>
-                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Contact</p></NuxtLink>
-                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Admissions</p></NuxtLink>
+                <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Контакти</p></NuxtLink>
+                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Прием</p></NuxtLink>
               </div>
             </div>
           </div>
@@ -231,7 +203,7 @@
       </div>
       <div class="bg-explo-darkercard h-8 text-center">
         <p class="text-explo-whiteblue pt-1">
-          © Експлораториум ЕООД
+          © Експлораториум
         </p>
       </div>
     </footer>

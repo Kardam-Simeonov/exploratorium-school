@@ -1,6 +1,6 @@
 <template>
    <div class="relative pt-56">
-    <nuxt-img width="1000px" :placeholder="[4, 3]" format="webp" preload
+    <img
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-center mask-fadeoff opacity-80"
       src="/stock/groupCloseup6.jpeg" />
     <header class="relative px-4">
@@ -19,13 +19,13 @@
           class="relative z-10 w-fit py-14 sm:px-24 px-8 2xl:text-5xl sm:text-4xl text-3xl text-center text-explo-darkgreen font-medium rounded-3xl bg-[#7978ba] bg-opacity-60 animate-fade-down drop-shadow-text">
           Свържете се с нас
         </h1>
-        <nuxt-img width="1300px" preload class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover opacity-90" src="/stock/groupCloseup4.jpeg" />
+        <img class="xl:block hidden absolute inset-0 z-0 w-full h-full object-cover rounded-[24px] opacity-90 border-[12px] border-[rgba(255,255,255,0.18)]" src="/stock/groupCloseup4.jpeg" />
       </div>
     </header>
     <div class="mx-auto sm:my-24 my-20 w-56 h-2 bg-explo-lightblue rounded-2xl" />
     <!-- Content -->
     <section
-      class="mx-auto mb-28 sm:px-8 px-2 1xl:max-w-4xl md:max-w-2xl max-w-lg bg-explo-darkpurple bg-opacity-70 py-12 rounded-2xl">
+      class="mx-auto mb-28 sm:px-8 px-2 1xl:max-w-4xl md:max-w-2xl max-w-lg bg-explo-darkpurple bg-opacity-70 py-12 rounded-[24px] border-[8px] border-[rgba(255,255,255,0.18)]">
       <div class="bg-explo-lightblue bg-opacity-20 rounded-xl mb-4 sm:p-6 p-5 text-white">
         <h1 class="text-explo-darkgreen text-2xl drop-shadow-md mb-4 font-medium">Контакти</h1>
         <div class="p-2">
