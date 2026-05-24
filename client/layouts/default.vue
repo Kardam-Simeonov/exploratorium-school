@@ -7,9 +7,9 @@
       <!-- Default Variant -->
       <div class="hidden xl:flex flex-col 2xl:max-w-[86rem] max-w-7xl mx-auto px-6 relative">
         <div class="opacity-10 bg-[#9a99cc] h-28 w-full absolute left-0 z-0 rounded-b-[3rem] shadow-lg" />
-        <div class="flex flex-row pt-3 relative">
+        <div class="grid grid-cols-[1fr_auto_1fr] items-center relative">
           <ul
-            class="relative flex flex-row justify-end pt-8 pr-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
+            class="relative flex flex-row justify-end items-center py-6 pr-6 min-w-0 text-white text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 0">
@@ -29,24 +29,24 @@
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/summer-school')">
+              <NuxtLink :to="localePath('/one-day')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 2">
                   <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Лятно училище</span>
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Един ден при нас</span>
                 </a>
               </NuxtLink>
             </li>
           </ul>
-          <div class="2xl:w-[48rem] 1xl:w-[44rem] w-[40rem] h-fit bg-white p-1 rounded-md shadow-lg">
+          <div class="h-fit bg-white p-1 mt-3 rounded-md shadow-lg">
             <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.625rem]" />
             <div class="p-2">
               <NuxtLink :to="localePath('/')">
-                <img class="focus:outline-none" src="@/assets/artwork/logoWhite.png">
+                <img class="focus:outline-none h-16 w-auto" src="@/assets/artwork/logoWhite.png">
               </NuxtLink>
             </div>
           </div>
           <ul
-            class="relative flex flex-row justify-start pt-8 pl-6 pb-4 w-full text-white 2xl:text-xl text-lg font-medium whitespace-nowrap">
+            class="relative flex flex-row justify-start items-center py-6 pl-6 min-w-0 text-white text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/contact')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 3">
@@ -60,18 +60,46 @@
             <li @mouseleave="highlightIndex = -1">
               <NuxtLink :to="localePath('/admission')">
                 <a class="cursor-pointer" @mouseover="highlightIndex = 4">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">Прием</span>
+                  <span class="bg-opacity-40 py-[6px] px-4 rounded-xl drop-shadow-lg flex flex-col items-center gap-[2px]"
+                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">
+                    <span>Прием</span>
+                    <span class="text-xs font-normal opacity-60 tracking-wide">2026/2027</span>
+                  </span>
                 </a>
               </NuxtLink>
             </li>
-            <li @mouseleave="highlightIndex = -1">
-              <NuxtLink @mouseover="highlightIndex = 5" v-for="locale in availableLocales" :key="locale.code"
+            <li class="group relative" @mouseleave="highlightIndex = -1">
+              <NuxtLink :to="localePath('/summer-activities')" class="cursor-pointer" @mouseover="highlightIndex = 5">
+                <span class="bg-opacity-40 py-[6px] px-4 rounded-xl drop-shadow-lg flex flex-col items-center gap-[2px]"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 5 }">
+                  <span class="inline-flex items-center gap-1">
+                    Летни активности
+                    <svg class="w-3 h-3 opacity-75" fill="none" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="text-xs font-normal opacity-60 tracking-wide">2026</span>
+                </span>
+              </NuxtLink>
+              <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 z-50">
+                <div class="bg-[rgba(99,104,172,0.82)] backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-xl shadow-2xl py-1 min-w-[230px]">
+                  <NuxtLink :to="localePath('/summer-activities/summer-school')" class="block px-4 py-3 text-white text-base font-normal hover:bg-explo-lightblue hover:bg-opacity-20 transition-colors duration-150 rounded-t-xl">
+                    Лято в Експлораториум
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/summer-activities/scout-school')" class="block px-4 py-3 text-white text-base font-normal hover:bg-explo-lightblue hover:bg-opacity-20 transition-colors duration-150">
+                    Скаутско училище
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/summer-activities/writers-workshop')" class="block px-4 py-3 text-white text-base font-normal hover:bg-explo-lightblue hover:bg-opacity-20 transition-colors duration-150 rounded-b-xl">
+                    Работилница за писатели
+                  </NuxtLink>
+                </div>
+              </div>
+            </li>
+            <!-- <li @mouseleave="highlightIndex = -1">
+              <NuxtLink @mouseover="highlightIndex = 6" v-for="locale in availableLocales" :key="locale.code"
                 :to="switchLocalePath(locale.code)" class="p-2 px-3 rounded-full text-xl">
                 <Icon v-if="locale.code != 'bg'" name="flag:gb-4x3" class="text-white text-2xl" />
                 <Icon v-if="locale.code == 'bg'" name="flag:bg-4x3" class="text-white text-2xl" />
               </NuxtLink>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -87,40 +115,61 @@
       </div>
       <transition name="fade">
         <div v-show="isMenuOpen" class="fixed xl:hidden top-0 left-0 right-0 z-50">
-          <div class="bg-explo-darkcard bg-opacity-[0.98] min-h-screen w-full mx-auto rounded-b-2xl shadow-2xl">
-            <ul class="flex flex-col text-center text-white text-2xl h-screen py-24 mb-[15%]">
+          <div class="bg-gradient-to-b from-[rgba(87,93,170,0.82)] to-[rgba(99,104,172,0.82)] backdrop-blur-md min-h-screen w-full mx-auto shadow-2xl">
+            <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] h-[5px]" />
+            <ul class="flex flex-col text-center text-white text-xl h-screen py-20">
               <NuxtLink to="/">
-                <li class="py-8 px-4 border-y-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                <li class="py-5 px-4 border-b border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">
                   Начало
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/about-us')">
-                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                <li class="py-5 px-4 border-b border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">
                   За нас
                 </li>
               </NuxtLink>
-              <NuxtLink :to="localePath('/summer-school')">
-              <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                Лятно училище
-              </li>
+              <NuxtLink :to="localePath('/one-day')">
+                <li class="py-5 px-4 border-b border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">
+                  Един ден при нас
+                </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/contact')">
-                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
+                <li class="py-5 px-4 border-b border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">
                   Контакти
                 </li>
               </NuxtLink>
               <NuxtLink :to="localePath('/admission')">
-                <li class="py-8 px-4 border-b-2 border-explo-darklitecard" @click="isMenuOpen = !isMenuOpen">
-                  Прием
+                <li class="py-5 px-4 border-b border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">
+                  <span class="block">Прием</span>
+                  <span class="text-sm font-normal opacity-60 tracking-wide">2026/2027</span>
                 </li>
               </NuxtLink>
+              <li class="border-b border-[rgba(255,255,255,0.12)]">
+                <NuxtLink :to="localePath('/summer-activities')" @click="isMenuOpen = !isMenuOpen">
+                  <div class="py-5 px-4 hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150">
+                    <span class="block">Летни активности</span>
+                    <span class="text-sm font-normal opacity-60 tracking-wide">2026</span>
+                  </div>
+                </NuxtLink>
+                <div class="bg-[rgba(0,0,0,0.12)] mx-4 mb-4 rounded-xl overflow-hidden border border-[rgba(255,255,255,0.08)]">
+                  <NuxtLink :to="localePath('/summer-activities/summer-school')">
+                    <div class="py-4 px-6 border-b border-[rgba(255,255,255,0.08)] text-white text-lg hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">Лято в Експлораториум</div>
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/summer-activities/scout-school')">
+                    <div class="py-4 px-6 border-b border-[rgba(255,255,255,0.08)] text-white text-lg hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">Скаутско училище</div>
+                  </NuxtLink>
+                  <NuxtLink :to="localePath('/summer-activities/writers-workshop')">
+                    <div class="py-4 px-6 text-white text-lg hover:bg-[rgba(255,255,255,0.08)] transition-colors duration-150" @click="isMenuOpen = !isMenuOpen">Работилница за писатели</div>
+                  </NuxtLink>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </transition>
       <div
         class="focus:outline-none xl:hidden fixed top-4 left-auto right-2 bottom-0 cursor-pointer h-fit w-fit p-2 rounded-2xl transition-transform duration-500 z-50 shadow-2xl"
-        :class="{ 'bg-explo-darkercard': isMenuOpen, 'bg-explo-lightblue': !isMenuOpen }"
+        :class="{ 'bg-[rgba(255,255,255,0.2)]': isMenuOpen, 'bg-explo-lightblue': !isMenuOpen }"
         @click="isMenuOpen = !isMenuOpen">
         <Icon v-show="!isMenuOpen" name="pepicons-pop:menu" class="text-white text-4xl" />
         <Icon v-show="isMenuOpen" name="pepicons-pop:times" class="text-white text-4xl" />
@@ -131,16 +180,16 @@
       <slot />
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="[&_p]:drop-shadow [&_span]:drop-shadow">
       <div class="pt-24 pb-12 flex flex-row flex-wrap justify-center gap-14">
-        <NuxtLink to="/summer-school">
+        <NuxtLink to="/summer-activities">
           <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
             <div
               class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
               <Icon name="mdi:white-balance-sunny" class="2xl:text-4xl text-3xl" />
             </div>
             <p class="text-xl text-center font-medium">
-              Лятно<br>училище
+              Летни<br>активности
             </p>
           </div>
         </NuxtLink>
@@ -187,15 +236,21 @@
             <p class="text-2xl font-medium text-explo-whiteblue mb-4">
               Навигация
             </p>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-3 gap-5">
               <div class="text-xl text-explo-whiteblue">
                 <NuxtLink to="/"><p class="mb-2 cursor-pointer hover:underline">Начало</p></NuxtLink>
                 <NuxtLink to="/about-us"><p class="mb-2 cursor-pointer hover:underline">За нас</p></NuxtLink>
-                <NuxtLink to="/summer-school"><p class="mb-2 cursor-pointer leading-tight hover:underline">Лятно училище</p></NuxtLink>
+                <NuxtLink to="/one-day"><p class="mb-2 cursor-pointer leading-tight hover:underline">Един ден при нас</p></NuxtLink>
               </div>
               <div class="text-xl text-explo-whiteblue">
                 <NuxtLink to="/contact"><p class="mb-2 cursor-pointer hover:underline">Контакти</p></NuxtLink>
-                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Прием</p></NuxtLink>
+                <NuxtLink to="/admission"><p class="cursor-pointer hover:underline">Прием 2026/2027</p></NuxtLink>
+              </div>
+              <div class="text-xl text-explo-whiteblue">
+                <NuxtLink to="/summer-activities"><p class="mb-2 cursor-pointer hover:underline leading-tight">Летни активности</p></NuxtLink>
+                <NuxtLink to="/summer-activities/summer-school"><p class="mb-2 cursor-pointer hover:underline leading-tight">Лято в Експлораториум</p></NuxtLink>
+                <NuxtLink to="/summer-activities/scout-school"><p class="mb-2 cursor-pointer hover:underline leading-tight">Скаутско училище</p></NuxtLink>
+                <NuxtLink to="/summer-activities/writers-workshop"><p class="cursor-pointer hover:underline leading-tight">Работилница за писатели</p></NuxtLink>
               </div>
             </div>
           </div>

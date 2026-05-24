@@ -39,23 +39,23 @@
         </div>
         <h2 class="text-[clamp(20px,4.5vw,30px)] leading-[1.1] font-bold text-white mb-[22px] text-left">Ако искате детето ви...</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[22px]">
-          <div class="bg-white p-[32px_28px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
+          <div class="bg-[rgba(255,255,255,0.07)] p-[32px_28px] rounded-[18px] border border-[rgba(255,255,255,0.1)] hover:translate-y-[-4px] hover:bg-[rgba(255,255,255,0.11)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
-            <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[10px]">01</div>
-            <h3 class="text-[clamp(18px,1.6vw,20px)] text-[#6368AC] leading-[1.3] mb-[10px] font-bold">Да задава въпроси</h3>
-            <p class="text-[#555569] text-[clamp(14px,1.2vw,15px)] leading-[1.5]">Вместо да чака готови отговори. Любопитството е двигателят – ние го пазим, не го изключваме в 8:00 сутринта.</p>
+            <div class="font-lobster text-[#CADA2B] text-[34px] leading-none mb-[10px]">01</div>
+            <h3 class="text-[clamp(18px,1.6vw,20px)] text-white leading-[1.3] mb-[10px] font-bold">Да задава въпроси</h3>
+            <p class="text-explo-whiteblue text-[clamp(14px,1.2vw,15px)] leading-[1.5] opacity-75">Вместо да чака готови отговори. Любопитството е двигателят – ние го пазим, не го изключваме в 8:00 сутринта.</p>
           </div>
-          <div class="bg-white p-[32px_28px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
+          <div class="bg-[rgba(255,255,255,0.07)] p-[32px_28px] rounded-[18px] border border-[rgba(255,255,255,0.1)] hover:translate-y-[-4px] hover:bg-[rgba(255,255,255,0.11)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
-            <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[10px]">02</div>
-            <h3 class="text-[clamp(18px,1.6vw,20px)] text-[#6368AC] leading-[1.3] mb-[10px] font-bold">Да мисли критично</h3>
-            <p class="text-[#555569] text-[clamp(14px,1.2vw,15px)] leading-[1.5]">Да проверява информацията, да не приема нещата за дадени, да отличава факт от мнение. Това е умение за цял живот.</p>
+            <div class="font-lobster text-[#CADA2B] text-[34px] leading-none mb-[10px]">02</div>
+            <h3 class="text-[clamp(18px,1.6vw,20px)] text-white leading-[1.3] mb-[10px] font-bold">Да мисли критично</h3>
+            <p class="text-explo-whiteblue text-[clamp(14px,1.2vw,15px)] leading-[1.5] opacity-75">Да проверява информацията, да не приема нещата за дадени, да отличава факт от мнение. Това е умение за цял живот.</p>
           </div>
-          <div class="bg-white p-[32px_28px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
+          <div class="bg-[rgba(255,255,255,0.07)] p-[32px_28px] rounded-[18px] border border-[rgba(255,255,255,0.1)] hover:translate-y-[-4px] hover:bg-[rgba(255,255,255,0.11)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
-            <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[10px]">03</div>
-            <h3 class="text-[clamp(18px,1.6vw,20px)] text-[#6368AC] leading-[1.3] mb-[10px] font-bold">Да расте в общност</h3>
-            <p class="text-[#555569] text-[clamp(14px,1.2vw,15px)] leading-[1.5]">Където е прието такова, каквото е. Без сравнения, без етикети, без „трябва да си като другите".</p>
+            <div class="font-lobster text-[#CADA2B] text-[34px] leading-none mb-[10px]">03</div>
+            <h3 class="text-[clamp(18px,1.6vw,20px)] text-white leading-[1.3] mb-[10px] font-bold">Да расте в общност</h3>
+            <p class="text-explo-whiteblue text-[clamp(14px,1.2vw,15px)] leading-[1.5] opacity-75">Където е прието такова, каквото е. Без сравнения, без етикети, без „трябва да си като другите".</p>
           </div>
         </div>
         <p class="max-w-2xl mt-12 text-white text-[clamp(16px,1.5vw,19px)] leading-[1.6] opacity-90">
@@ -69,14 +69,14 @@
     <section id="form" class="relative px-4 lg:px-12 py-32 mt-12 bg-explo-darkblue">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-[40px] items-start">
-          <div class="bg-white p-[40px_28px] lg:p-[48px_40px] rounded-[28px] shadow-[0_12px_40px_rgba(99,104,172,0.15)]">
-            <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Запазете час за среща</div>
-            <h2 class="text-[#6368AC] text-[clamp(26px,3.5vw,36px)] leading-[1.2] mb-[16px] font-bold">Попълнете формата за регистрация</h2>
-            <p class="text-[#555569] mb-[32px] text-[clamp(15px,1.3vw,17px)] leading-[1.6]">
-              Попълнете запитване към нас и ние ще се свържем, за да уговорим удобно време за лична среща и посещение на базата.
+          <div class="bg-[rgba(255,255,255,0.07)] p-[40px_28px] lg:p-[48px_40px] rounded-[28px] border border-[rgba(255,255,255,0.1)]">
+            <div class="text-[#CADA2B] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Запишете детето</div>
+            <h2 class="text-white text-[clamp(26px,3.5vw,36px)] leading-[1.2] mb-[16px] font-bold">Запазете час за среща</h2>
+            <p class="text-explo-whiteblue mb-[32px] text-[clamp(15px,1.3vw,17px)] leading-[1.6] opacity-80">
+              Пишете ни или се обадете — ще уговорим удобно време за лична среща и посещение на базата.
             </p>
-            <a href="/admissions/register" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">
-              Изпратете запитване
+            <a href="mailto:exploratorium.school@abv.bg" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">
+              Изпрати запитване
             </a>
           </div>
  
@@ -84,26 +84,26 @@
             <div class="text-[#CADA2B]  font-bold text-[clamp(14px,1.3vw,16px)] uppercase tracking-[2px] mb-[12px]">Или директно</div>
             <h3 class="text-white text-[clamp(26px,3.5vw,36px)] leading-[1.2] mb-[24px] font-bold">Свържете се с нас</h3>
             <div class="flex flex-col gap-[14px]">
-              <a href="tel:+359879180700" class="bg-white p-[18px_22px] rounded-[14px] flex items-center gap-[16px] hover:translate-x-[4px] hover:shadow-[0_8px_20px_rgba(99,104,172,0.12)] transition-all duration-200">
+              <a href="tel:+359879180700" class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
                 <div class="text-[26px]">📞</div>
                 <div class="flex-1 min-w-0">
-                  <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[2px]">Телефон</div>
-                  <div class="font-semibold text-[#6368AC] text-[15px]">0879 180 700</div>
-                  <div class="text-[12px] text-[#555569]">Роси Панайотова</div>
+                  <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Телефон</div>
+                  <div class="font-semibold text-[#CADA2B] text-[15px]">0879 180 700</div>
+                  <div class="text-[12px] text-explo-whiteblue opacity-60">Роси Панайотова</div>
                 </div>
               </a>
-              <a href="mailto:exploratorium.school@abv.bg" class="bg-white p-[18px_22px] rounded-[14px] flex items-center gap-[16px] hover:translate-x-[4px] hover:shadow-[0_8px_20px_rgba(99,104,172,0.12)] transition-all duration-200">
+              <a href="mailto:exploratorium.school@abv.bg" class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
                 <div class="text-[26px]">📧</div>
                 <div class="flex-1 min-w-0">
-                  <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[2px]">Имейл</div>
-                  <div class="font-semibold text-[#6368AC] text-[15px] break-words">exploratorium.school@abv.bg</div>
+                  <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Имейл</div>
+                  <div class="font-semibold text-[#CADA2B] text-[15px] break-words">exploratorium.school@abv.bg</div>
                 </div>
               </a>
-              <div class="bg-white p-[18px_22px] rounded-[14px] flex items-center gap-[16px]">
+              <div class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)]">
                 <div class="text-[26px]">📍</div>
                 <div class="flex-1 min-w-0">
-                  <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[2px]">Адрес</div>
-                  <div class="font-semibold text-[#6368AC] text-[15px] leading-[1.4]">кв. Драгалевци, ул. Мавровец 3</div>
+                  <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Адрес</div>
+                  <div class="font-semibold text-[#CADA2B] text-[15px] leading-[1.4]">кв. Драгалевци, ул. Мавровец 3</div>
                 </div>
               </div>
             </div>

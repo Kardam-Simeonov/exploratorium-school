@@ -23,14 +23,14 @@
         }}</h1>
         <h2 class="text-explo-whiteblue 2xl:text-xl lg:text-base text-base">{{ $t("hero_subtitle") }}</h2>
         <div class="flex flex-wrap justify-center gap-8 mt-10 font-medium">
-          <NuxtLink to="/summer-school">
+          <NuxtLink to="/summer-activities">
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
                 class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
                 <Icon name="mdi:white-balance-sunny" class="1xl:text-4xl text-3xl" />
               </div>
               <p class="text-center">
-                Лятно<br>училище
+                Летни<br>активности
               </p>
             </div>
           </NuxtLink>
@@ -166,17 +166,17 @@
         class="absolute lg:top-96 sm:top-72 top-64 lg:left-16 -left-4 1xl:w-72 lg:w-64 sm:w-56 w-36 opacity-10 -rotate-90"
         src="@/assets/artwork/svg/blobHouse-layer2.svg">
       <img
-        class="lg:col-span-6 col-span-full relative 1xl:max-w-lg max-w-[27rem] w-full rounded-xl rounded-br-[3rem] self-center lg:justify-self-end sm:justify-self-start justify-self-center my-12 1xl:mr-32 lg:mr-12 shadow-xl"
+        class="lg:col-span-6 col-span-full relative 1xl:max-w-lg max-w-[27rem] w-full rounded-xl rounded-br-[3rem] self-center lg:justify-self-end justify-self-center my-12 1xl:mr-32 lg:mr-12 shadow-xl"
         src="/stock/house.jpg" />
       <img class="w-[14rem] absolute z-10 lg:top-[30rem] top-[22rem] 1xl:left-8 -left-8"
         src="@/assets/artwork/svg/scribble-1.svg">
       <div
-        class="lg:col-span-6 col-span-full justify-self-center relative z-10 my-8 sm:mt-8 mt-20">
-        <h1 class="text-[clamp(2.25rem,4.5vw,2.5rem)] leading-[1.1] font-bold text-[#CADA2B] mb-12 max-w-2xl w-fit">
-          <span class="block text-[clamp(1.125rem,1.5vw,1.25rem)] text-white font-medium uppercase tracking-[2px] mb-[12px] opacity-85">За нас</span>
+        class="lg:col-span-6 col-span-full justify-self-center relative z-10 my-8 sm:mt-8 mt-20 max-w-xl lg:max-w-[28rem] 2xl:max-w-xl">
+        <h1 class="text-[clamp(1.75rem,3.2vw,1.90rem)] 2xl:text-[clamp(2.10rem,4.5vw,2.25rem)] leading-[1.1] font-bold text-[#CADA2B] mb-12 w-fit">
+          <span class="block text-[clamp(0.75rem,1.1vw,0.875rem)] 2xl:text-[clamp(1.125rem,1.5vw,1.25rem)] text-white font-medium uppercase tracking-[2px] mb-[12px] opacity-85">За нас</span>
           Ние не просто преподаваме. Ние създаваме среда за мислене.
         </h1>
-        <p class="max-w-xl text-[clamp(1rem,2vw,1.20rem)] opacity-95 mb-[32px] text-white drop-shadow-sm">
+        <p class="text-[clamp(1rem,1.4vw,1.05rem)] 2xl:text-[clamp(0.90rem,2vw,1.10rem)] opacity-95 mb-[32px] text-white drop-shadow-sm">
           „Експлораториум“ се роди от един прост въпрос: Възможно ли е училището да бъде мястото, където детето се чувства най-разбрано и най-силно? Ние сме общност от изследователи, за които образованието не е заучаване на факти, а изграждане на характер. В нашата база в полите на Витоша децата не са „ученици“ в класическия смисъл – те са архитекти на собственото си знание. Тук грешката не се наказва с двойка, а се насърчава като първа стъпка към откритието.
         </p>
         <!-- <p
@@ -194,77 +194,71 @@
         </NuxtLink>
       </div>
     </section>
-    <!-- What's new -->
+    <!-- Summer Activities -->
     <section class="relative">
-      <img src="/stock/playground.jpg" 
+      <img src="/stock/playground.jpg"
         class="lg:hidden block absolute z-0 w-full min-h-[20rem] -top-[9rem] opacity-10 object-cover object-center mask-fadeoff" />
-      <div class="relative grid gap-5 sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl">
-        <img src="/stock/playground.png" 
+      <div class="relative sm:mt-36 mb-12 mt-28 mx-auto 2xl:max-w-7xl lg:max-w-6xl max-w-2xl sm:px-6 px-4">
+        <img src="/stock/playground.png"
           class="lg:block hidden absolute z-0 w-[50rem] -top-[12.5rem] left-[55%]" />
-        <div class="col-span-full mb-8 sm:pl-6 pl-3">
-          <h1
-            class="text-left 1xl:text-5xl text-4xl font-bold text-[#CADA2B] mb-12 w-fit">
-            Летни Активности 2026
-          </h1>
-          <p class="text-lg opacity-95 mb-[32px] text-white max-w-xl">
-            Докато светът спори за оценки, ние експериментираме, готвим и изследваме Витоша.
-            Всяка седмица е различна научна и емоционална лаборатория за деца от 5 до 10 години.
-          </p>
-          <!-- <div class="w-10 h-2 bg-explo-darkgreen drop-shadow-text" /> -->
+        <div class="mb-10">
+          <h2 class="text-left 1xl:text-5xl text-4xl font-bold text-[#CADA2B] mb-4 w-fit">Летни активности 2026</h2>
+          <p class="text-lg text-white font-medium italic opacity-90 mb-6">Лятото като приключение, в което откриваме себе си.</p>
+          <p class="text-base text-white max-w-xl leading-relaxed">За лятото на 2026 година нашият екип подготви три напълно различни концептуални
+              предложения, създадени да отговорят на специфичните търсения, интереси и възраст
+              на децата. Всяко от тях е проектирано в синхрон с нашите ценности — изграждане на
+              общност, критично мислене, автономия и дълбока връзка с природата.</p>
         </div>
-        <!-- <ArticleCarousel :carousel-slides="articles ? articles.data : []" /> -->
-         <!-- Content -->
-        <!-- <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 1xl:gap-8 gap-6 mx-auto mt-24 mb-18 sm:px-12 px-6 max-w-[75rem]">
-          <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-            <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/smallgroup.jpg')] bg-cover mb-6 rounded-lg">
-              <div
-                class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
-                1
+        <div class="grid grid-cols-1 gap-7 lg:grid-cols-3 mt-32">
+          <NuxtLink to="/summer-activities/summer-school" class="flex flex-col bg-explo-darkblue rounded-[20px] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.25)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.35)] hover:-translate-y-1 transition-all duration-200">
+            <div class="relative h-[200px]">
+              <img src="/stock/kayak.jpg" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(87,93,170,0.7)] to-transparent" />
+              <div class="absolute bottom-4 left-5">
+                <span class="bg-[#CADA2B] text-[#575DAA] text-xs font-bold uppercase tracking-[1.5px] py-1 px-3 rounded-full">5–10 юли &amp; 14–18 юли</span>
               </div>
             </div>
-            <div class="mx-auto w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
-            <h1 class="text-xl text-explo-darkgreen font-medium my-5">
-              Среща
-            </h1>
-            <p class="text-white mb-6">
-              Организираме среща с детето и родителите. По време на срещата ще Ви представим нашата методика на работа и ще отговорим на всички Ваши въпроси.
-            </p>
-          </article>
-          <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-            <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12  bg-cover mb-6 rounded-lg">
-              <div
-                class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
-                2
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
+              <h3 class="text-lg font-bold text-white mb-3 leading-tight">Лято в Експлораториум</h3>
+              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">Динамично лято за деца от 5 до 10 години. Наука, природа, готвене и творчество — всичко на едно място, в полите на Витоша.</p>
+              <span class="inline-block text-center py-3 px-6 rounded-full font-semibold text-sm bg-[#CADA2B] text-[#575DAA]">Научи повече</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/summer-activities/scout-school" class="flex flex-col bg-explo-darkblue rounded-[20px] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.25)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.35)] hover:-translate-y-1 transition-all duration-200">
+            <div class="relative h-[200px]">
+              <img src="/stock/climbingthetree.jpg" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(87,93,170,0.7)] to-transparent" />
+              <div class="absolute bottom-4 left-5">
+                <span class="bg-[#CADA2B] text-[#575DAA] text-xs font-bold uppercase tracking-[1.5px] py-1 px-3 rounded-full">6–10 юли &amp; 13–17 юли</span>
               </div>
             </div>
-            <div class="mx-auto w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
-            <h1 class="text-xl text-explo-darkgreen font-medium my-5">
-              Пробна седмица
-            </h1>
-            <p class="text-white mb-6">
-              Повреме на пробната седмица, детето ще има възможност да се запознае с учителите и другите деца, както и да се присъедини към ежедневните занимания.
-            </p>
-          </article>
-          <article class="relative h-full w-full rounded-md rounded-br-3xl p-3 pb-4 bg-explo-darkpurple border-b-8 border-explo-lightblue shadow-xl">
-            <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen py-12 bg-[url('/stock/woodensign.jpg')] bg-cover mb-6 rounded-lg">
-              <div
-                class="w-fit p-6 aspect-square flex items-center justify-center bg-explo-background bg-opacity-90 rounded-full text-6xl drop-shadow-sm">
-                3
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
+              <h3 class="text-lg font-bold text-white mb-3 leading-tight">Скаутско училище</h3>
+              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">За деца от 8 до 11 години. Оцеляване сред природата, работа в екип и незабравими лагерни вечери под небето на Витоша.</p>
+              <span class="inline-block text-center py-3 px-6 rounded-full font-semibold text-sm bg-[#CADA2B] text-[#575DAA]">Научи повече</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/summer-activities/writers-workshop" class="flex flex-col bg-explo-darkblue rounded-[20px] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.25)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.35)] hover:-translate-y-1 transition-all duration-200">
+            <div class="relative h-[200px]">
+              <img src="/stock/drawing.jpg" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[rgba(87,93,170,0.7)] to-transparent" />
+              <div class="absolute bottom-4 left-5">
+                <span class="bg-[#CADA2B] text-[#575DAA] text-xs font-bold uppercase tracking-[1.5px] py-1 px-3 rounded-full">13–17 години</span>
               </div>
             </div>
-            <div class="mx-auto w-16 h-[0.20rem] bg-explo-lightblue rounded-2xl opacity-50" />
-            <h1 class="text-xl text-explo-darkgreen font-medium my-5">
-              Записване
-            </h1>
-            <p class="text-white mb-6">
-              След пробната седмица, детето може да бъде записано в училището.
-            </p>
-          </article>
-        </section> -->
-        <!-- <NuxtLink to="/blog"
-          class="w-fit bg-explo-darkcard text-explo-whiteblue text-lg rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-3 mx-auto mt-16 shadow-lg">
-          {{ $t("publications_button") }}
-        </NuxtLink> -->
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
+              <h3 class="text-lg font-bold text-white mb-3 leading-tight">Работилница за писатели</h3>
+              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">За тийнейджъри с влечение към писането. Хайку, манга, пътеписи и киносценарии — пространство, в което мисълта среща белия лист.</p>
+              <span class="inline-block text-center py-3 px-6 rounded-full font-semibold text-sm bg-[#CADA2B] text-[#575DAA]">Научи повече</span>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="text-center mt-10">
+          <NuxtLink to="/summer-activities" class="inline-block py-4 px-8 rounded-full font-semibold text-base bg-[rgba(255,255,255,0.1)] text-white border-2 border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] transition-all duration-200">Научете повече →</NuxtLink>
+        </div>
       </div>
     </section>
     <!-- Facebook Feed -->
