@@ -11,7 +11,7 @@
               Твоята история започва тук
             </h1>
             <p class="text-[clamp(16px,1.5vw,19px)] opacity-95 mb-[32px]">
-              Наднича ли в теб душата на творец? Превърни света в история и думите в приключение. Лятна работилница за писатели — пътешествие из жанровете.
+              Наднича ли в теб душата на творец? Превърни света в история и думите в приключение. Лятна работилница за писатели - пътешествие из жанровете.
             </p>
             <div class="flex flex-wrap gap-[14px]">
               <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Кандидатствай</a>
@@ -20,7 +20,7 @@
           </div>
           <div class="relative">
             <img src="/stock/drawing.jpg" alt="Дете пише и твори" class="w-full aspect-[4/3] object-cover rounded-[24px] shadow-[0_24px_60px_rgba(0,0,0,0.3)] border-[6px] border-[rgba(255,255,255,0.18)]">
-            <div class="absolute bottom-[-18px] left-1/2 transform -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">Пилотен проект 2026</div>
+            <div class="absolute bottom-[-18px] left-1/2 transform -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">13-17 години</div>
           </div>
         </div>
       </div>
@@ -60,10 +60,10 @@
             <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Работилница за писатели</div>
             <h2 class="text-[clamp(28px,4vw,42px)] text-[#6368AC] leading-[1.2] font-bold mb-[24px]">Малка, бутикова група с индивидуален подход</h2>
             <p class="text-[#555569] text-[clamp(16px,1.5vw,18px)] leading-[1.7] mb-[24px]">
-              Обичаш ли да измисляш истории? Крие ли се в теб душата на творец? Това лято те каним на писателско приключение — ще открием богатствата на книгите, ще творим заедно и ще търсим вдъхновение из природата и града.
+              Обичаш ли да измисляш истории? Крие ли се в теб душата на творец? Това лято те каним на писателско приключение - ще открием богатствата на книгите, ще творим заедно и ще търсим вдъхновение из природата и града.
             </p>
             <p class="text-[#555569] text-[clamp(16px,1.5vw,18px)] leading-[1.7]">
-              Заниманията ни ще имат за цел не само да опознаем литературата по достъпен и забавен начин, но и английски език, който ще упражняваме чрез игри и творчество. Ако имаш въображение, любопитство и желание да твориш — това е мястото за теб.
+              Заниманията ни ще имат за цел не само да опознаем литературата по достъпен и забавен начин, но и английски език, който ще упражняваме чрез игри и творчество. Ако имаш въображение, любопитство и желание да твориш - това е мястото за теб.
             </p>
           </div>
         </div>
@@ -76,14 +76,14 @@
         <div class="text-center mb-[56px]">
           <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">4 тематични модула</div>
           <h2 class="text-[clamp(28px,4vw,42px)] text-[#6368AC] leading-[1.2] font-bold">Пътешествие из жанровете</h2>
-          <p class="max-w-[640px] mx-auto mt-[18px] text-[#555569] text-[17px]">Всеки модул е свят за себе си — различен жанр, различно приключение, различен начин да кажеш нещо свое.</p>
+          <p class="max-w-[640px] mx-auto mt-[18px] text-[#555569] text-[17px]">Всеки модул е свят за себе си - различен жанр, различно приключение, различен начин да кажеш нещо свое.</p>
         </div>
         <div class="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[22px]">
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">01</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Хайку и стихотворения</h3>
-            <div class="text-[#555569] text-[14px] mb-[12px]">По стъпките на Яворов — посещение на къща-музей и литературна разходка. Работилница за лирика на български и английски.</div>
+            <div class="text-[#555569] text-[14px] mb-[12px]">По стъпките на Яворов - посещение на къща-музей и литературна разходка. Работилница за лирика на български и английски.</div>
             <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Мисия: лирика</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
@@ -97,7 +97,7 @@
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">03</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Пътеписи</h3>
-            <div class="text-[#555569] text-[14px] mb-[12px]">Пикник и разходка сред природата — търсене на сюжети извън града. Превръщане на приключенията в завладяващ текст.</div>
+            <div class="text-[#555569] text-[14px] mb-[12px]">Пикник и разходка сред природата - търсене на сюжети извън града. Превръщане на приключенията в завладяващ текст.</div>
             <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Мисия: завладяващ текст</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
@@ -130,7 +130,7 @@
             <img src="/stock/group3.jpg" alt="Група деца работят заедно" class="w-full aspect-[4/3] object-cover">
             <div class="p-[30px_28px] text-[#575DAA] bg-gradient-to-br from-[#CADA2B] to-[#B8C24E]">
               <h3 class="text-[24px] font-bold mb-[10px] leading-[1.2]">Творчески английски и национално ниво</h3>
-              <p class="opacity-92 text-[16px]">Упражняваме езика чрез игри и писане — без учебници и натиск. Целта е да подготвим текстове за участие в конкурса „Братя Мормареви".</p>
+              <p class="opacity-92 text-[16px]">Упражняваме езика чрез игри и писане - без учебници и натиск. Целта е да подготвим текстове за участие в конкурса „Братя Мормареви".</p>
             </div>
           </div>
         </div>
@@ -180,4 +180,5 @@
 </template>
 
 <script setup>
+useHead({ title: 'Работилница за писатели' })
 </script>

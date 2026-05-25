@@ -190,7 +190,7 @@
             <Icon name="fa6-solid:chevron-right" />
           </button> -->
           <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">
-            Научете повече</a>
+            Научи повече</a>
         </NuxtLink>
       </div>
     </section>
@@ -206,7 +206,7 @@
           <p class="text-lg text-white font-medium italic opacity-90 mb-6">Лятото като приключение, в което откриваме себе си.</p>
           <p class="text-base text-white max-w-xl leading-relaxed">За лятото на 2026 година нашият екип подготви три напълно различни концептуални
               предложения, създадени да отговорят на специфичните търсения, интереси и възраст
-              на децата. Всяко от тях е проектирано в синхрон с нашите ценности — изграждане на
+              на децата. Всяко от тях е проектирано в синхрон с нашите ценности - изграждане на
               общност, критично мислене, автономия и дълбока връзка с природата.</p>
         </div>
         <div class="grid grid-cols-1 gap-7 lg:grid-cols-3 mt-32">
@@ -221,7 +221,8 @@
             <div class="p-6 flex flex-col flex-1">
               <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
               <h3 class="text-lg font-bold text-white mb-3 leading-tight">Лято в Експлораториум</h3>
-              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">Динамично лято за деца от 5 до 10 години. Наука, природа, готвене и творчество — всичко на едно място, в полите на Витоша.</p>
+              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">Динамично лято за деца от 5 до 10 години. Наука, природа, готвене и творчество -
+                 всичко на едно място, в полите на Витоша.</p>
               <span class="inline-block text-center py-3 px-6 rounded-full font-semibold text-sm bg-[#CADA2B] text-[#575DAA]">Научи повече</span>
             </div>
           </NuxtLink>
@@ -251,13 +252,13 @@
             <div class="p-6 flex flex-col flex-1">
               <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
               <h3 class="text-lg font-bold text-white mb-3 leading-tight">Работилница за писатели</h3>
-              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">За тийнейджъри с влечение към писането. Хайку, манга, пътеписи и киносценарии — пространство, в което мисълта среща белия лист.</p>
+              <p class="text-explo-whiteblue text-sm leading-relaxed mb-6 flex-1 opacity-80">За тийнейджъри с влечение към писането. Хайку, манга, пътеписи и киносценарии - пространство, в което мисълта среща белия лист.</p>
               <span class="inline-block text-center py-3 px-6 rounded-full font-semibold text-sm bg-[#CADA2B] text-[#575DAA]">Научи повече</span>
             </div>
           </NuxtLink>
         </div>
         <div class="text-center mt-10">
-          <NuxtLink to="/summer-activities" class="inline-block py-4 px-8 rounded-full font-semibold text-base bg-[rgba(255,255,255,0.1)] text-white border-2 border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] transition-all duration-200">Научете повече →</NuxtLink>
+          <NuxtLink to="/summer-activities" class="inline-block py-4 px-8 rounded-full font-semibold text-base bg-[rgba(255,255,255,0.1)] text-white border-2 border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] transition-all duration-200">Повече за летни активности →</NuxtLink>
         </div>
       </div>
     </section>
@@ -279,6 +280,7 @@
 </template>
 
 <script setup>
+useHead({ title: 'Начало' })
 // import { ref, onMounted } from 'vue'
 // const { find } = useStrapi()
 

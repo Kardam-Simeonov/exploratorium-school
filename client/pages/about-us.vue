@@ -18,6 +18,7 @@
             а изграждане на характер.
           </p>
           <div class="flex flex-wrap gap-[14px]">
+            <a href="#welcome" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Кои сме ние</a>
             <a href="#vision" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Нашата визия</a>
             <a href="#philosophy" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Философията ни</a>
             <a href="#history" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">История</a>
@@ -29,7 +30,7 @@
     <div class="mx-auto my-24 w-56 h-2 bg-explo-lightblue rounded-2xl" />
 
     <!-- WELCOME -->
-    <section class="relative px-4 lg:px-12 mb-32">
+    <section id="welcome" class="relative px-4 lg:px-12 mb-32">
       <div class="max-w-7xl mx-auto">
         <div class="max-w-3xl mx-auto text-center mb-[40px]">
           <h2 class="text-[clamp(28px,4vw,42px)] text-white leading-[1.15] font-bold mb-[16px]">
@@ -113,7 +114,7 @@
     <section class="bg-explo-darkblue text-white py-[60px] text-center lg:py-[80px] mb-32">
       <div class="max-w-7xl mx-auto px-6">
         <blockquote class="max-w-[800px] mx-auto text-[clamp(22px,3vw,32px)] leading-[1.4] font-medium relative px-[30px]">
-          Тук ние не просто учим. Ние създаваме среда за мислене!
+          Тук ние не просто учим. Ние създаваме среда за мислене.
           <span class="absolute left-[-10px] top-[-20px] font-lobster text-[#CADA2B] text-[70px] leading-none">"</span>
           <span class="absolute right-[-10px] bottom-[-40px] font-lobster text-[#CADA2B] text-[70px] leading-none">"</span>
         </blockquote>
@@ -149,7 +150,7 @@
               <div class="font-lobster text-[26px] leading-none mb-[8px] opacity-95">Стълб 02</div>
               <h3 class="text-[clamp(20px,2vw,24px)] font-bold mb-[10px] leading-[1.2] text-[#CADA2B]">Демократичност и отговорност</h3>
               <p class="opacity-92 text-[clamp(14px,1.2vw,16px)] leading-[1.5]">
-                Нашата работеща общност се управлява с участието на самите деца. Чрез практиката на пряката демокрация те участват в създаването на правилата и решаването на ежедневните предизвикателства — учейки се да поемат реална отговорност.
+                Нашата работеща общност се управлява с участието на самите деца. Чрез практиката на пряката демокрация те участват в създаването на правилата и решаването на ежедневните предизвикателства - учейки се да поемат реална отговорност.
               </p>
             </div>
           </div>
@@ -228,7 +229,7 @@
           <div>
             <div class="text-[#CADA2B] font-semibold text-[clamp(14px,1.3vw,16px)] uppercase tracking-[2px] mb-[12px]">История</div>
             <h2 class="text-[clamp(28px,4vw,42px)] text-white leading-[1.15] font-bold mb-[28px]">
-              От 2014 година — жива реалност всеки ден
+              От 2014 година - жива реалност всеки ден
             </h2>
             <div class="space-y-[18px]">
               <p class="text-white text-[clamp(16px,1.5vw,18px)] leading-[1.7] opacity-90">
@@ -318,7 +319,7 @@
       </div>
     </section>
 
-    <!-- TEAM — placeholder -->
+    <!-- TEAM - placeholder -->
     <!-- <section id="team" class="relative px-4 lg:px-12 py-[80px]">
       <div class="max-w-7xl mx-auto">
         <div class="text-[#CADA2B] font-semibold text-[clamp(14px,1.3vw,16px)] uppercase tracking-[2px] mb-[12px]">Нашият екип</div>
@@ -327,7 +328,7 @@
       </div>
     </section> -->
 
-    <!-- LEARNING BASE — placeholder -->
+    <!-- LEARNING BASE - placeholder -->
     <!-- <section id="base" class="relative px-4 lg:px-12 pb-[80px]">
       <div class="max-w-7xl mx-auto">
         <div class="text-[#CADA2B] font-semibold text-[clamp(14px,1.3vw,16px)] uppercase tracking-[2px] mb-[12px]">Нашата база</div>
@@ -338,4 +339,5 @@
   </div>
 </template>
 <script setup>
+useHead({ title: 'За нас' })
 </script>

@@ -40,7 +40,7 @@
             </p>
             <div class="border-l-[4px] border-[#CADA2B] pl-[20px] py-[2px]">
               <p class="text-[#CADA2B] font-medium text-[clamp(16px,1.6vw,20px)] leading-[1.5] italic">
-                „Тук не бързаме към отговорите — учим как да задаваме правилните въпроси."
+                „Тук не бързаме към отговорите - учим как да задаваме правилните въпроси."
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="relative mb-[56px]">
           <img src="/stock/natureCloseup3.jpeg" class="w-full aspect-[21/9] object-cover object-center rounded-[24px] shadow-[0_24px_60px_rgba(0,0,0,0.25)] border-[6px] border-[rgba(255,255,255,0.18)]">
-          <div class="absolute bottom-[-18px] left-1/2 transform -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">Витоша — нашата класна стая</div>
+          <div class="absolute bottom-[-18px] left-1/2 transform -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">Витоша - нашата класна стая</div>
         </div>
         <div class="grid grid-cols-1 gap-[40px] lg:grid-cols-[1fr_1.6fr] items-start mt-[32px]">
           <div>
@@ -111,5 +111,6 @@
 </template>
 
 <script setup>
+useHead({ title: 'Един ден при нас' })
 const localePath = useLocalePath()
 </script>

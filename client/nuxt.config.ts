@@ -46,6 +46,13 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'page', mode: 'out-in' }
+    layoutTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      titleTemplate: '%s | Exploratorium School',
+      title: 'Exploratorium School',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
   }
 })

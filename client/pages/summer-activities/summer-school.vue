@@ -258,7 +258,7 @@
       <div class="container mx-auto px-8 max-w-[1200px]">
         <div class="bg-white p-[40px_24px] rounded-[28px] shadow-[0_12px_40px_rgba(99,104,172,0.15)] max-w-[760px] mx-auto lg:p-[56px_40px]">
           <h2 class="text-[#6368AC] text-[clamp(26px,3.5vw,36px)] mb-[12px] font-bold">Запазете място за дете</h2>
-          <p class="text-[#555569] mb-[32px] text-[17px]">Можете да запишете детето си за една, няколко или за всички 11 седмици. Местата са ограничени — свържете се с нас, за да заявите коя седмица желаете.</p>
+          <p class="text-[#555569] mb-[32px] text-[17px]">Можете да запишете детето си за една, няколко или за всички 11 седмици. Местата са ограничени - свържете се с нас, за да заявите коя седмица желаете.</p>
           <div class="grid grid-cols-1 gap-[16px] mb-[32px] lg:grid-cols-3">
             <a href="tel:+359879180700" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">📞</div>
@@ -297,6 +297,7 @@
 </template>
 
 <script setup>
+useHead({ title: 'Лято в Експлораториум' })
 const weeks = [
   { num: '01', title: 'Биологична машина', subtitle: 'Тялото и сетивата', dates: '15 – 19 юни', research: 'Измерване на пулс; клетки от кожа на лук под микроскоп', experiment: '„Модел на белия дроб" (бутилка и балони)', cooking: 'Енергийни бонбони за силни мускули' },
   { num: '02', title: 'Химия на чувствата', subtitle: 'Емоционална интелигентност', dates: '22 – 26 юни', research: '„Карта на емоциите" в тялото; реакции при страх и радост', experiment: '„Вулкан от чувства" – контролирана химична реакция', cooking: '„Пица-емотикон" – настроения чрез продукти' },

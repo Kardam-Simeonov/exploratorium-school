@@ -65,7 +65,7 @@
               Водени от нашата философия, че най-важните уроци не се учат между четири стени, лято организираме Скаутското училище. То е създадено за деца, които не се боят да изцапат ръцете си, за да открият възможностите си.
             </p>
             <p class="text-[#555569] text-[clamp(16px,1.5vw,18px)] leading-[1.7]">
-              Тук не просто палим огън или връзваме възли — ние изграждаме увереност, учим се на екипност и развиваме психологическа устойчивост в непозната среда. Под ръководството на тандем от специалисти — биолог-изследовател и планински инструктор — „Не мога" се превръща в „Знам как".
+              Тук не просто палим огън или връзваме възли - ние изграждаме увереност, учим се на екипност и развиваме психологическа устойчивост в непозната среда. Под ръководството на тандем от специалисти - биолог-изследовател и планински инструктор — „Не мога" се превръща в „Знам как".
             </p>
           </div>
           <div class="relative">
@@ -89,35 +89,35 @@
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">1</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Архитекти на бивака</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Избор на терен, заслони, хамаци, скаутски възли</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 1 — 6 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 1 - 6 юли</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">2</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Тайният език на гората</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Следи от животни, ядливи растения, прогноза за времето</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 2 — 7 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 2 - 7 юли</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">3</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Господари на огъня</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Безопасно огнище, добиване на огън, горски чай</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 3 — 8 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 3 - 8 юли</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">4</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Ориентиране и картография</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Компас, карта, мисия „Търсене на съкровище"</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 4 — 9 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 4 - 9 юли</div>
           </div>
           <div class="bg-white p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">5</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Въжено предизвикателство</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Въжена градина, тролей, баланс и доверие в екипа</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 5 — 10 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 5 - 10 юли</div>
           </div>
         </div>
       </div>
@@ -142,35 +142,35 @@
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">1</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Живата вода</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Планински извори, филтър за пречистване на вода</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 1 — 13 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 1 - 13 юли</div>
           </div>
           <div class="bg-[#EEF4F9] p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">2</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Мисия „Планинско спасяване"</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Първа помощ, импровизирана носилка, транспорт</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 2 — 14 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 2 - 14 юли</div>
           </div>
           <div class="bg-[#EEF4F9] p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">3</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Оцеляване в екстремни условия</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">„Горска чорба" на огън, психология на оцеляването</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 3 — 15 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 3 - 15 юли</div>
           </div>
           <div class="bg-[#EEF4F9] p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">4</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Горски Ninja Warrior</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Трасе от препятствия, баланс, катерене, отборни щафети</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 4 — 16 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 4 - 16 юли</div>
           </div>
           <div class="bg-[#EEF4F9] p-[26px_22px] rounded-[18px] border-2 border-transparent hover:translate-y-[-4px] hover:border-[#CADA2B] hover:shadow-[0_12px_28px_rgba(99,104,172,0.14)] transition-all duration-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-[6px] h-full bg-[#CADA2B]"></div>
             <div class="font-lobster text-[#9A99CC] text-[34px] leading-none mb-[6px]">5</div>
             <h3 class="text-[18px] text-[#6368AC] leading-[1.3] mb-[6px] font-bold">Големият преход и Ритуалът</h3>
             <div class="text-[#555569] text-[14px] mb-[12px] italic">Финален поход, отличителни знаци, приемане в общността</div>
-            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 5 — 17 юли</div>
+            <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.5px]">Ден 5 - 17 юли</div>
           </div>
         </div>
       </div>
@@ -229,10 +229,10 @@
               <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Имейл</div>
               <div class="font-semibold text-[#6368AC] text-[14px]">exploratorium.camp@abv.bg</div>
             </a>
-            <a href="https://www.facebook.com/exploratoriumsummer" target="_blank" rel="noopener" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
+            <a href="https://www.facebook.com/ExploratoriumBG" target="_blank" rel="noopener" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">👍</div>
               <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Facebook</div>
-              <div class="font-semibold text-[#6368AC] text-[14px]">@exploratoriumsummer</div>
+              <div class="font-semibold text-[#6368AC] text-[14px]">ExploratoriumBG</div>
             </a>
           </div>
           <a href="mailto:exploratorium.camp@abv.bg?subject=Записване%20Скаутско%20училище%202026" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Изпрати запитване</a>
@@ -243,4 +243,5 @@
 </template>
 
 <script setup>
+useHead({ title: 'Скаутско училище' })
 </script>

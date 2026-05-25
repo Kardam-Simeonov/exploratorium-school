@@ -73,7 +73,7 @@
             <div class="text-[#CADA2B] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Запишете детето</div>
             <h2 class="text-white text-[clamp(26px,3.5vw,36px)] leading-[1.2] mb-[16px] font-bold">Запазете час за среща</h2>
             <p class="text-explo-whiteblue mb-[32px] text-[clamp(15px,1.3vw,17px)] leading-[1.6] opacity-80">
-              Пишете ни или се обадете — ще уговорим удобно време за лична среща и посещение на базата.
+              Пишете ни или се обадете - ще уговорим удобно време за лична среща и посещение на базата.
             </p>
             <a href="mailto:exploratorium.school@abv.bg" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">
               Изпрати запитване
@@ -88,8 +88,6 @@
                 <div class="text-[26px]">📞</div>
                 <div class="flex-1 min-w-0">
                   <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Телефон</div>
-                  <div class="font-semibold text-[#CADA2B] text-[15px]">0879 180 700</div>
-                  <div class="text-[12px] text-explo-whiteblue opacity-60">Роси Панайотова</div>
                 </div>
               </a>
               <a href="mailto:exploratorium.school@abv.bg" class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
@@ -97,6 +95,13 @@
                 <div class="flex-1 min-w-0">
                   <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Имейл</div>
                   <div class="font-semibold text-[#CADA2B] text-[15px] break-words">exploratorium.school@abv.bg</div>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/ExploratoriumBG" target="_blank" rel="noopener" class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
+                <div class="text-[26px]">👍</div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-[12px] text-explo-whiteblue opacity-60 uppercase tracking-[0.8px] mb-[2px]">Facebook</div>
+                  <div class="font-semibold text-[#CADA2B] text-[15px]">ExploratoriumBG</div>
                 </div>
               </a>
               <div class="bg-[rgba(255,255,255,0.07)] p-[18px_22px] rounded-[14px] flex items-center gap-[16px] border border-[rgba(255,255,255,0.1)]">
@@ -114,5 +119,6 @@
   </div>
 </template>
 <script setup>
+useHead({ title: 'Прием' })
 </script>
   
