@@ -164,7 +164,7 @@
             <a href="mailto:exploratorium.school@abv.bg" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">📩</div>
               <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Имейл</div>
-              <div class="font-semibold text-[#6368AC] text-[14px]">exploratorium.school@abv.bg</div>
+              <div class="font-semibold text-[#6368AC] text-[13px] sm:text-[14px]">exploratorium.school<br class="sm:hidden">@abv.bg</div>
             </a>
             <a href="https://www.facebook.com/ExploratoriumBG" target="_blank" rel="noopener" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">👍</div>
@@ -172,7 +172,6 @@
               <div class="font-semibold text-[#6368AC] text-[14px]">ExploratoriumBG</div>
             </a>
           </div>
-          <a href="mailto:exploratorium.school@abv.bg?subject=Кандидатура%20Работилница%20за%20писатели%202026" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Изпратете запитване</a>
         </div>
       </div>
     </section>
@@ -180,5 +179,15 @@
 </template>
 
 <script setup>
-useHead({ title: 'Работилница за писатели' })
+useHead({
+  title: 'Работилница за писатели | Exploratorium School',
+  meta: [
+    { name: 'description', content: 'Творческа работилница за млади писатели в Експлораториум. Деца изграждат разкази, герои и светове под напътствията на опитни фасилитатори.' },
+    { property: 'og:title', content: 'Работилница за писатели | Летни активности · Експлораториум' },
+    { property: 'og:description', content: 'Творческа работилница за млади писатели в Експлораториум. Деца изграждат разкази, герои и светове под напътствията на опитни фасилитатори.' },
+    { property: 'og:image', content: 'https://exploratorium.bg/stock/summerhero.jpg' },
+    { property: 'og:url', content: 'https://exploratorium.bg/summer-activities/writers-workshop' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://exploratorium.bg/summer-activities/writers-workshop' }],
+})
 </script>

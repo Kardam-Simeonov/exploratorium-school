@@ -1,348 +1,436 @@
 <template>
   <div class="font-inter text-[#2A2A40] bg-[#EEF4F9]">
+
     <!-- HERO -->
-    <section class="bg-gradient-to-br from-[#6368AC] to-[#9A99CC] text-white pt-[250px] pb-[80px] relative overflow-hidden lg:pt-[270px] lg:pb-[100px]">
+    <section class="bg-gradient-to-br from-[#6368AC] to-[#9A99CC] text-white pt-[250px] pb-[100px] relative overflow-hidden lg:pt-[270px]">
       <div class="absolute bottom-[-60px] left-[-60px] right-[-60px] h-[120px] bg-[#EEF4F9] rounded-[50%] z-[1]"></div>
       <div class="container mx-auto px-6 relative z-[2] max-w-[1200px]">
-        <div class="grid grid-cols-1 gap-[50px] items-center lg:grid-cols-[1fr_1.1fr]">
+        <div class="grid grid-cols-1 gap-[60px] items-center lg:grid-cols-[1.2fr_1fr]">
           <div class="animate-fade-down">
-            <h1 class="text-[clamp(30px,4.5vw,52px)] leading-[1.1] font-bold text-[#CADA2B] mb-[22px]">
-              <span class="block text-[clamp(16px,1.8vw,20px)] text-white font-medium uppercase tracking-[2px] mb-[12px] opacity-85">Лято в Експлораториум</span>
-              От микроскопа до огъня в планината
+            <p class="text-[14px] font-semibold tracking-[2px] text-[#CADA2B] mb-[16px] uppercase">Лято в Експлораториум · 2026</p>
+            <h1 class="text-[clamp(36px,4.5vw,56px)] font-black leading-[1.1] mb-[20px]">
+              От микроскопа до <span class="text-[#CADA2B]">огъня в планината</span>
             </h1>
-            <p class="text-[clamp(16px,1.5vw,19px)] opacity-95 mb-[32px]">
-              Докато светът спори за оценки, ние експериментираме, готвим и изследваме Витоша.
-              Всяка седмица е различна научна и емоционална лаборатория за деца от 5 до 10 години.
+            <p class="text-[clamp(17px,1.5vw,20px)] opacity-90 mb-[36px]">
+              Докато светът спори за оценки, ние експериментираме, готвим и изследваме Витоша. 11 тематични седмици за деца 5-10 г.
             </p>
-            <div class="flex flex-wrap gap-[14px]">
-              <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Запази място за дете</a>
-              <a href="#weeks" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Виж 11-те седмици</a>
+            <div class="flex flex-wrap gap-[16px]">
+              <a href="#zapis" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s]">Запази място за дете</a>
+              <a href="#sedmici" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200">Виж 11-те седмици</a>
             </div>
           </div>
-          <div class="relative">
-            <img src="/stock/photo_2026-05-14_15-00-45.jpg" alt="Деца изследват поток на Витоша" class="w-full aspect-[4/3] object-cover rounded-[24px] shadow-[0_24px_60px_rgba(0,0,0,0.3)] border-[6px] border-[rgba(255,255,255,0.18)]">
-            <div class="absolute bottom-[-18px] left-1/2 transform -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">15 юни – 28 август</div>
+          <div class="relative h-[480px] lg:h-[420px]">
+            <img src="/stock/summerhero.jpg" alt="Деца изследват през лятото в Експлораториум" class="w-full h-full object-cover rounded-[24px] shadow-[0_24px_64px_rgba(0,0,0,0.3)] border-[6px] border-[rgba(255,255,255,0.18)]">
+            <div class="absolute bottom-[-18px] left-1/2 -translate-x-1/2 bg-[#CADA2B] text-[#575DAA] py-[12px] px-[24px] rounded-full font-bold text-[14px] uppercase tracking-[1px] whitespace-nowrap shadow-[0_8px_24px_rgba(202,218,43,0.5)]">15 юни – 28 август · 150 €/седмица</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FACTS -->
+    <!-- PILLARS -->
     <section class="bg-[#EEF4F9] py-[30px] pb-[60px] relative z-[3]">
       <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="grid grid-cols-2 gap-[16px] bg-white p-[32px] rounded-[24px] shadow-[0_8px_32px_rgba(99,104,172,0.12)] lg:grid-cols-4">
-          <div class="text-center p-[12px]">
-            <div class="text-[30px] mb-[8px]">📍</div>
-            <div class="text-[13px] uppercase tracking-[0.8px] text-[#555569] mb-[6px]">Къде</div>
-            <div class="font-semibold text-[#6368AC] text-[16px] leading-[1.4]">Учебна база, кв. Драгалевци<br>ул. Мавровец 3</div>
+        <div class="grid grid-cols-2 gap-[16px] bg-white p-[32px_20px] rounded-[24px] shadow-[0_12px_48px_rgba(94,96,206,0.12)] lg:grid-cols-4 lg:p-[40px]">
+          <div class="text-center">
+            <div class="text-[32px] mb-[12px]">📅</div>
+            <div class="text-[12px] font-semibold uppercase tracking-[2px] text-[#555569] mb-[8px]">Кога</div>
+            <div class="text-[18px] font-bold text-[#6368AC]">15 юни – 28 август<small class="block text-[13px] font-medium text-[#555569] mt-[4px]">пон–пет, 8:30–17:30</small></div>
           </div>
-          <div class="text-center p-[12px]">
-            <div class="text-[30px] mb-[8px]">📅</div>
-            <div class="text-[13px] uppercase tracking-[0.8px] text-[#555569] mb-[6px]">Кога</div>
-            <div class="font-semibold text-[#6368AC] text-[16px] leading-[1.4]">15 юни – 28 август<br>пон–пет, 9:00–18:00</div>
+          <div class="text-center">
+            <div class="text-[32px] mb-[12px]">👧🧒</div>
+            <div class="text-[12px] font-semibold uppercase tracking-[2px] text-[#555569] mb-[8px]">Възраст</div>
+            <div class="text-[18px] font-bold text-[#6368AC]">5 – 10 години</div>
           </div>
-          <div class="text-center p-[12px]">
-            <div class="text-[30px] mb-[8px]">👧🧒</div>
-            <div class="text-[13px] uppercase tracking-[0.8px] text-[#555569] mb-[6px]">Възраст</div>
-            <div class="font-semibold text-[#6368AC] text-[16px] leading-[1.4]">5 – 10 години</div>
+          <div class="text-center">
+            <div class="text-[32px] mb-[12px]">📍</div>
+            <div class="text-[12px] font-semibold uppercase tracking-[2px] text-[#555569] mb-[8px]">Къде</div>
+            <div class="text-[18px] font-bold text-[#6368AC]">Драгалевци<small class="block text-[13px] font-medium text-[#555569] mt-[4px]">ул. Мавровец 3</small></div>
           </div>
-          <div class="text-center p-[12px]">
-            <div class="text-[30px] mb-[8px]">💶</div>
-            <div class="text-[13px] uppercase tracking-[0.8px] text-[#555569] mb-[6px]">Цена</div>
-            <div class="font-semibold text-[#6368AC] text-[16px] leading-[1.4]">150 €/седмица<br>-10% за второ дете</div>
+          <div class="text-center">
+            <div class="text-[32px] mb-[12px]">💶</div>
+            <div class="text-[12px] font-semibold uppercase tracking-[2px] text-[#555569] mb-[8px]">Цена</div>
+            <div class="text-[18px] font-bold text-[#6368AC]">150 €/седмица<small class="block text-[13px] font-medium text-[#555569] mt-[4px]">-10% за второ дете</small></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="bg-[#EEF4F9] pt-[16px] pb-[48px] relative z-[3]">
+    <!-- ABOUT -->
+    <section class="py-[80px] bg-[#FFF9E6]">
       <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="text-center mb-[32px]">
-          <h2 class="text-[clamp(22px,3.5vw,32px)] text-[#6368AC] font-bold leading-[1.2] mb-[16px]">Лято в Експлораториум: „Пътешествие към себе си и света"</h2>
-          <p class="text-[#555569] text-[clamp(15px,1.4vw,17px)] leading-[1.7] max-w-[760px] mx-auto mb-[20px]">
-            Ние вярваме, че всяко дете носи в себе си естествен изследователски дух. Нашата мисия е да подкрепим това любопитство, като превърнем лятото в едно вълнуващо пътуване. От микроскопа в лабораторията до лагерния огън в планината – децата в Експлораториум откриват как работи светът и кои са те самите в него.
-          </p>
-          <p class="text-[#555569] text-[clamp(14px,1.3vw,16px)] italic opacity-80 max-w-[640px] mx-auto">Идеално за откриватели, които искат да съчетават изследователския дух с незабравими летни приключения.</p>
-        </div>
-        <div class="bg-white rounded-[20px] p-[28px_32px] shadow-[0_8px_24px_rgba(99,104,172,0.1)]">
-          <div class="text-[#6368AC] font-bold text-[16px] mb-[16px]">Всеки ден е различно приключение:</div>
-          <div class="grid grid-cols-1 gap-[12px] lg:grid-cols-2">
-            <div class="flex items-start gap-[12px]">
-              <div class="w-[6px] h-[6px] rounded-full bg-[#CADA2B] mt-[9px] shrink-0"></div>
-              <p class="text-[#555569] text-[15px] leading-[1.6]"><span class="font-semibold text-[#6368AC]">Изследователски подход и наука чрез игра:</span> Пътешествия из знанието, водени от детското любопитство.</p>
-            </div>
-            <div class="flex items-start gap-[12px]">
-              <div class="w-[6px] h-[6px] rounded-full bg-[#CADA2B] mt-[9px] shrink-0"></div>
-              <p class="text-[#555569] text-[15px] leading-[1.6]"><span class="font-semibold text-[#6368AC]">Ежедневни излизания сред природата:</span> Планината като най-голямата ни и вдъхновяваща класна стая.</p>
-            </div>
-            <div class="flex items-start gap-[12px]">
-              <div class="w-[6px] h-[6px] rounded-full bg-[#CADA2B] mt-[9px] shrink-0"></div>
-              <p class="text-[#555569] text-[15px] leading-[1.6]"><span class="font-semibold text-[#6368AC]">Творчески ателиета и отборни мисии:</span> Време за изразяване на личността, изграждане на общност и екипна работа.</p>
-            </div>
-            <div class="flex items-start gap-[12px]">
-              <div class="w-[6px] h-[6px] rounded-full bg-[#CADA2B] mt-[9px] shrink-0"></div>
-              <p class="text-[#555569] text-[15px] leading-[1.6]"><span class="font-semibold text-[#6368AC]">Свобода, движение и смях:</span> Истински летни игри в двора ни и споделени мигове на чист въздух.</p>
-            </div>
+        <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">За кого е лагерът</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[16px] text-[#6368AC]">Идеално за откривателите</h2>
+        <div class="w-14 h-1 bg-[#CADA2B] rounded-full mb-[28px]" />
+        <p class="text-[18px] leading-[1.7] text-[#555569] max-w-[800px] mb-[32px]">На децата, които искат да съчетават изследователския дух с незабравими летни приключения. Всеки ден е различно приключение:</p>
+        <div class="grid grid-cols-1 gap-[20px] lg:grid-cols-2">
+          <div class="p-[20px] bg-[#e7e8f9] rounded-[16px] border-l-[4px] border-[#6368AC]">
+            <strong class="block text-[#6368AC] font-bold mb-[6px]">Изследователски подход и наука чрез игра</strong>
+            Пътешествия из знанието, водени от детското любопитство.
+          </div>
+          <div class="p-[20px] bg-[#e7e8f9] rounded-[16px] border-l-[4px] border-[#6368AC]">
+            <strong class="block text-[#6368AC] font-bold mb-[6px]">Ежедневни излизания сред природата</strong>
+            Планината като най-голямата ни и вдъхновяваща класна стая.
+          </div>
+          <div class="p-[20px] bg-[#e7e8f9] rounded-[16px] border-l-[4px] border-[#6368AC]">
+            <strong class="block text-[#6368AC] font-bold mb-[6px]">Творчески ателиета и отборни мисии</strong>
+            Време за изразяване на личността, изграждане на общност и екипна работа.
+          </div>
+          <div class="p-[20px] bg-[#e7e8f9] rounded-[16px] border-l-[4px] border-[#6368AC]">
+            <strong class="block text-[#6368AC] font-bold mb-[6px]">Свобода, движение и смях</strong>
+            Истински летни игри в двора ни и споделени мигове на чист въздух.
           </div>
         </div>
       </div>
     </section>
 
     <!-- WEEKS -->
-    <section id="weeks" class="py-[60px] lg:py-[80px]">
-      <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="text-center mb-[56px]">
-          <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">11 тематични седмици</div>
-          <h2 class="text-[clamp(28px,4vw,42px)] text-[#6368AC] leading-[1.2] font-bold">Всяка седмица е нова лаборатория</h2>
-          <p class="max-w-[640px] mx-auto mt-[18px] text-[#555569] text-[17px]">Записванията са на седмична база - детето може да дойде за една седмица, за пет или за цялото лято. Темите не се повтарят.</p>
-        </div>
-        <div class="grid grid-cols-1 gap-[14px] items-start sm:grid-cols-2 lg:grid-cols-2">
-          <div
-            v-for="(week, i) in weeks"
-            :key="i"
-            class="bg-white rounded-[18px] border-2 overflow-hidden transition-all duration-200 cursor-pointer select-none relative"
-            :class="openWeeks.has(i) ? 'border-[#CADA2B] shadow-[0_12px_28px_rgba(99,104,172,0.14)]' : 'border-transparent shadow-[0_2px_8px_rgba(99,104,172,0.07)] hover:border-[#CADA2B] hover:shadow-[0_8px_20px_rgba(99,104,172,0.11)]'"
-            @click="toggleWeek(i)"
-          >
-            <div class="absolute top-0 left-0 w-[5px] h-full bg-[#CADA2B]"></div>
-            <div class="pl-[24px] pr-[20px] py-[22px] flex items-center gap-[16px]">
-              <div class="font-lobster text-[#9A99CC] text-[42px] leading-none shrink-0 lg:text-[52px]">{{ week.num }}</div>
-              <div class="flex-1 min-w-0">
-                <h3 class="text-[18px] text-[#6368AC] leading-[1.3] font-bold lg:text-[21px]">{{ week.title }}</h3>
-                <div class="text-[#555569] text-[14px] italic mt-[3px] opacity-80 lg:text-[16px]">{{ week.subtitle }}</div>
-                <div class="text-[#B8C24E] font-semibold text-[13px] tracking-[0.3px] mt-[6px] lg:text-[15px]">{{ week.dates }}</div>
-              </div>
-              <svg
-                class="w-[18px] h-[18px] text-[#9A99CC] shrink-0 transition-transform duration-200"
-                :class="{ 'rotate-180 text-[#6368AC]': openWeeks.has(i) }"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
+    <section id="sedmici" class="py-[80px] bg-[#e7e8f9] relative overflow-hidden">
+      <div class="absolute top-[-60px] right-[-60px] w-[320px] h-[320px] rounded-full bg-[rgba(99,104,172,0.06)] pointer-events-none"></div>
+      <div class="absolute bottom-[-80px] left-[-40px] w-[260px] h-[260px] rounded-full bg-[rgba(202,218,43,0.07)] pointer-events-none"></div>
+      <div class="container mx-auto px-6 max-w-[1200px] relative z-[1]">
+        <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">11 тематични седмици</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[16px] text-[#6368AC]">Всяка седмица е нова лаборатория</h2>
+        <div class="w-14 h-1 bg-[#CADA2B] rounded-full mb-[16px]"></div>
+        <p class="text-[18px] text-[#555569] max-w-[720px] mb-[52px] leading-[1.7]">Записванията са на седмична база – детето може да дойде за една, за пет или за всички 11 седмици. Темите не се повтарят.</p>
+        <div class="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-3">
+          <div v-for="week in weeks" :key="week.num"
+            class="group bg-white rounded-[22px] p-[28px_24px] relative overflow-hidden hover:translate-y-[-4px] hover:shadow-[0_16px_48px_rgba(99,104,172,0.18)] transition-all duration-200 shadow-[0_4px_16px_rgba(99,104,172,0.08)] border border-[#ecedf8]">
+            <!-- Faded watermark number -->
+            <div class="absolute top-[-10px] right-[10px] font-black text-[#6368AC] opacity-[0.055] text-[88px] leading-none select-none pointer-events-none">{{ week.num }}</div>
+            <!-- Icon + date pill -->
+            <div class="flex items-start justify-between mb-[18px]">
+              <div class="w-[48px] h-[48px] bg-[#e7e8f9] group-hover:bg-[#d8daf5] rounded-[14px] flex items-center justify-center text-[24px] transition-colors duration-200 shrink-0">{{ week.icon }}</div>
+              <div class="bg-[#f0f4e6] text-[#5a7020] text-[11px] font-bold px-[10px] py-[4px] rounded-full tracking-[0.3px] mt-[2px]">{{ week.dates }}</div>
             </div>
-            <Transition
-              @enter="onWeekEnter"
-              @after-enter="onWeekAfterEnter"
-              @leave="onWeekLeave"
-            >
-              <div v-if="openWeeks.has(i)" class="pl-[24px] pr-[20px] pb-[22px]">
-                <div class="border-t border-[#EEF4F9] pt-[14px] space-y-[10px]">
-                  <div class="text-[15px] text-[#555569] leading-[1.6] lg:text-[16px]"><span class="font-semibold text-[#6368AC]">Изследване:</span> {{ week.research }}</div>
-                  <div class="text-[15px] text-[#555569] leading-[1.6] lg:text-[16px]"><span class="font-semibold text-[#6368AC]">Опит:</span> {{ week.experiment }}</div>
-                  <div class="text-[15px] text-[#555569] leading-[1.6] lg:text-[16px]"><span class="font-semibold text-[#6368AC]">Готвене:</span> {{ week.cooking }}</div>
-                </div>
-              </div>
-            </Transition>
+            <!-- Title -->
+            <div class="text-[18px] font-extrabold text-[#2A2A40] mb-[10px] leading-[1.3]">{{ week.title }}</div>
+            <!-- Theme pill -->
+            <div class="inline-block bg-[#e7e8f9] text-[#6368AC] text-[12px] font-semibold px-[10px] py-[3px] rounded-full">{{ week.theme }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCLUDES -->
+    <section class="py-[80px] bg-[#f0f4e6]">
+      <div class="container mx-auto px-6 max-w-[1200px]">
+        <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">Цената включва</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[16px] text-[#6368AC]">Какво получавате за 150 €/седмица</h2>
+        <div class="w-14 h-1 bg-[#CADA2B] rounded-full mb-[48px]" />
+        <div class="grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4">
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">👨‍🏫</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Опитни ментори</h3>
+            <p class="text-[14px] text-[#555569]">На децата ще се грижат учители от екипа на Експлораториум – тези, които работят с деца от години.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">🎨</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Лабораторни материали</h3>
+            <p class="text-[14px] text-[#555569]">Всички консумативи за експерименти, занаяти и творчески ателиета.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">🧪</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Кулинарна лаборатория</h3>
+            <p class="text-[14px] text-[#555569]">Продукти за готварските дни в четвъртък – приложна химия с детски ръце.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">⛰️</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Излизания на Витоша</h3>
+            <p class="text-[14px] text-[#555569]">Ежедневен излет с придружители, разрешителни за резерватите включени.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT TO BRING -->
+    <section class="py-[80px] bg-[#e7e8f9]">
+      <div class="container mx-auto px-6 max-w-[1200px]">
+        <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">Практическа информация</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[24px] text-[#6368AC]">Какво да носи детето</h2>
+        <p class="text-[18px] text-[#555569] max-w-[720px] mb-[48px]">Малка раница, удобни обувки и любопитство – това е всичко. Подробният списък по дни идва при записване.</p>
+        <div class="grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4">
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">🥪</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Храна за деня</h3>
+            <p class="text-[14px] text-[#555569]">Сандвич за обяд, плодове или сладко за следобед, бутилка вода. Подготвени от вкъщи.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">🎒</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Малка раница</h3>
+            <p class="text-[14px] text-[#555569]">Удобна за носене през деня. Резервна тениска, шапка с козирка, слънцезащитен крем.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">👟</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Здрави обувки</h3>
+            <p class="text-[14px] text-[#555569]">Маратонки за горските пътеки. На водните партита в петък – бански костюм и хавлия.</p>
+          </div>
+          <div class="p-[24px] bg-white rounded-[20px] shadow-[0_4px_16px_rgba(99,104,172,0.1)]">
+            <div class="w-[48px] h-[48px] bg-[#e7e8f9] rounded-[12px] flex items-center justify-center text-[24px] mb-[16px]">🔍</div>
+            <h3 class="text-[17px] font-bold mb-[6px]">Любопитство</h3>
+            <p class="text-[14px] text-[#555569]">Без телефони и таблети – само готовност за приключение и въпроси „Защо?".</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- RITUALS -->
-    <section class="bg-white py-[60px] lg:py-[80px]">
-      <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="text-center mb-[56px]">
-          <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Всяка седмица</div>
-          <h2 class="text-[clamp(28px,4vw,42px)] text-[#6368AC] leading-[1.2] font-bold">Два ритуала, които децата чакат</h2>
-          <p class="max-w-[640px] mx-auto mt-[18px] text-[#555569] text-[17px]">Освен тематичните експерименти и излизанията на Витоша, всяка седмица има два постоянни момента, които станаха традиция в Експлораториум.</p>
-        </div>
-        <div class="grid grid-cols-1 gap-[28px] lg:grid-cols-2">
-          <div class="rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(99,104,172,0.12)] hover:translate-y-[-4px] hover:shadow-[0_18px_40px_rgba(99,104,172,0.18)] transition-all duration-200">
-            <img src="/stock/photo_2026-05-14_15-00-48.jpg" alt="Деца с готварски шапки приготвят домати" class="w-full aspect-[4/3] object-cover">
-            <div class="p-[30px_28px] text-white bg-gradient-to-br from-[#6368AC] to-[#575DAA]">
-              <div class="font-lobster text-[26px] leading-none mb-[8px] opacity-95">Четвъртък</div>
-              <h3 class="text-[24px] font-bold mb-[10px] leading-[1.2]">Кулинарна лаборатория</h3>
-              <p class="opacity-92 text-[16px]">Не просто готвене - приложна химия. Децата разбират защо тестото бухва, защо карамелът кафенее, защо лимонът пощипва. После го изяждат.</p>
+    <section class="py-[80px] bg-gradient-to-br from-[#6368AC] to-[#4a4ca3] text-white relative overflow-hidden">
+      <!-- Decorative blobs -->
+      <div class="absolute top-[-80px] left-[-60px] w-[340px] h-[340px] rounded-full bg-[rgba(255,255,255,0.04)] pointer-events-none"></div>
+      <div class="absolute bottom-[-60px] right-[-60px] w-[280px] h-[280px] rounded-full bg-[rgba(202,218,43,0.07)] pointer-events-none"></div>
+
+      <div class="container mx-auto px-6 max-w-[1200px] relative z-[1]">
+        <div class="text-[#CADA2B] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">Всяка седмица</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[16px] text-white">Два ритуала, които децата чакат</h2>
+        <p class="text-[18px] text-[rgba(255,255,255,0.8)] max-w-[680px] mb-[52px] leading-[1.7]">Освен тематичните експерименти и излизанията на Витоша, всяка седмица има два постоянни момента, които станаха традиция.</p>
+
+        <div class="grid grid-cols-1 gap-[24px] lg:grid-cols-2">
+
+          <!-- Кулинарна лаборатория -->
+          <div class="group relative rounded-[24px] overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.3)] cursor-default">
+            <img src="/stock/ritual-cooking.jpg" alt="Кулинарна лаборатория в Експлораториум – деца около маса с продукти"
+              class="w-full h-[380px] object-cover group-hover:scale-[1.04] transition-transform duration-500 ease-out">
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[rgba(25,22,65,0.95)] via-[rgba(25,22,65,0.35)] to-transparent"></div>
+            <!-- Day badge -->
+            <div class="absolute top-[20px] left-[20px] flex items-center gap-[8px]">
+              <div class="bg-[#CADA2B] text-[#3a3f70] text-[11px] font-black uppercase tracking-[1.5px] px-[13px] py-[5px] rounded-full shadow-[0_4px_12px_rgba(202,218,43,0.4)]">Четвъртък</div>
+            </div>
+            <!-- Emoji badge top-right -->
+            <div class="absolute top-[18px] right-[20px] w-[40px] h-[40px] bg-[rgba(255,255,255,0.15)] backdrop-blur-sm rounded-full flex items-center justify-center text-[20px] border border-[rgba(255,255,255,0.2)]">🍳</div>
+            <!-- Text content -->
+            <div class="absolute bottom-0 left-0 right-0 p-[28px_28px_32px]">
+              <div class="text-[24px] font-extrabold text-white mb-[8px] leading-[1.2]">Кулинарна лаборатория</div>
+              <div class="text-[15px] text-[rgba(255,255,255,0.85)] leading-[1.6]">Не просто готвене — приложна химия. Децата разбират защо тестото бухва, защо карамелът кафенее, защо лимонът пощипва. После го изяждат.</div>
             </div>
           </div>
-          <div class="rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(99,104,172,0.12)] hover:translate-y-[-4px] hover:shadow-[0_18px_40px_rgba(99,104,172,0.18)] transition-all duration-200">
-            <img src="/stock/photo_2026-05-14_15-01-01.jpg" alt="Деца изследват каньон с водопад" class="w-full aspect-[4/3] object-cover">
-            <div class="p-[30px_28px] text-[#575DAA] bg-gradient-to-br from-[#CADA2B] to-[#B8C24E]">
-              <div class="font-lobster text-[26px] leading-none mb-[8px] opacity-95">Петък</div>
-              <h3 class="text-[24px] font-bold mb-[10px] leading-[1.2]">Водно парти</h3>
-              <p class="opacity-92 text-[16px]">Водни предизвикателства, експерименти с плаване и потъване, и чиста радост. Седмицата завършва мокро и щастливо.</p>
+
+          <!-- Водно парти -->
+          <div class="group relative rounded-[24px] overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.3)] cursor-default">
+            <img src="/stock/ritual-water.jpg" alt="Водно парти в края на седмицата"
+              class="w-full h-[380px] object-cover group-hover:scale-[1.04] transition-transform duration-500 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-[rgba(25,22,65,0.95)] via-[rgba(25,22,65,0.35)] to-transparent"></div>
+            <div class="absolute top-[20px] left-[20px]">
+              <div class="bg-[#CADA2B] text-[#3a3f70] text-[11px] font-black uppercase tracking-[1.5px] px-[13px] py-[5px] rounded-full shadow-[0_4px_12px_rgba(202,218,43,0.4)]">Петък</div>
+            </div>
+            <div class="absolute top-[18px] right-[20px] w-[40px] h-[40px] bg-[rgba(255,255,255,0.15)] backdrop-blur-sm rounded-full flex items-center justify-center text-[20px] border border-[rgba(255,255,255,0.2)]">💧</div>
+            <div class="absolute bottom-0 left-0 right-0 p-[28px_28px_32px]">
+              <div class="text-[24px] font-extrabold text-white mb-[8px] leading-[1.2]">Водно парти</div>
+              <div class="text-[15px] text-[rgba(255,255,255,0.85)] leading-[1.6]">Водни предизвикателства, експерименти с плаване и потъване, и чиста радост. Седмицата завършва мокро и щастливо.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-[80px] bg-[#fdf8ec]">
+      <div class="container mx-auto px-6 max-w-[1200px]">
+        <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[16px]">Мнения на семейства</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[48px] text-[#6368AC]">Какво казват нашите родители</h2>
+        <div class="max-w-[780px] mx-auto flex flex-col gap-[24px]">
+          <div class="bg-white p-[40px_36px] rounded-[24px] border-l-[6px] border-[#6368AC] shadow-[0_12px_40px_rgba(94,96,206,0.08)]">
+            <div class="font-lobster text-[56px] leading-none text-[#6368AC] opacity-25 mb-[-8px]">"</div>
+            <p class="text-[18px] leading-[1.65] italic text-[#2A2A40] mb-[22px]">Бъдете все така всеотдайни! Когато преди две години моите момичета бяха за кратко през лятото при вас, сутринта нямаха търпение за следващите приключения!</p>
+            <div class="flex items-center gap-[14px] border-t border-[#e7e8f9] pt-[18px]">
+              <div class="w-[44px] h-[44px] bg-[#e7e8f9] rounded-full flex items-center justify-center text-[16px] font-bold text-[#6368AC]">СУ</div>
+              <div>
+                <div class="font-bold text-[15px] text-[#2A2A40]">Савина Урдева</div>
+                <div class="text-[13px] text-[#555569]">майка на две момичета</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-[40px_36px] rounded-[24px] border-l-[6px] border-[#6368AC] shadow-[0_12px_40px_rgba(94,96,206,0.08)]">
+            <div class="font-lobster text-[56px] leading-none text-[#6368AC] opacity-25 mb-[-8px]">"</div>
+            <p class="text-[18px] leading-[1.65] italic text-[#2A2A40] mb-[22px]">Избрах Лятната програма на Експлораториум и за двете ми деца заради приятелската атмосфера и възможността децата да изкарват повече време на чист въздух в полите на Витоша. Учителите успяха да стимулират любопитството на децата с научни експерименти, разходки сред природата и много други интересни активности, за което им благодаря от сърце.</p>
+            <div class="flex items-center gap-[14px] border-t border-[#e7e8f9] pt-[18px]">
+              <div class="w-[44px] h-[44px] bg-[#e7e8f9] rounded-full flex items-center justify-center text-[16px] font-bold text-[#6368AC]">М</div>
+              <div>
+                <div class="font-bold text-[15px] text-[#2A2A40]">Михаела</div>
+                <div class="text-[13px] text-[#555569]">майка на Андерс (9 г.) и Линнеа (6 г.)</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="bg-[#EEF4F9] py-[60px] pb-[100px] lg:py-[80px] lg:pb-[100px]">
+    <!-- CTA FORM -->
+    <section id="zapis" class="py-[80px] bg-gradient-to-br from-[#6368AC] to-[#4a4ca3] text-white">
       <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="text-center mb-[56px]">
-          <div class="text-[#B8C24E] font-semibold text-[14px] uppercase tracking-[2px] mb-[10px]">Моменти от лагера</div>
-          <h2 class="text-[clamp(28px,4vw,42px)] text-[#6368AC] leading-[1.2] font-bold">Така изглежда едно лято в Експлораториум</h2>
-          <p class="max-w-[640px] mx-auto mt-[18px] text-[#555569] text-[17px]">Снимки от предишни сезони - експерименти, занаяти, кулинария, излизания на Витоша.</p>
-        </div>
-        <div class="grid grid-cols-2 auto-rows-[110px] gap-[14px] lg:grid-cols-12 lg:auto-rows-[140px]">
-          <div class="col-span-1 row-span-2 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-7 lg:row-span-2">
-            <img src="/stock/photo_2026-05-14_15-00-32.jpg" alt="Момче гледа в микроскоп" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-          <div class="col-span-1 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-5">
-            <img src="/stock/photo_2026-05-14_15-01-07.jpg" alt="Деца правят експеримент с цветно вещество" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-          <div class="col-span-1 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-5">
-            <img src="/stock/photo_2026-05-14_13-31-22.jpg" alt="Експеримент с буркан и светлина" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-          <div class="col-span-1 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-4">
-            <img src="/stock/photo_2026-05-14_15-00-23.jpg" alt="Деца в кухнята-лаборатория" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-          <div class="col-span-1 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-4">
-            <img src="/stock/photo_2026-05-14_15-00-40.jpg" alt="Деца рисуват и творят" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-          <div class="col-span-1 rounded-[14px] overflow-hidden shadow-[0_6px_18px_rgba(99,104,172,0.12)] hover:translate-y-[-3px] hover:shadow-[0_14px_30px_rgba(99,104,172,0.22)] transition-all duration-[0.25s] cursor-zoom-in lg:col-span-4">
-            <img src="/stock/photo_2026-05-14_15-00-45.jpg" alt="Деца на излет на Витоша" class="w-full h-full object-cover hover:scale-106 transition-transform duration-[0.4s]">
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="text-[#CADA2B] font-semibold text-[14px] uppercase tracking-[2px] mb-[12px]">Запишете място</div>
+        <h2 class="text-[clamp(30px,4vw,40px)] font-extrabold leading-[1.2] mb-[24px] text-white">Запазете място за вашето дете</h2>
+        <p class="text-[18px] text-[rgba(255,255,255,0.85)] max-w-[720px] mb-[40px]">Местата са ограничени. Попълнете формуляра и ще се свържем с вас в рамките на 24 часа.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-[28px] items-start">
 
-    <!-- PROMISE + WHAT YOUR CHILD GETS -->
-    <section class="bg-[#6368AC] text-white py-[70px] lg:py-[90px]">
-      <div class="container mx-auto px-6 max-w-[1200px]">
-        <blockquote class="max-w-[800px] mx-auto text-[clamp(20px,2.8vw,30px)] leading-[1.5] font-medium relative px-[40px] text-center mb-[60px]">
-          Дете, което в края на лятото не е <span class="line-through opacity-40">„гледано"</span>,
-          а е <span class="text-[#CADA2B] font-bold">пораснало с увереност</span>, че може да задава правилните въпроси.
-          <span class="absolute left-0 top-[-10px] font-lobster text-[#CADA2B] text-[72px] leading-none opacity-70">"</span>
-          <span class="absolute right-0 bottom-[-36px] font-lobster text-[#CADA2B] text-[72px] leading-none opacity-70">"</span>
-        </blockquote>
-
-        <div class="flex items-center gap-[20px] max-w-[480px] mx-auto mb-[52px]">
-          <div class="flex-1 h-[1px] bg-[rgba(255,255,255,0.18)]"></div>
-          <div class="text-[rgba(255,255,255,0.4)] text-[20px]">✦</div>
-          <div class="flex-1 h-[1px] bg-[rgba(255,255,255,0.18)]"></div>
-        </div>
-
-        <div class="text-center mb-[36px]">
-          <div class="text-[#CADA2B] font-semibold text-[13px] uppercase tracking-[2.5px] mb-[10px]">В края на лятото</div>
-          <h2 class="text-white text-[clamp(24px,3.2vw,34px)] font-bold leading-[1.2]">Какво получава вашето дете?</h2>
-        </div>
-
-        <div class="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.12)] rounded-[18px] p-[28px_22px] text-center hover:bg-[rgba(255,255,255,0.16)] hover:translate-y-[-3px] transition-all duration-200">
-            <div class="w-[48px] h-[48px] rounded-full bg-[#CADA2B] flex items-center justify-center mb-[16px] mx-auto">
-              <svg class="w-[20px] h-[20px] text-[#575DAA]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <!-- Form card -->
+          <div class="bg-[rgba(255,255,255,0.11)] backdrop-blur-sm border border-[rgba(255,255,255,0.22)] p-[36px_28px] rounded-[28px] shadow-[0_12px_40px_rgba(0,0,0,0.15)] lg:p-[48px_40px]">
+            <div v-if="submitted" class="flex flex-col items-center text-center py-8 gap-4">
+              <div class="w-[108px] h-[108px] rounded-full bg-[rgba(202,218,43,0.15)] flex items-center justify-center">
+                <svg class="w-[60px] h-[60px] text-[#CADA2B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <h3 class="text-white text-[22px] font-bold">Изпратено успешно!</h3>
+              <p class="text-[rgba(255,255,255,0.75)] text-[16px]">Ще се свържем с вас в рамките на 24 часа.</p>
             </div>
-            <h3 class="font-bold text-white text-[17px] mb-[8px]">Увереност</h3>
-            <p class="text-[rgba(255,255,255,0.7)] text-[14px] leading-[1.5]">Че може да се справя с практически задачи.</p>
+            <form v-else @submit.prevent="submitForm" class="flex flex-col gap-[16px]">
+              <div class="grid grid-cols-1 gap-[16px] sm:grid-cols-2">
+                <div>
+                  <label class="block text-[11px] text-white font-medium uppercase tracking-[1px] mb-[8px]">Вашето име <span class="text-[#CADA2B]">*</span></label>
+                  <input v-model="form.parentName" type="text" required placeholder="Име и фамилия"
+                    class="w-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)] rounded-[12px] px-[16px] py-[12px] text-white placeholder-[rgba(255,255,255,0.5)] text-[15px] focus:outline-none focus:border-[rgba(202,218,43,0.7)] transition-colors duration-150 font-inter" />
+                </div>
+                <div>
+                  <label class="block text-[11px] text-white font-medium uppercase tracking-[1px] mb-[8px]">Телефон <span class="text-[#CADA2B]">*</span></label>
+                  <input v-model="form.phone" type="tel" required placeholder="0888 123 456"
+                    class="w-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)] rounded-[12px] px-[16px] py-[12px] text-white placeholder-[rgba(255,255,255,0.5)] text-[15px] focus:outline-none focus:border-[rgba(202,218,43,0.7)] transition-colors duration-150 font-inter" />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-[16px] sm:grid-cols-2">
+                <div>
+                  <label class="block text-[11px] text-white font-medium uppercase tracking-[1px] mb-[8px]">Възраст на детето <span class="text-[#CADA2B]">*</span></label>
+                  <select v-model="form.childAge" required
+                    class="w-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)] rounded-[12px] px-[16px] py-[12px] text-white text-[15px] focus:outline-none focus:border-[rgba(202,218,43,0.7)] transition-colors duration-150 font-inter">
+                    <option value="" class="text-[#2A2A40]">Избери възраст</option>
+                    <option value="5" class="text-[#2A2A40]">5 години</option>
+                    <option value="6" class="text-[#2A2A40]">6 години</option>
+                    <option value="7" class="text-[#2A2A40]">7 години</option>
+                    <option value="8" class="text-[#2A2A40]">8 години</option>
+                    <option value="9" class="text-[#2A2A40]">9 години</option>
+                    <option value="10" class="text-[#2A2A40]">10 години</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] text-white font-medium uppercase tracking-[1px] mb-[8px]">Желана седмица</label>
+                  <select v-model="form.week"
+                    class="w-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)] rounded-[12px] px-[16px] py-[12px] text-white text-[15px] focus:outline-none focus:border-[rgba(202,218,43,0.7)] transition-colors duration-150 font-inter">
+                    <option value="" class="text-[#2A2A40]">Още не съм решил/а</option>
+                    <option value="1" class="text-[#2A2A40]">01: Биологична машина (15-19.06)</option>
+                    <option value="2" class="text-[#2A2A40]">02: Химия на чувствата (22-26.06)</option>
+                    <option value="3" class="text-[#2A2A40]">03: Зелени детективи (29.06-03.07)</option>
+                    <option value="4" class="text-[#2A2A40]">04: Нашите съседи (06-10.07)</option>
+                    <option value="5" class="text-[#2A2A40]">05: Архитекти на общността (13-17.07)</option>
+                    <option value="6" class="text-[#2A2A40]">06: Етно-лаборатория (20-24.07)</option>
+                    <option value="7" class="text-[#2A2A40]">07: Лаборатория за илюзии (27-31.07)</option>
+                    <option value="8" class="text-[#2A2A40]">08: Еко-пазители (03-07.08)</option>
+                    <option value="9" class="text-[#2A2A40]">09: Геометрия на красотата (10-14.08)</option>
+                    <option value="10" class="text-[#2A2A40]">10: Физика на звука (17-21.08)</option>
+                    <option value="11" class="text-[#2A2A40]">11: Картографи на неизвестното (24-28.08)</option>
+                    <option value="multiple" class="text-[#2A2A40]">Повече от една седмица</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-[11px] text-white font-medium uppercase tracking-[1px] mb-[8px]">Съобщение (по желание)</label>
+                <textarea v-model="form.message" rows="3" placeholder="Въпроси, специфики на детето, или нещо което да знаем..."
+                  class="w-full bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)] rounded-[12px] px-[16px] py-[12px] text-white placeholder-[rgba(255,255,255,0.5)] text-[15px] focus:outline-none focus:border-[rgba(202,218,43,0.7)] transition-colors duration-150 resize-none font-inter" />
+              </div>
+              <p v-if="formError" class="text-red-400 text-[14px]">{{ formError }}</p>
+              <button type="submit" :disabled="submitting"
+                class="w-full py-[14px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 font-inter">
+                {{ submitting ? 'Изпращане...' : 'Изпрати заявка' }}
+              </button>
+              <p class="text-center text-[13px] text-[rgba(255,255,255,0.6)]">Ще се свържем в рамките на 24 часа на посочения телефон.</p>
+            </form>
           </div>
-          <div class="bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.12)] rounded-[18px] p-[28px_22px] text-center hover:bg-[rgba(255,255,255,0.16)] hover:translate-y-[-3px] transition-all duration-200">
-            <div class="w-[48px] h-[48px] rounded-full bg-[#CADA2B] flex items-center justify-center mb-[16px] mx-auto">
-              <svg class="w-[20px] h-[20px] text-[#575DAA]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-            </div>
-            <h3 class="font-bold text-white text-[17px] mb-[8px]">Знание</h3>
-            <p class="text-[rgba(255,255,255,0.7)] text-[14px] leading-[1.5]">Придобито чрез преживяване, а не чрез заучаване.</p>
-          </div>
-          <div class="bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.12)] rounded-[18px] p-[28px_22px] text-center hover:bg-[rgba(255,255,255,0.16)] hover:translate-y-[-3px] transition-all duration-200">
-            <div class="w-[48px] h-[48px] rounded-full bg-[#CADA2B] flex items-center justify-center mb-[16px] mx-auto">
-              <svg class="w-[20px] h-[20px] text-[#575DAA]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </div>
-            <h3 class="font-bold text-white text-[17px] mb-[8px]">Общност</h3>
-            <p class="text-[rgba(255,255,255,0.7)] text-[14px] leading-[1.5]">Среда на уважение, в която всяко дете е прието.</p>
-          </div>
-          <div class="bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.12)] rounded-[18px] p-[28px_22px] text-center hover:bg-[rgba(255,255,255,0.16)] hover:translate-y-[-3px] transition-all duration-200">
-            <div class="w-[48px] h-[48px] rounded-full bg-[#CADA2B] flex items-center justify-center mb-[16px] mx-auto">
-              <svg class="w-[20px] h-[20px] text-[#575DAA]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-            </div>
-            <h3 class="font-bold text-white text-[17px] mb-[8px]">Спомени</h3>
-            <p class="text-[rgba(255,255,255,0.7)] text-[14px] leading-[1.5]">Изцапани колена, широки усмивки и нови приятелства.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- CTA -->
-    <section id="cta" class="bg-[#EEF4F9] py-[60px] text-center lg:py-[80px]">
-      <div class="container mx-auto px-8 max-w-[1200px]">
-        <div class="bg-white p-[40px_24px] rounded-[28px] shadow-[0_12px_40px_rgba(99,104,172,0.15)] max-w-[760px] mx-auto lg:p-[56px_40px]">
-          <h2 class="text-[#6368AC] text-[clamp(26px,3.5vw,36px)] mb-[12px] font-bold">Запазете място за дете</h2>
-          <p class="text-[#555569] mb-[32px] text-[17px]">Можете да запишете детето си за една, няколко или за всички 11 седмици. Местата са ограничени - свържете се с нас, за да заявите коя седмица желаете.</p>
-          <div class="grid grid-cols-1 gap-[16px] mb-[32px] lg:grid-cols-3">
-            <a href="tel:+359879180700" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
-              <div class="text-[24px] mb-[6px]">📞</div>
-              <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Телефон</div>
-              <div class="font-semibold text-[#6368AC] text-[14px] break-words">0879 180 700</div>
+          <!-- Contact cards -->
+          <div class="flex flex-col gap-[14px]">
+            <div class="text-[#CADA2B] font-bold text-[11px] uppercase tracking-[0.12em] mb-1">Или директно</div>
+            <h3 class="text-white font-extrabold text-[clamp(1.6rem,2.5vw,2.2rem)] leading-[1.15] mb-4">Свържете се с нас</h3>
+            <a href="tel:+359879180700" class="bg-[rgba(255,255,255,0.07)] p-[22px_28px] rounded-[16px] flex items-center gap-[20px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
+              <div class="text-[34px]">📞</div>
+              <div class="flex-1 min-w-0">
+                <div class="text-[12px] text-white opacity-60 uppercase tracking-[1px] mb-[3px]">Телефон</div>
+                <div class="font-bold text-[#CADA2B] text-[18px]">0879 180 700</div>
+              </div>
+              <div class="text-[#CADA2B] text-[24px] shrink-0">↗</div>
             </a>
-            <a href="mailto:exploratorium.camp@abv.bg" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
-              <div class="text-[24px] mb-[6px]">📩</div>
-              <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Имейл</div>
-              <div class="font-semibold text-[#6368AC] text-[14px]">exploratorium.camp@abv.bg</div>
+            <a href="mailto:exploratorium.camp@abv.bg" class="bg-[rgba(255,255,255,0.07)] p-[22px_28px] rounded-[16px] flex items-center gap-[20px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
+              <div class="text-[34px]">📧</div>
+              <div class="flex-1 min-w-0">
+                <div class="text-[12px] text-white opacity-60 uppercase tracking-[1px] mb-[3px]">Имейл</div>
+                <div class="font-bold text-[#CADA2B] text-[15px] sm:text-[17px]">exploratorium.camp<br class="sm:hidden">@abv.bg</div>
+              </div>
+              <div class="text-[#CADA2B] text-[24px] shrink-0">↗</div>
             </a>
-            <a href="https://www.facebook.com/exploratoriumsummer" target="_blank" rel="noopener" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
-              <div class="text-[24px] mb-[6px]">👍</div>
-              <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Facebook</div>
-              <div class="font-semibold text-[#6368AC] text-[14px] break-words">@exploratoriumsummer</div>
+            <a href="https://www.facebook.com/exploratoriumsummer" target="_blank" rel="noopener" class="bg-[rgba(255,255,255,0.07)] p-[22px_28px] rounded-[16px] flex items-center gap-[20px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
+              <div class="text-[34px]">👍</div>
+              <div class="flex-1 min-w-0">
+                <div class="text-[12px] text-white opacity-60 uppercase tracking-[1px] mb-[3px]">Facebook</div>
+                <div class="font-bold text-[#CADA2B] text-[16px] sm:text-[18px]">@exploratorium<br class="sm:hidden">summer</div>
+              </div>
+              <div class="text-[#CADA2B] text-[24px] shrink-0">↗</div>
+            </a>
+            <a href="https://maps.app.goo.gl/LwYPiCAErdjCQ9RA7" target="_blank" rel="noopener" class="bg-[rgba(255,255,255,0.07)] p-[22px_28px] rounded-[16px] flex items-center gap-[20px] border border-[rgba(255,255,255,0.1)] hover:translate-x-[4px] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-200">
+              <div class="text-[34px]">📍</div>
+              <div class="flex-1 min-w-0">
+                <div class="text-[12px] text-white opacity-60 uppercase tracking-[1px] mb-[3px]">Адрес</div>
+                <div class="font-bold text-[#CADA2B] text-[18px] leading-[1.4]">кв. Драгалевци, ул. Мавровец 3</div>
+              </div>
+              <div class="text-[#CADA2B] text-[24px] shrink-0">↗</div>
             </a>
           </div>
-          <a href="mailto:exploratorium.camp@abv.bg?subject=Записване%20за%20летен%20лагер%20Експлораториум" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Изпрати запитване</a>
+
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <!-- <footer class="bg-[#575DAA] text-[rgba(255,255,255,0.85)] py-[40px] pb-[28px] text-center">
-      <div class="container mx-auto px-6 max-w-[1200px]">
-        <div class="font-lobster text-[#CADA2B] text-[22px] mb-[8px]">school EXPLORATORIUM</div>
-        <p>Учебна база, кв. Драгалевци, ул. Мавровец 3, София</p>
-        <p class="mt-[14px] opacity-70">
-          Виж снимки и моменти от предишни лагери:
-          <a href="https://www.facebook.com/exploratoriumsummer" target="_blank" class="text-[#CADA2B]">facebook.com/exploratoriumsummer</a>
-        </p>
-        <p class="mt-[14px] opacity-70">© 2026 Експлораториум · Лято в Драгалевци</p>
-      </div>
-    </footer> -->
   </div>
 </template>
 
 <script setup>
-useHead({ title: 'Лято в Експлораториум' })
+useHead({
+  title: 'Лятно училище | Exploratorium School',
+  meta: [
+    { name: 'description', content: 'Лято в Експлораториум – научна лаборатория и приключения на Витоша за деца 5-10 г. 11 тематични седмици. 150€/седмица.' },
+    { property: 'og:title', content: 'Лято в Експлораториум · 5-10 г. · Драгалевци' },
+    { property: 'og:description', content: 'Лято в Експлораториум – научна лаборатория и приключения на Витоша за деца 5-10 г. 11 тематични седмици. 150€/седмица.' },
+    { property: 'og:image', content: 'https://exploratorium.bg/stock/summerhero.jpg' },
+    { property: 'og:url', content: 'https://exploratorium.bg/summer-activities/summer-school' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://exploratorium.bg/summer-activities/summer-school' }],
+})
+
 const weeks = [
-  { num: '01', title: 'Биологична машина', subtitle: 'Тялото и сетивата', dates: '15 – 19 юни', research: 'Измерване на пулс; клетки от кожа на лук под микроскоп', experiment: '„Модел на белия дроб" (бутилка и балони)', cooking: 'Енергийни бонбони за силни мускули' },
-  { num: '02', title: 'Химия на чувствата', subtitle: 'Емоционална интелигентност', dates: '22 – 26 юни', research: '„Карта на емоциите" в тялото; реакции при страх и радост', experiment: '„Вулкан от чувства" – контролирана химична реакция', cooking: '„Пица-емотикон" – настроения чрез продукти' },
-  { num: '03', title: 'Зелени детективи', subtitle: 'Растения и почва', dates: '29 юни – 03 юли', research: 'Хербарий; микро-светът в почвата с лупа', experiment: '„Дишането на листата" – кислородни мехурчета на слънце', cooking: 'Свежа салата от билки, които познаваме' },
-  { num: '04', title: 'Нашите съседи', subtitle: 'Животните на Витоша', dates: '06 – 10 юли', research: 'Следотърсачество на Витоша – стъпки и следи от диви животни', experiment: '„Защо птиците не потъват?" – плаваемост на перата', cooking: 'Печене на бисквитки във форми на животни' },
-  { num: '05', title: 'Архитекти на общността', subtitle: 'Хората и занаятите', dates: '13 – 17 юли', research: 'Интервюиране на квартала (Драгалевци); проучване на стари занаяти', experiment: '„Здравият мост" от клечки – тестване на издръжливостта', cooking: 'Обща „Племенна трапеза" – всеки отговаря за различен елемент' },
-  { num: '06', title: 'Етно-лаборатория', subtitle: 'Културите по света', dates: '20 – 24 юли', research: 'Музикални инструменти и писмености от различни континенти', experiment: '„Как се прави папирус?" или естествени багрила от куркума и цвекло', cooking: 'Ден на световната кухня – гуакамоле или азиатски пролетни рулца' },
-  { num: '07', title: 'Лаборатория за илюзии', subtitle: 'Мозък и въображение', dates: '27 – 31 юли', research: 'Оптични илюзии и тауматроп; как мозъкът ни „мами"', experiment: '„Невидимо мастило" – писане с лимонов сок, видимо при нагряване', cooking: '„Вълшебна лимонада" – сменя цвета с чай от синя пеперуда' },
-  { num: '08', title: 'Еко-пазители', subtitle: 'Грижа за планетата', dates: '03 – 07 август', research: 'Филтриране на „мръсна" вода през пясък, въглен и камъни', experiment: 'Разграждане на материали – пластмаса vs. хартия в почвата', cooking: '„Нулев отпадък" – готвим с всичко налично, без да изхвърляме' },
-  { num: '09', title: 'Геометрия на красотата', subtitle: 'Цветове и форми', dates: '10 – 14 август', research: 'Хроматография – разделяне на цветовете на черния флумастер', experiment: '„Танцуващи цветове" в мляко (с веро и бои)', cooking: '„Дъга в чинията" – плодове наредени по цветове и форми' },
-  { num: '10', title: 'Физика на звука', subtitle: 'Музика и вълни', dates: '17 – 21 август', research: 'Визуализиране на звукови вълни върху опънато фолио със захар/ориз', experiment: '„Стъклено пиано" с чаши с различна височина на водата', cooking: '„Хрупкави ритми" – храна, която издава интересен звук при ядене' },
-  { num: '11', title: 'Картографи на неизвестното', subtitle: 'Ориентиране и откривателство', dates: '24 – 28 август', research: 'Ориентиране с компас и слънце; „състарена" карта на Драгалевци', experiment: '„Реактивен двигател" с балон и сламка (как се движат ракетите)', cooking: '„Храна за изследователи" – сушене на плодове или домашно мюсли' },
+  { num: '01', icon: '🧬', title: 'Биологична машина', theme: 'Тялото и сетивата', dates: '15 – 19 юни' },
+  { num: '02', icon: '🧪', title: 'Химия на чувствата', theme: 'Емоционална интелигентност', dates: '22 – 26 юни' },
+  { num: '03', icon: '🌿', title: 'Зелени детективи', theme: 'Растения и почва', dates: '29 юни – 3 юли' },
+  { num: '04', icon: '🐾', title: 'Нашите съседи', theme: 'Животните на Витоша', dates: '6 – 10 юли' },
+  { num: '05', icon: '🏗️', title: 'Архитекти на общността', theme: 'Хората и занаятите', dates: '13 – 17 юли' },
+  { num: '06', icon: '🌍', title: 'Етно-лаборатория', theme: 'Културите по света', dates: '20 – 24 юли' },
+  { num: '07', icon: '🧠', title: 'Лаборатория за илюзии', theme: 'Мозък и въображение', dates: '27 – 31 юли' },
+  { num: '08', icon: '♻️', title: 'Еко-пазители', theme: 'Грижа за планетата', dates: '3 – 7 август' },
+  { num: '09', icon: '🎨', title: 'Геометрия на красотата', theme: 'Цветове и форми', dates: '10 – 14 август' },
+  { num: '10', icon: '🎵', title: 'Физика на звука', theme: 'Музика и вълни', dates: '17 – 21 август' },
+  { num: '11', icon: '🗺️', title: 'Картографи на неизвестното', theme: 'Ориентиране и откривателство', dates: '24 – 28 август' },
 ]
 
-const openWeeks = ref(new Set())
+const form = reactive({ parentName: '', phone: '', childAge: '', week: '', message: '' })
+const submitted = ref(false)
+const submitting = ref(false)
+const formError = ref(null)
 
-function toggleWeek(i) {
-  const next = new Set(openWeeks.value)
-  next.has(i) ? next.delete(i) : next.add(i)
-  openWeeks.value = next
-}
-
-function onWeekEnter(el) {
-  el.style.height = '0'
-  el.style.opacity = '0'
-  el.style.overflow = 'hidden'
-  el.offsetHeight
-  el.style.transition = 'height 0.25s ease, opacity 0.25s ease'
-  el.style.height = el.scrollHeight + 'px'
-  el.style.opacity = '1'
-}
-
-function onWeekAfterEnter(el) {
-  el.style.height = 'auto'
-  el.style.overflow = ''
-  el.style.transition = ''
-}
-
-function onWeekLeave(el) {
-  el.style.height = el.scrollHeight + 'px'
-  el.style.overflow = 'hidden'
-  el.offsetHeight
-  el.style.transition = 'height 0.25s ease, opacity 0.25s ease'
-  el.style.height = '0'
-  el.style.opacity = '0'
+async function submitForm() {
+  submitting.value = true
+  formError.value = null
+  try {
+    const res = await fetch('https://formspree.io/f/mvznogbb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(form),
+    })
+    if (res.ok) {
+      submitted.value = true
+    } else {
+      formError.value = 'Грешка при изпращане. Моля, опитайте отново.'
+    }
+  } catch {
+    formError.value = 'Грешка при изпращане. Моля, проверете връзката си.'
+  } finally {
+    submitting.value = false
+  }
 }
 </script>
-

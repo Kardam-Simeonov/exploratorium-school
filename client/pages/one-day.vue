@@ -111,6 +111,6 @@
 </template>
 
 <script setup>
-useHead({ title: 'Един ден при нас' })
+useHead({ title: 'Един ден при нас | Exploratorium School' })
 const localePath = useLocalePath()
 </script>

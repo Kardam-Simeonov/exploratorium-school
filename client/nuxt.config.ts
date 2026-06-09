@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   runtimeConfig: {
     public: {
       strapiUrl: process.env.STRAPI_URL || 'http://127.0.0.1:1337'
@@ -48,10 +48,15 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'page', mode: 'out-in' },
     head: {
-      titleTemplate: '%s | Exploratorium School',
       title: 'Exploratorium School',
+      htmlAttrs: { lang: 'bg' },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      meta: [
+        { property: 'og:site_name', content: 'Експлораториум Скул' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'bg_BG' },
       ]
     }
   }

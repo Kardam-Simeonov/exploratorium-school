@@ -186,7 +186,7 @@
     </section>
 
     <!-- PROMISE -->
-    <section class="bg-[#6368AC] text-white py-[60px] text-center lg:py-[80px]">
+    <section class="bg-explo-darkpurple text-white py-[60px] text-center lg:py-[80px]">
       <div class="container mx-auto px-6 max-w-[1200px]">
         <blockquote class="max-w-[800px] mx-auto text-[clamp(22px,3vw,32px)] leading-[1.4] font-medium relative px-[30px]">
           Лятото не е просто пауза от ученето, а <span class="text-[#CADA2B] font-bold">най-доброто му
@@ -212,7 +212,7 @@
             <a href="mailto:exploratorium.school@abv.bg" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">📩</div>
               <div class="text-[12px] text-[#555569] uppercase tracking-[0.8px] mb-[4px]">Имейл</div>
-              <div class="font-semibold text-[#6368AC] text-[14px]">exploratorium.school@abv.bg</div>
+              <div class="font-semibold text-[#6368AC] text-[13px] sm:text-[14px]">exploratorium.school<br class="sm:hidden">@abv.bg</div>
             </a>
             <a href="https://www.facebook.com/ExploratoriumBG" target="_blank" rel="noopener" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">👍</div>
@@ -220,7 +220,6 @@
               <div class="font-semibold text-[#6368AC] text-[14px]">ExploratoriumBG</div>
             </a>
           </div>
-          <a href="mailto:exploratorium.school@abv.bg" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none">Изпрати запитване</a>
         </div>
       </div>
     </section>
@@ -229,6 +228,16 @@
 </template>
 
 <script setup>
-useHead({ title: 'Летни активности' })
+useHead({
+  title: 'Летни активности | Exploratorium School',
+  meta: [
+    { name: 'description', content: 'Летни програми на Експлораториум за деца – Лятно училище, Скаутско училище и Работилница за писатели. Наука, приключения и творчество в Драгалевци.' },
+    { property: 'og:title', content: 'Летни активности | Експлораториум' },
+    { property: 'og:description', content: 'Летни програми на Експлораториум за деца – Лятно училище, Скаутско училище и Работилница за писатели. Наука, приключения и творчество в Драгалевци.' },
+    { property: 'og:image', content: 'https://exploratorium.bg/stock/summerhero.jpg' },
+    { property: 'og:url', content: 'https://exploratorium.bg/summer-activities' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://exploratorium.bg/summer-activities' }],
+})
 const localePath = useLocalePath()
 </script>

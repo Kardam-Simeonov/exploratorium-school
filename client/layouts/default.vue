@@ -11,29 +11,23 @@
           <ul
             class="relative flex flex-row justify-end items-center py-6 pr-6 min-w-0 text-white text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 0">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 0 }">
-                    Начало
-                  </span>
-                </a>
+              <NuxtLink :to="localePath('/')" class="cursor-pointer" @mouseover="highlightIndex = 0">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 0 }">
+                  Начало
+                </span>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/about-us')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 1">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За нас</span>
-                </a>
+              <NuxtLink :to="localePath('/about-us')" class="cursor-pointer" @mouseover="highlightIndex = 1">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 1 }">За нас</span>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/one-day')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 2">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Един ден при нас</span>
-                </a>
+              <NuxtLink :to="localePath('/one-day')" class="cursor-pointer" @mouseover="highlightIndex = 2">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 2 }">Един ден при нас</span>
               </NuxtLink>
             </li>
           </ul>
@@ -48,24 +42,20 @@
           <ul
             class="relative flex flex-row justify-start items-center py-6 pl-6 min-w-0 text-white text-lg font-medium whitespace-nowrap">
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/contact')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 3">
-                  <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
-                    Контакти
-                  </span>
-                </a>
+              <NuxtLink :to="localePath('/contact')" class="cursor-pointer" @mouseover="highlightIndex = 3">
+                <span class="bg-opacity-40 p-2 px-3 rounded-full drop-shadow-lg"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 3 }">
+                  Контакти
+                </span>
               </NuxtLink>
             </li>
             <li @mouseleave="highlightIndex = -1">
-              <NuxtLink :to="localePath('/admission')">
-                <a class="cursor-pointer" @mouseover="highlightIndex = 4">
-                  <span class="bg-opacity-40 py-[6px] px-4 rounded-xl drop-shadow-lg flex flex-col items-center gap-[2px]"
-                    :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">
-                    <span>Прием</span>
-                    <span class="text-xs font-normal opacity-60 tracking-wide">2026/2027</span>
-                  </span>
-                </a>
+              <NuxtLink :to="localePath('/admission')" class="cursor-pointer" @mouseover="highlightIndex = 4">
+                <span class="bg-opacity-40 py-[6px] px-4 rounded-xl drop-shadow-lg flex flex-col items-center gap-[2px]"
+                  :class="{ 'bg-explo-lightblue': highlightIndex == 4 }">
+                  <span>Прием</span>
+                  <span class="text-xs font-normal opacity-60 tracking-wide">2026/2027</span>
+                </span>
               </NuxtLink>
             </li>
             <li class="group relative" @mouseleave="highlightIndex = -1">
@@ -179,6 +169,7 @@
     <main>
       <slot />
     </main>
+    <CookieConsent />
     <!-- Footer -->
     <footer class="[&_p]:drop-shadow [&_span]:drop-shadow">
       <div class="pt-24 pb-12 flex flex-row flex-wrap justify-center gap-14">
@@ -223,7 +214,7 @@
           <div class="flex md:flex-row flex-col gap-5 justify-end w-full">
             <div class="flex flex-col mr-auto w-auto font-medium">
               <span class="text-2xl text-explo-whiteblue">Работно време</span>
-              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:50</span>
+              <span class="text-lg font-normal text-explo-whiteblue mt-2 mb-6">Понеделник - Петък<br>8:30 - 17:30</span>
               <span class="text-xl text-explo-whiteblue">+359 87 918 0700</span>
               <span class="text-sm text-explo-whiteblue">exploratorium.school<wbr>@abv.bg</span>
               <a href="https://www.facebook.com/ExploratoriumBG" target="_blank" rel="noopener" class="text-sm drop-shadow text-explo-whiteblue mt-2 hover:underline">facebook.com/ExploratoriumBG</a>
@@ -232,7 +223,7 @@
               <iframe class="1xl:h-40 lg:h-36 h-40 w-full mb-2 border-0 rounded-xl" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5230.205417478834!2d23.30200026206169!3d42.63266613532392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa83c18f1997c1%3A0xdfabcd8416421bfb!2sExploratorium%20School!5e0!3m2!1sen!2sbg!4v1779725354508!5m2!1sen!2sbg" />
-              <span class="text-md drop-shadow text-explo-whiteblue">Адрес: кв. Драгалевци, ул. Мавровец 3</span>
+              <a href="https://maps.app.goo.gl/LwYPiCAErdjCQ9RA7" target="_blank" rel="noopener" class="text-md drop-shadow text-explo-whiteblue hover:underline">📍 кв. Драгалевци, ул. Мавровец 3</a>
             </div>
           </div>
           <div class="lg:block hidden h-48 w-[0.50rem] mx-12 bg-explo-darklitecard" />
@@ -258,10 +249,21 @@
           </div>
         </div>
       </div>
-      <div class="bg-explo-darkercard min-h-[2rem] text-center">
-        <p class="text-explo-whiteblue pt-1">
-          © Експлораториум - алтернативно училище в Драгалевци, от 2014 г. 
+      <div class="bg-explo-darkercard py-3 flex flex-col sm:flex-row items-center justify-center gap-3 px-4">
+        <p class="text-explo-whiteblue text-center text-[14px]">
+          © Експлораториум - алтернативно училище в Драгалевци, от 2014 г.
         </p>
+        <span class="hidden sm:block text-[rgba(238,244,249,0.35)] text-[14px]">·</span>
+        <div class="flex items-center gap-3">
+          <NuxtLink to="/privacy-policy" class="text-[14px] text-explo-whiteblue hover:text-white underline underline-offset-2 transition-colors duration-150">
+            Политика за поверителност
+          </NuxtLink>
+          <span class="text-[rgba(238,244,249,0.35)] text-[14px]">·</span>
+          <button @click="openBanner"
+            class="flex items-center gap-[6px] px-3 py-[5px] rounded-full text-[13px] font-semibold bg-[rgba(255,255,255,0.12)] text-explo-whiteblue border border-[rgba(255,255,255,0.2)] hover:bg-[rgba(255,255,255,0.2)] hover:text-white transition-all duration-150">
+            🍪 Бисквитки
+          </button>
+        </div>
       </div>
     </footer>
   </div>
@@ -269,12 +271,7 @@
 
 <script setup>
 const localePath = useLocalePath()
-const { locale, locales } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-
-const availableLocales = computed(() => {
-  return (locales.value).filter(i => i.code !== locale.value)
-})
+const { openBanner } = useCookieConsent()
 
 const isMenuOpen = ref(false)
 const highlightIndex = ref(-1)
@@ -292,7 +289,7 @@ watch(isMenuOpen, (open) => {
     document.body.style.position = ''
     document.body.style.top = ''
     document.body.style.width = ''
-    window.scrollTo(0, savedScrollY)
+    window.scrollTo({ top: savedScrollY, behavior: 'instant' })
   }
 })
 
