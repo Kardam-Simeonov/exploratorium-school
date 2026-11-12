@@ -26,7 +26,7 @@
           <NuxtLink to="/summer-activities">
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
-                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
                 <Icon name="mdi:white-balance-sunny" class="1xl:text-4xl text-3xl" />
               </div>
               <p class="text-center">
@@ -37,7 +37,7 @@
           <NuxtLink to="/admission">
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
-                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
                 <Icon name="pepicons-pop:pinpoint-filled" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
@@ -48,7 +48,7 @@
           <NuxtLink to="/contact">
             <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
               <div
-                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
+                class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
                 <Icon name="material-symbols:phone-android-rounded" class="1xl:text-4xl text-3xl" />
               </div>
               <p>
@@ -190,7 +190,7 @@
             <Icon name="fa6-solid:chevron-right" />
           </button> -->
           <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">
-            Научи повече</a>
+            Научете повече</a>
         </NuxtLink>
       </div>
     </section>
@@ -334,10 +334,10 @@
 
 <script setup>
 useHead({
-  title: 'Exploratorium School',
+  title: 'Exploratorium School - Където стъпките се превръщат в следи',
   meta: [
     { name: 'description', content: 'Експлораториум Скул е алтернативно училище в Драгалевци за деца от 4 до 14 години, в което образованието не е заучаване на факти, а изграждане на личност.' },
-    { property: 'og:title', content: 'Exploratorium School - където стъпките се превръщат в следи.' },
+    { property: 'og:title', content: 'Exploratorium School - Където стъпките се превръщат в следи.' },
     { property: 'og:description', content: 'Експлораториум Скул е алтернативно училище в Драгалевци за деца от 4 до 14 години, в което образованието не е заучаване на факти, а изграждане на личност.' },
     { property: 'og:image', content: 'https://exploratorium.bg/stock/hero.jpg' },
     { property: 'og:url', content: 'https://exploratorium.bg/' },

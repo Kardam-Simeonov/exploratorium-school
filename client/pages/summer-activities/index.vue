@@ -19,8 +19,8 @@
               Три напълно различни концептуални предложения - едно за всяко дете, едно за всяко търсене.
             </p>
             <div class="flex flex-wrap gap-[14px]">
-              <a href="#programs" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none">Разгледай програмите</a>
-              <a href="#contact" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer">Запиши се</a>
+              <a href="#programs" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none">Разгледайте програмите</a>
+              <a href="#contact" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer">Запишете се</a>
             </div>
           </div>
           <!-- Staggered image mosaic — signals multiple programs -->
@@ -104,7 +104,7 @@
               <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
               <h3 class="text-[clamp(20px,2vw,24px)] font-bold text-[#3d4270] mb-3 leading-[1.2]">Лято в Експлораториум</h3>
               <p class="text-[#555569] text-[15px] leading-[1.65] mb-6 flex-1">Динамично лято за деца от 5 до 10 години. Наука, природа, готвене и творчество - всичко на едно място, в полите на Витоша.</p>
-              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научи повече</span>
+              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научете повече</span>
             </div>
           </NuxtLink>
 
@@ -120,7 +120,7 @@
               <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
               <h3 class="text-[clamp(20px,2vw,24px)] font-bold text-[#3d4270] mb-3 leading-[1.2]">Скаутско училище</h3>
               <p class="text-[#555569] text-[15px] leading-[1.65] mb-6 flex-1">За деца от 8 до 11 години. Оцеляване сред природата, работа в екип и незабравими лагерни вечери под небето на Витоша.</p>
-              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научи повече</span>
+              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научете повече</span>
             </div>
           </NuxtLink>
 
@@ -136,7 +136,7 @@
               <div class="w-10 h-1 bg-[#CADA2B] mb-4 rounded-full" />
               <h3 class="text-[clamp(20px,2vw,24px)] font-bold text-[#3d4270] mb-3 leading-[1.2]">Работилница за писатели</h3>
               <p class="text-[#555569] text-[15px] leading-[1.65] mb-6 flex-1">За тийнейджъри с влечение към писането. Хайку, манга, пътеписи и киносценарии - пространство, в което мисълта среща белия лист.</p>
-              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научи повече</span>
+              <span class="inline-block text-center py-[12px] px-[24px] rounded-full font-semibold text-[14px] bg-[#575DAA] text-white hover:bg-[#6368AC] transition-colors duration-150">Научете повече</span>
             </div>
           </NuxtLink>
 

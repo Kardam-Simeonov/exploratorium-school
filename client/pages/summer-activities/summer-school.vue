@@ -15,8 +15,8 @@
               Докато светът спори за оценки, ние експериментираме, готвим и изследваме Витоша. 11 тематични седмици за деца 5-10 г.
             </p>
             <div class="flex flex-wrap gap-[16px]">
-              <a href="#zapis" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s]">Запази място за дете</a>
-              <a href="#sedmici" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200">Виж 11-те седмици</a>
+              <a href="#zapis" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s]">Запазете място за дете</a>
+              <a href="#sedmici" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200">Вижте 11-те седмици</a>
             </div>
           </div>
           <div class="relative h-[480px] lg:h-[420px]">
@@ -330,7 +330,7 @@
               <p v-if="formError" class="text-red-400 text-[14px]">{{ formError }}</p>
               <button type="submit" :disabled="submitting"
                 class="w-full py-[14px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 font-inter">
-                {{ submitting ? 'Изпращане...' : 'Изпрати заявка' }}
+                {{ submitting ? 'Изпращане...' : 'Изпратете заявка' }}
               </button>
               <p class="text-center text-[13px] text-[rgba(255,255,255,0.6)]">Ще се свържем в рамките на 24 часа на посочения телефон.</p>
             </form>

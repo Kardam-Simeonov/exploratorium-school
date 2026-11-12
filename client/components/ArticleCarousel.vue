@@ -24,7 +24,7 @@
           </div>
           <NuxtLink :to="localPath(`/${slide.attributes.slug}`)">
             <button class="bg-explo-darkcard text-explo-whiteblue text-base rounded-md border-b-4 border-explo-darkercard hover:border-explo-darkgreen p-2 shadow-lg">
-              Научете Повече <Icon name="fa6-solid:chevron-right" />
+              Научете повече <Icon name="fa6-solid:chevron-right" />
             </button>
           </NuxtLink>
         </div>

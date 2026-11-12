@@ -95,7 +95,7 @@
       </div>
       <!-- Mobile Variant -->
       <div
-        class="xl:hidden block absolute top-2 left-0 right-0 sm:w-[15rem] w-[13rem] mx-auto h-fit bg-white p-1 rounded-md shadow-lg">
+        class="xl:hidden block absolute top-2 left-0 right-0 sm:w-[15rem] w-[11.5rem] mx-auto h-fit bg-white p-1 rounded-md shadow-lg">
         <div class="bg-gradient-to-r from-[#575DAA] to-[#9695C9] p-[3px] rounded-[0.175rem] h-[1.400rem]" />
         <div class="p-2">
           <NuxtLink to="/">
@@ -172,40 +172,75 @@
     <CookieConsent />
     <!-- Footer -->
     <footer class="[&_p]:drop-shadow [&_span]:drop-shadow">
-      <div class="pt-24 pb-12 flex flex-row flex-wrap justify-center gap-14">
-        <NuxtLink to="/summer-activities">
-          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
-            <div
-              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="mdi:white-balance-sunny" class="2xl:text-4xl text-3xl" />
-            </div>
-            <p class="text-xl text-center font-medium">
-              Летни<br>активности
-            </p>
-          </div>
-        </NuxtLink>
-        <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
+      <!-- Mobile footer nav -->
+      <div class="md:hidden flex flex-col items-center pt-14 pb-14 gap-8 px-6">
+        <!-- Featured: Прием -->
         <NuxtLink to="/admission">
-          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
-            <div
-              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-4xl text-3xl" />
+          <div class="group flex flex-col items-center gap-3 text-explo-darkgreen cursor-pointer">
+            <div class="p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+              <Icon name="pepicons-pop:pinpoint-filled" class="text-4xl" />
             </div>
-            <p class="text-xl font-medium">
-              Прием
-            </p>
+            <div class="text-center">
+              <p class="text-lg font-bold leading-tight">Прием</p>
+              <p class="text-[11px] text-[#CADA2B] font-bold uppercase tracking-[0.12em] mt-[2px]">2026/2027</p>
+            </div>
           </div>
         </NuxtLink>
-        <div class="md:block hidden h-14 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
-        <NuxtLink to="/contact">
-          <div class="group flex flex-col place-items-center gap-3 text-explo-darkgreen cursor-pointer">
-            <div
-              class="w-fit p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full group-hover:bg-explo-darkercard group-hover:-translate-y-2 transition-all duration-200">
-              <Icon name="material-symbols:phone-android-rounded" class="2xl:text-4xl text-3xl" />
+
+        <!-- Divider -->
+        <div class="flex items-center gap-3 w-[70%]">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent to-[rgba(150,149,201,0.3)] rounded-full"></div>
+          <div class="w-[5px] h-[5px] rounded-full bg-[rgba(150,149,201,0.4)]"></div>
+          <div class="flex-1 h-px bg-gradient-to-l from-transparent to-[rgba(150,149,201,0.3)] rounded-full"></div>
+        </div>
+
+        <!-- Secondary row: Летни + Контакти -->
+        <div class="flex flex-row justify-center gap-16">
+          <NuxtLink to="/summer-activities">
+            <div class="group flex flex-col items-center gap-3 text-explo-darkgreen cursor-pointer">
+              <div class="p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+                <Icon name="mdi:white-balance-sunny" class="text-4xl" />
+              </div>
+              <p class="text-base text-center font-medium">Летни<br>активности</p>
             </div>
-            <p class="text-xl font-medium">
-              Контакти
-            </p>
+          </NuxtLink>
+          <NuxtLink to="/contact">
+            <div class="group flex flex-col items-center gap-3 text-explo-darkgreen cursor-pointer">
+              <div class="p-3 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+                <Icon name="material-symbols:phone-android-rounded" class="text-4xl" />
+              </div>
+              <p class="text-base font-medium">Контакти</p>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+
+      <!-- Desktop footer nav -->
+      <div class="hidden md:flex flex-row justify-center gap-12 pt-20 pb-10">
+        <NuxtLink to="/summer-activities">
+          <div class="group flex flex-col place-items-center gap-2.5 text-explo-darkgreen cursor-pointer">
+            <div class="w-fit p-2.5 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+              <Icon name="mdi:white-balance-sunny" class="2xl:text-5xl text-4xl" />
+            </div>
+            <p class="text-lg text-center font-medium">Летни<br>активности</p>
+          </div>
+        </NuxtLink>
+        <div class="h-12 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
+        <NuxtLink to="/admission">
+          <div class="group flex flex-col place-items-center gap-2.5 text-explo-darkgreen cursor-pointer">
+            <div class="w-fit p-2.5 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+              <Icon name="pepicons-pop:pinpoint-filled" class="2xl:text-5xl text-4xl" />
+            </div>
+            <p class="text-lg font-medium">Прием</p>
+          </div>
+        </NuxtLink>
+        <div class="h-12 w-[0.20rem] bg-explo-lightblue bg-opacity-50 my-auto rounded-2xl" />
+        <NuxtLink to="/contact">
+          <div class="group flex flex-col place-items-center gap-2.5 text-explo-darkgreen cursor-pointer">
+            <div class="w-fit p-2.5 aspect-square flex items-center justify-center bg-explo-darkblue rounded-full border-2 border-[rgba(202,218,43,0.3)] shadow-[0_0_28px_rgba(202,218,43,0.18)] group-hover:bg-explo-darkercard group-hover:-translate-y-2 group-hover:shadow-[0_0_40px_rgba(202,218,43,0.3)] transition-all duration-200">
+              <Icon name="material-symbols:phone-android-rounded" class="2xl:text-5xl text-4xl" />
+            </div>
+            <p class="text-lg font-medium">Контакти</p>
           </div>
         </NuxtLink>
       </div>

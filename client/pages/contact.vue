@@ -78,7 +78,7 @@
               <p v-if="formError" class="text-red-400 text-[14px]">{{ formError }}</p>
               <button type="submit" :disabled="submitting"
                 class="w-full py-[14px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0">
-                {{ submitting ? 'Изпращане...' : 'Изпрати запитване' }}
+                {{ submitting ? 'Изпращане...' : 'Изпратете запитване' }}
               </button>
             </form>
           </div>

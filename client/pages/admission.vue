@@ -1,5 +1,5 @@
 <template>
-  <div class="relative 1xl:pt-[17rem] pt-[20rem]">
+  <div class="relative 1xl:pt-[17rem] pt-[13rem]">
     <img
       class="xl:hidden block h-[22rem] w-full absolute top-0 left-0 object-cover object-top mask-fadeoff opacity-80"
       src="/stock/admissionshero.jpg" />
@@ -10,18 +10,22 @@
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 items-center">
           <!-- Text column -->
           <div>
-            <div class="inline-block bg-[rgba(255,255,255,0.12)] border border-[rgba(255,255,255,0.25)] px-4 py-[7px] rounded-full text-sm font-bold tracking-[0.04em] mb-6 text-white">
-              Прием <span class="text-[#CADA2B]">2026/2027</span> · 10 свободни места
+            <div class="inline-block bg-[rgba(255,255,255,0.2)] border border-[rgba(255,255,255,0.25)] px-4 py-[7px] rounded-full sm:text-sm text-xs sm:shadow-none shadow-md font-bold tracking-[0.04em] mb-6 text-white">
+              <div class="drop-shadow">Прием <span class="text-[#CADA2B]">2026/2027</span> · 10 свободни места</div>
             </div>
             <h1 class="text-[clamp(2.4rem,5vw,4.25rem)] leading-[1.05] font-black text-[#CADA2B] drop-shadow mb-[28px] tracking-[-0.02em]">
               Търсим следващите 10 малки изследователи
             </h1>
-            <p class="text-[1.2rem] leading-[1.6] text-white mb-[36px] max-w-[520px]">
+            <p class="sm:text-[1.2rem] text-[1rem] leading-[1.6] text-white mb-[36px] max-w-[520px]">
               Приемът за новата учебна година е отворен за деца от 4 до 14 години.
               Търсим семейства, които вярват, че детето им е повече от „набор от оценки".
             </p>
-            <a href="#form" class="inline-flex items-center gap-2 py-[18px] px-[40px] rounded-full font-bold text-[1rem] bg-[#CADA2B] text-[#4a4f8f] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:bg-[#b8c24e] hover:translate-y-[-2px] hover:shadow-[0_8px_20px_rgba(202,218,43,0.35)] transition-all duration-200 cursor-pointer border-none">
-              Запази час за среща →
+            <a href="#form" class="group relative inline-flex items-center gap-[10px] sm:py-[18px] sm:px-[44px] py-[16px] px-[28px] rounded-full font-extrabold sm:text-[1rem] text-[0.9rem] overflow-hidden bg-gradient-to-r from-[#CADA2B] via-[#ddf040] to-[#c8d826] text-[#2a2f60] tracking-[-0.01em] shadow-[0_6px_36px_rgba(202,218,43,0.55),inset_0_1px_0_rgba(255,255,255,0.55)] hover:translate-y-[-3px] hover:shadow-[0_14px_52px_rgba(202,218,43,0.75),inset_0_1px_0_rgba(255,255,255,0.55)] active:translate-y-0 transition-all duration-200 cursor-pointer border-none">
+              <div class="hero-btn-shimmer absolute inset-y-0 w-[45%] bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.3)] to-transparent -skew-x-12 pointer-events-none"></div>
+              <svg class="relative group-hover:rotate-12 transition-transform duration-200 shrink-0" width="17" height="17" viewBox="0 0 24 24" fill="none">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="relative">Запазете час за среща</span>
             </a>
           </div>
           <!-- Image column -->
@@ -118,7 +122,7 @@
             <div class="h-[3px] w-[56px] bg-gradient-to-r from-[#CADA2B] to-[rgba(202,218,43,0.2)] rounded-full"></div>
           </div>
           <p class="text-explo-whiteblue text-[clamp(15px,1.3vw,17px)] leading-[1.7] opacity-65 lg:pb-[4px]">
-            Не учебен ден – изследователски. Всяко сутро носи нов въпрос, всяко следобед – нов отговор.
+            Не учебен ден – изследователски. Всяка сутрин носи нов въпрос, всеки следобед – нов отговор.
           </p>
         </div>
 
@@ -347,7 +351,7 @@
           <div class="text-[#CADA2B] font-bold text-[11px] uppercase tracking-[0.12em] mb-4">Как протича приемът</div>
           <h2 class="text-[clamp(28px,4vw,44px)] font-extrabold text-white leading-[1.1] mb-4">Решение без натиск</h2>
           <div class="h-[3px] w-[56px] bg-gradient-to-r from-[#CADA2B] to-[rgba(202,218,43,0.2)] rounded-full mb-5"></div>
-          <p class="text-white text-[clamp(16px,1.4vw,18px)] leading-[1.7] opacity-80">В повечето училища решавате под напрежение, че местата свършват. При нас първо опитвате – детето ви прекарва истински дни с нас, преди да решите каквото и да bilo.</p>
+          <p class="text-white text-[clamp(16px,1.4vw,18px)] leading-[1.7] opacity-80">В повечето училища решавате почти на сляпо — записвате детето, преди то изобщо да е прекарало истински ден там. При нас е обратното: първо опитвате, после решавате.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:items-stretch gap-[20px] lg:gap-0">
@@ -361,7 +365,7 @@
               </svg>
             </div>
             <div class="font-lobster text-[#CADA2B] text-[3rem] leading-none mb-[14px]" style="filter:drop-shadow(0 0 10px rgba(202,218,43,0.3))">01</div>
-            <h3 class="text-white font-extrabold text-[clamp(16px,1.5vw,18px)] mb-[10px]">Записване</h3>
+            <h3 class="text-white font-extrabold text-[clamp(16px,1.5vw,18px)] mb-[10px]">Запитване</h3>
             <p class="text-white opacity-60 text-[clamp(14px,1.2vw,15px)] leading-[1.65]">Попълвате формата по-долу и ние се свързваме с вас, за да уговорим удобно време.</p>
           </div>
 
@@ -453,7 +457,7 @@
       <div class="absolute bottom-[-80px] right-[-60px] w-[340px] h-[340px] rounded-full bg-[rgba(99,104,172,0.09)] pointer-events-none"></div>
 
       <div class="max-w-4xl mx-auto relative z-[1]">
-        <div class="relative bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.13)] rounded-[28px] p-10 lg:p-14 text-center overflow-hidden">
+        <div class="relative bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.13)] rounded-[28px] p-6 sm:p-10 lg:p-14 text-center overflow-hidden">
           <!-- Top lime accent -->
           <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-[#CADA2B] to-transparent"></div>
           <!-- Subtle inner glow at top -->
@@ -489,8 +493,11 @@
           </div>
 
           <p class="text-explo-whiteblue opacity-65 text-[0.9rem] leading-[1.65] max-w-xl mx-auto mb-8">Точните годишни такси се различават по възрастов етап и срок на записване. За да изберете най-подходящия за вашето семейство вариант, ги обсъждаме спокойно на личната среща.</p>
-          <a href="#form" class="inline-flex items-center gap-2 py-[16px] px-[40px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150">
-            Запазете час – обсъдете вариантите
+          <a href="#form" class="group inline-flex items-center gap-2 sm:py-[16px] sm:px-[40px] py-[11px] px-[22px] w-full sm:w-auto justify-center rounded-full font-semibold sm:text-[16px] text-[14px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150">
+            <span>Свържете се, за да обсъдим вариантите</span>
+            <svg class="shrink-0 group-hover:translate-x-[3px] transition-transform duration-200" width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -525,7 +532,7 @@
     <section id="form" class="relative px-4 lg:px-8 py-32 bg-explo-darkblue">
       <div class="max-w-7xl mx-auto">
         <div class="max-w-2xl mb-[48px]">
-          <div class="text-[#CADA2B] font-semibold text-[13px] uppercase tracking-[2px] mb-[10px]">Записване на дете</div>
+          <div class="text-[#CADA2B] font-semibold text-[13px] uppercase tracking-[2px] mb-[10px]">Контакти</div>
           <h2 class="text-white text-[clamp(29px,3.5vw,36px)] leading-[1.2] mb-[12px] font-bold">Запазете час за среща</h2>
           <p class="text-explo-whiteblue text-[clamp(15px,1.3vw,17px)] leading-[1.6] opacity-75">
             Попълнете формуляра и ще се свържем с вас за удобно време за лична среща и посещение на базата.
@@ -574,7 +581,7 @@
               <p v-if="formError" class="text-red-400 text-[14px]">{{ formError }}</p>
               <button type="submit" :disabled="submitting"
                 class="w-full py-[14px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0">
-                {{ submitting ? 'Изпращане...' : 'Изпрати запитване' }}
+                {{ submitting ? 'Изпращане...' : 'Изпратете запитване' }}
               </button>
             </form>
           </div>
@@ -621,30 +628,77 @@
       </div>
     </section>
 
-    <!-- Sticky urgency CTA -->
+    <!-- Bloom background — sibling of CTA so z-index is independent -->
+    <Transition name="bloom">
+      <div
+        v-if="showStickyBtn && stickyExpanded"
+        class="fixed bottom-[-206px] right-[-214px] w-[520px] h-[520px] rounded-full pointer-events-none z-[35] xl:hidden"
+        style="background: radial-gradient(circle at center, rgba(75,82,185,1) 0%, rgba(68,76,168,0.88) 28%, rgba(60,65,148,0.55) 55%, transparent 74%); filter: blur(3px);"
+      ></div>
+    </Transition>
+
+    <!-- Sticky CTA (mobile/tablet only) -->
     <Transition name="sticky-cta">
-      <a
+      <div
         v-if="showStickyBtn"
-        href="#form"
-        class="fixed top-[20px] left-0 z-40 xl:hidden group flex items-center gap-[12px] bg-[rgba(14,16,52,0.88)] backdrop-blur-md border border-[rgba(255,255,255,0.1)] border-l-0 pl-[18px] pr-[18px] py-[12px] rounded-r-[20px] shadow-[6px_4px_48px_rgba(0,0,0,0.55),0_0_24px_rgba(202,218,43,0.07)] hover:translate-x-[5px] hover:shadow-[8px_4px_56px_rgba(0,0,0,0.65),0_0_36px_rgba(202,218,43,0.18)] transition-all duration-300 ease-out no-underline select-none overflow-hidden"
+        class="fixed bottom-6 right-4 z-40 xl:hidden select-none"
       >
-        <!-- Lime left accent bar -->
-        <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#CADA2B]"></div>
+        <!-- Speed-dial action buttons (above the trigger) -->
+        <Transition name="dial">
+          <div v-if="stickyExpanded" class="absolute right-[72px] bottom-[40px] flex flex-col-reverse items-end gap-[10px]">
+            <a
+              href="tel:+359879180700"
+              @click="stickyExpanded = false"
+              class="dial-btn dial-btn-1 flex items-center gap-[10px] bg-[rgba(8,11,44,0.96)] backdrop-blur-md border border-[rgba(255,255,255,0.16)] text-white font-semibold text-[15px] px-5 py-[13px] rounded-full shadow-[0_6px_32px_rgba(0,0,0,0.55)] no-underline whitespace-nowrap"
+            >
+              <svg class="shrink-0 text-[#CADA2B]" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Обадете се</span>
+            </a>
+            <a
+              href="#form"
+              @click="stickyExpanded = false"
+              class="dial-btn dial-btn-2 flex items-center gap-[10px] bg-[#CADA2B] text-[#2a2f60] font-extrabold text-[15px] px-5 py-[13px] rounded-full shadow-[0_6px_32px_rgba(202,218,43,0.55)] no-underline whitespace-nowrap -mr-[44px]"
+            >
+              <svg class="shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Запазете час</span>
+            </a>
+          </div>
+        </Transition>
 
-        <!-- Periodic shimmer sweep -->
-        <div class="sticky-shimmer absolute inset-y-0 w-[55%] bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.05)] to-transparent skew-x-[-15deg] pointer-events-none"></div>
+        <!-- Persistent circle + pill text layered behind it -->
+        <div class="relative">
+          <!-- Pill background + text, slides out right when expanded -->
+          <Transition name="pill-bg">
+            <div
+              v-if="!stickyExpanded"
+              class="absolute top-1/2 -translate-y-1/2 right-[30px] flex items-center bg-[rgba(40,46,90,0.95)] backdrop-blur-md border border-[rgba(202,218,43,0.3)] rounded-full h-[46px] pl-4 pr-10 cursor-pointer shadow-[0_8px_32px_rgba(0,0,0,0.65),0_0_0_1px_rgba(202,218,43,0.08)]"
+              @click="stickyExpanded = true"
+            >
+              <span class="live-dot w-[7px] h-[7px] rounded-full bg-[#CADA2B] shrink-0 mr-[10px]"></span>
+              <span class="text-white font-bold text-[13px] whitespace-nowrap tracking-[0.02em]">Свържете се</span>
+            </div>
+          </Transition>
 
-        <!-- Hover glow -->
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[rgba(202,218,43,0.06)] to-transparent pointer-events-none"></div>
-
-        <!-- Phone icon -->
-        <svg class="relative shrink-0 text-[#CADA2B]" width="15" height="15" viewBox="0 0 24 24" fill="none">
-          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-
-        <!-- Text -->
-        <span class="relative text-white font-black text-[13px] leading-none tracking-[-0.01em]">Свържете се с нас</span>
-      </a>
+          <!-- Single circle button — icon swaps inside -->
+          <button
+            @click="stickyExpanded = !stickyExpanded"
+            class="fab-idle relative z-10 w-[60px] h-[60px] rounded-full bg-[#CADA2B] border border-[rgba(255,255,255,0.35)] flex items-center justify-center text-[#4a5490] cursor-pointer"
+          >
+            <Transition name="icon-swap" mode="out-in">
+              <svg v-if="!stickyExpanded" key="phone" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg v-else key="close" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </Transition>
+          </button>
+        </div>
+      </div>
     </Transition>
   </div>
 </template>
@@ -669,15 +723,18 @@ const formError = ref(null)
 const openFaq = ref(-1)
 
 const showStickyBtn = ref(false)
+const stickyExpanded = ref(false)
 let _stickyScrollHandler = null
 
 onMounted(() => {
   const hero = document.querySelector('header')
   const formSection = document.getElementById('form')
   _stickyScrollHandler = () => {
-    const pastHero = window.scrollY > (hero ? hero.offsetTop + hero.offsetHeight + 300 : 700)
+    const pastHero = window.scrollY > (hero ? hero.offsetTop + hero.offsetHeight + 20 : 200)
     const atForm = formSection ? window.scrollY + window.innerHeight >= formSection.offsetTop + 80 : false
-    showStickyBtn.value = pastHero && !atForm
+    const visible = pastHero && !atForm
+    if (!visible) stickyExpanded.value = false
+    showStickyBtn.value = visible
   }
   window.addEventListener('scroll', _stickyScrollHandler, { passive: true })
 })
@@ -756,21 +813,78 @@ async function submitForm() {
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
 
+@keyframes hero-btn-shimmer {
+  0%   { transform: translateX(-150%) skewX(-12deg); }
+  100% { transform: translateX(350%) skewX(-12deg); }
+}
+.hero-btn-shimmer {
+  animation: hero-btn-shimmer 2.6s ease-in-out infinite;
+}
+
+/* ── Sticky CTA show/hide (scroll-triggered) ── */
 .sticky-cta-enter-active,
 .sticky-cta-leave-active {
-  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.28s ease, transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sticky-cta-enter-from,
 .sticky-cta-leave-to {
   opacity: 0;
-  transform: translateX(-130%) scale(0.85);
+  transform: translateX(120px);
 }
 
-@keyframes shimmer-sweep {
-  0%   { transform: translateX(-120%) skewX(-15deg); }
-  100% { transform: translateX(320%) skewX(-15deg); }
+/* ── Beacon circle: crowned pulse (drop → dark gap ring → breathing outer ring) ── */
+@keyframes fab-pulse {
+  0%   { box-shadow: 0 6px 22px rgba(202,218,43,0.6), 0 0 0 3px rgba(6,8,36,0.97), 0 0 0 5px rgba(202,218,43,0.4); }
+  60%  { box-shadow: 0 6px 22px rgba(202,218,43,0.3), 0 0 0 3px rgba(6,8,36,0.97), 0 0 0 16px rgba(202,218,43,0); }
+  100% { box-shadow: 0 6px 22px rgba(202,218,43,0.6), 0 0 0 3px rgba(6,8,36,0.97), 0 0 0 5px rgba(202,218,43,0.4); }
 }
-.sticky-shimmer {
-  animation: shimmer-sweep 3.5s ease-in-out infinite;
+.fab-idle { animation: fab-pulse 2.2s ease-in-out infinite; }
+
+.live-dot { opacity: 1; }
+
+/* ── Background bloom ── */
+.bloom-enter-active {
+  transition: transform 0.65s cubic-bezier(0.34, 1.1, 0.64, 1), opacity 0.45s ease;
 }
+.bloom-leave-active {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 1, 1), opacity 0.22s ease;
+}
+.bloom-enter-from,
+.bloom-leave-to {
+  transform: scale(0.02);
+  opacity: 0;
+}
+
+/* ── Speed-dial buttons emerge ── */
+.dial-enter-active {
+  transition: opacity 0.45s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.dial-enter-from {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.dial-leave-active {
+  transition: opacity 0.18s ease, transform 0.22s cubic-bezier(0.4, 0, 1, 1);
+}
+.dial-leave-to { opacity: 0; transform: translateY(18px) scale(0.85); }
+
+/* ── Pill text slides behind circle ── */
+.pill-bg-enter-active,
+.pill-bg-leave-active {
+  transition: opacity 0.22s ease, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pill-bg-enter-from,
+.pill-bg-leave-to {
+  opacity: 0;
+  transform: translateY(-50%) translateX(28px);
+}
+
+/* ── Icon spin-swap inside the circle ── */
+.icon-swap-enter-active,
+.icon-swap-leave-active {
+  transition: opacity 0.14s ease, transform 0.16s ease;
+}
+.icon-swap-enter-from { opacity: 0; transform: rotate(-80deg) scale(0.4); }
+.icon-swap-leave-to   { opacity: 0; transform: rotate(80deg)  scale(0.4); }
 </style>

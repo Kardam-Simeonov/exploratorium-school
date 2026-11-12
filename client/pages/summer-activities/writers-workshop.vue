@@ -14,8 +14,8 @@
               Наднича ли в теб душата на творец? Превърни света в история и думите в приключение. Лятна работилница за писатели - пътешествие из жанровете.
             </p>
             <div class="flex flex-wrap gap-[14px]">
-              <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Кандидатствай</a>
-              <a href="#program" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Виж програмата</a>
+              <a href="#cta" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[#CADA2B] text-[#575DAA] shadow-[0_4px_14px_rgba(202,218,43,0.4)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(202,218,43,0.55)] transition-all duration-[0.15s] cursor-pointer border-none text-center">Кандидатствайте</a>
+              <a href="#program" class="inline-block py-[16px] px-[32px] rounded-full font-semibold text-[16px] bg-[rgba(255,255,255,0.12)] text-white border-2 border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.22)] transition-all duration-200 cursor-pointer text-center">Вижте програмата</a>
             </div>
           </div>
           <div class="relative">
@@ -154,7 +154,7 @@
       <div class="container mx-auto px-8 max-w-[1200px]">
         <div class="bg-white p-[40px_24px] rounded-[28px] shadow-[0_12px_40px_rgba(99,104,172,0.15)] max-w-[760px] mx-auto lg:p-[56px_40px]">
           <h2 class="text-[#6368AC] text-[clamp(26px,3.5vw,36px)] mb-[12px] font-bold">Търсим автори със смели идеи</h2>
-          <p class="text-[#555569] mb-[32px] text-[17px]">Първоначалният прием е силно ограничен, за да запазим бутиковия характер на групата. Свържи се с нас и ни разкажи за теб.</p>
+          <p class="text-[#555569] mb-[32px] text-[17px]">Първоначалният прием е силно ограничен, за да запазим бутиковия характер на групата. Свържете се с нас и ни разкажи за теб.</p>
           <div class="grid grid-cols-1 gap-[16px] mb-[32px] lg:grid-cols-3">
             <a href="tel:+359879180700" class="bg-[#EEF4F9] p-[18px_14px] rounded-[14px] hover:bg-[rgba(202,218,43,0.18)] transition-colors duration-200">
               <div class="text-[24px] mb-[6px]">📞</div>
